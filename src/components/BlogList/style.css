@@ -1,0 +1,203 @@
+.blog-pg-section {
+}
+
+.blog-grids .grid:nth-child(4) {
+    background: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+    .blog-pg-section .blog-posts {
+        padding-right: 40px;
+    }
+}
+
+.blog-pg-section .blog-posts>.post {
+    margin-bottom: 80px;
+}
+
+@media (max-width: 991px) {
+    .blog-pg-section .blog-posts>.post {
+        margin-bottom: 70px;
+    }
+}
+
+.blog-pg-section .post .details {
+    background-color: #f8f8f8;
+    padding: 35px 40px;
+}
+
+@media (max-width: 991px) {
+    .blog-pg-section .post .details {
+        padding: 35px 20px;
+    }
+}
+
+.blog-pg-section .entry-meta {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.blog-pg-section .entry-meta>li {
+    font-size: 14px;
+    font-size: 0.875rem;
+    float: left;
+}
+
+@media (max-width: 767px) {
+    .blog-pg-section .entry-meta>li {
+        font-size: 13px;
+        font-size: 0.8125rem;
+    }
+}
+
+.blog-pg-section .entry-meta>li+li {
+    margin-left: 15px;
+    padding-left: 15px;
+    padding-top: 9px;
+    position: relative;
+}
+
+.blog-pg-section .entry-meta>li+li:before {
+    content: "|";
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+
+.blog-pg-section .entry-meta li a {
+    color: #ed5217;
+}
+
+.blog-pg-section .entry-meta img {
+    border-radius: 50%;
+    border: 1px solid #e6e6e6;
+}
+
+.blog-pg-section .details h3 {
+    font-size: 24px;
+    font-size: 1.5rem;
+    margin: 0 0 0.8em;
+}
+
+@media (max-width: 991px) {
+    .blog-pg-section .details h3 {
+        font-size: 22px;
+        font-size: 1.375rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .blog-pg-section .details h3 {
+        font-size: 20px;
+        font-size: 1.25rem;
+    }
+}
+
+.blog-pg-section .details h3 a {
+    color: #283a5e;
+}
+
+.blog-pg-section .details h3 a:hover {
+    color: #ed5217;
+}
+
+.blog-pg-section .details p {
+    margin-bottom: 1.5em;
+}
+
+.blog-pg-section .details .read-more {
+    font-weight: 500;
+    color: #ed5217;
+    text-transform: uppercase;
+}
+
+.blog-pg-section .details .read-more:hover {
+    color: #fe4702;
+}
+
+.blog-pg-section .format-video .video-holder {
+    position: relative;
+    text-align: center;
+}
+
+.blog-pg-section .format-video .video-holder:before {
+    content: "";
+    background-color: rgba(254, 108, 53, 0.1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.blog-pg-section .format-video .video-holder:hover:before {
+    background-color: rgba(254, 108, 53, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.blog-pg-section .format-video .video-holder a {
+    width: 78px;
+    height: 78px;
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.blog-pg-section .format-video .video-holder i {
+    font-size: 50px;
+    font-size: 3.125rem;
+    color: #fff;
+    position: relative;
+    top: 0px;
+    left: 3px;
+}
+
+.blog-pg-section .format-quote .details {
+    background-color: #fdf0eb;
+    position: relative;
+}
+
+.blog-pg-section .format-quote .details:before {
+    content: "";
+    background: url("../../images/blog/quote.png") center center/auto no-repeat local;
+    width: 55px;
+    height: 44px;
+    position: absolute;
+    right: 40px;
+    top: 35px;
+}
+
+
+
+.format-video .video-holder .wrap {
+    background-color: rgba(242, 123, 78, 0.78);
+    width: 88px;
+    height: 88px;
+    line-height: 88px;
+    border: 3px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 40px;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}

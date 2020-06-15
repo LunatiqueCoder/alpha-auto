@@ -1,0 +1,156 @@
+.hx-site-footer-area{
+  background: #fdf3ed;
+}
+.hx-site-footer-top .container{
+  position: relative;
+}
+.hx-site-footer-top .container:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -60px;
+    height: 1px;
+    width: 100%;
+    background: #feddd3;
+}
+.hx-site-footer-top {
+    padding: 80px 0 60px;
+}
+.hx-site-footer-text{
+  max-width: 290px;
+}
+.hx-site-logo{
+  margin-bottom: 30px;
+  max-width: 200px;
+}
+.social li{
+    display: inline-block;
+    padding: 5px;
+    color: #fff;
+
+}
+.social li a {
+    color: #444;
+}
+.social {
+    margin-top: 25px;
+}
+
+.hx-site-footer-top p {
+    color: #777;
+    margin-bottom: 0;
+}
+.hx-site-footer-top a{
+  color:#666;
+}
+.hx-site-footer-top a:hover{
+  color:#ed5217;
+}
+
+.hx-site-footer-link ul li a{
+  padding-top: 10px;
+  display: block;
+}
+.hx-site-footer-top h3{
+  font-size: 25px;
+  color:#444;
+  margin-bottom: 20px;
+  text-transform:uppercase;
+}
+
+.hx-site-footer-link{
+  overflow: hidden;
+}
+.hx-latest-section .img-holder {
+    float: left;
+    padding-right: 15px;
+}
+.hx-latest-section .details span{
+  display: inline-block;
+  color:#ed5217;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.hx-latest-section .post {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.hx-latest-section .post3{
+    margin-bottom: 0px;
+}
+.footer-widget.instagram h3 {
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+.hx-site-footer-top h3 {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.hx-site-footer-top h3:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    height: 3px;
+    background: #ed5217;
+    border-radius: 20px;
+}
+.link-sub {
+    margin-bottom: 0;
+}
+.hx-site-footer-top .details p {
+    line-height: 32px;
+    font-size: 16px;
+    margin-top: -9px;
+    color: #666;
+}
+.adress-section ul li {
+    color: #666;
+    margin-bottom: 15px;
+}
+.adress-section .ad{
+  margin-top: 30px;
+}
+.adress-section .ad span{
+  color:#ed5217;
+}
+.service-section ul li{
+  color:#666;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.service-section ul li:before{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 0;
+  top: 8px;
+  background:#ed5217;
+  border-radius: 50%; 
+
+}
+
+.hx-site-footer-bottom{
+  background: #fdf3ed;
+  padding: 30px 0;
+}
+
+.hx-site-footer-bottom-content {
+    text-align: center;
+}
+.hx-site-footer-bottom-content span{
+  color:#666;
+  font-size: 16px;
+  text-align: center;
+}
+.hx-site-footer-bottom-content span a{
+  color:#ed5217
+}

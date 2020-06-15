@@ -1,0 +1,160 @@
+.hx-team-area {
+    background: #fff;
+    padding-bottom: 90px!important;
+}
+
+.hx-team-img {
+    position: relative;
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.hx-team-img img {
+    width: 100%;
+}
+
+.hx-team-single:hover .hx-team-img {
+    transform: scale(1.2);
+}
+
+.hx-team-img:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(237, 82, 23, .92);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.hx-team-single:hover .hx-team-img:before {
+    opacity: 1;
+}
+
+.hx-thumb-content {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.hx-team-single {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.hx-team-single:hover .hx-thumb-content {
+    opacity: 1;
+    left: 40px;
+    top: 40px;
+}
+
+.hx-thumb-content ul {
+    display: flex;
+}
+
+.hx-thumb-content ul li {
+    padding-right: 15px;
+}
+
+.hx-thumb-content ul li i {
+    color: #fff;
+}
+
+.hx-team-content {
+    position: absolute;
+    left: 35px;
+    bottom: 45px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.hx-team-single:hover .hx-team-content {
+    opacity: 1;
+}
+
+.hx-team-content h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.hx-team-content span {
+    color: #fffefe;
+}
+
+ .hx-team-single .SocialIcons {
+     display: flex;
+     flex-direction: column;
+     left: 0;
+     opacity: 0;
+     position: absolute;
+     top: 10%;
+     transform: rotateY(90deg);
+     transform-origin: left center 0;
+     transition: all 350ms ease;
+ }
+
+ .hx-team-single .SocialIcons a {
+     background: #ffffff none repeat scroll 0 0;
+     font-size: 14px;
+     height: 35px;
+     margin-bottom: 1px;
+     position: relative;
+     text-align: center;
+     width: 35px;
+     color: #333;
+ }
+
+ .hx-team-single .SocialIcons a i {
+     left: 50%;
+     position: absolute;
+     top: 50%;
+     transform: translateX(-50%) translateY(-50%);
+ }
+
+
+
+ .hx-team-single:hover .SocialIcons {
+     opacity: 1;
+     left: 10%;
+     transform: rotateY(0deg);
+ }
+
+ .hx-team-single .profileInfo {
+    background: #ffffff none repeat scroll 0 0;
+    bottom: 0;
+    height: 50px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 80%;
+    transform: rotatex(90deg);
+    transform-origin: bottom center 0;
+    transition: all 350ms ease;
+    opacity: 0;
+    box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+}
+
+ .hx-team-single .profileInfo h3 {
+     font-size: 20px;
+     margin: 15px 0;
+     text-align: center;
+ }
+
+ .hx-team-single .profileInfo h3 a {
+     color: #283a5e;
+ }
+ .hx-team-single .profileInfo h3 a:hover {
+     color: #ed5217;
+ }
+
+ .hx-team-single:hover .profileInfo {
+     opacity: 1;
+     bottom: 8%;
+     transform:rotatex(0deg);
+ }

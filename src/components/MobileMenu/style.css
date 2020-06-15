@@ -1,0 +1,125 @@
+.mobileMenu {
+    position: fixed;
+    left: -280px;
+    top: 0;
+    z-index: 9999;
+    height: 100vh;
+    width: 280px;
+    background: url("../../images/blog/img-1.jpg") center center/cover no-repeat local;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 10px 40px 0px rgba(50, 50, 50, 0.1);
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+.mobileMenu:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    content: "";
+}
+.responsivemenu .card-body{
+    background: none;
+}
+.mobileMenu h2{
+    padding-left: 20px;
+}
+.mobileMenu.show{
+    left: 0;
+}
+.showmenu {
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    top: 25px;
+}
+.responsivemenu {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 30px;
+}
+.responsivemenu li a,
+.responsivemenu li p{
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #ddd;
+    cursor: pointer;
+}
+.responsivemenu li p{
+    position: relative;
+    margin-bottom: 0;
+}
+
+.responsivemenu .card{
+  border:none;
+  background: none;
+}
+.responsivemenu .card-body{
+  padding-top: 0;
+}
+
+.responsivemenu .card-body li {
+    background: #0e1113;
+}
+
+.responsivemenu li a{
+    position: relative;
+}
+.responsivemenu li i{
+    position: absolute;
+    right: 20px;
+    top: 17px;
+}
+.showmenu i{
+    font-size: 30px;
+    color: #fff;
+}
+.mobileMenu{
+    display: none;
+}
+.showmenu{
+    display: none;
+}
+@media (max-width:992px){
+    .showmenu{
+        display: block;
+    }
+    .mobileMenu{
+        display: block;
+    }
+}
+
+@media (max-width:767px){
+    .mobileMenu {
+        width: 240px;
+    }
+
+}
+
+
+.middle-header-3 .showmenu {
+    top: 36px;
+}
+.middle-header2 .showmenu {
+    top: 26px;
+}
+
+.header-style-3 .showmenu i{
+    color: #fff!important;
+}
+
+.header-style-2 .showmenu i{
+    color: #333!important;
+}
+
+.SidebarWrap {
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
