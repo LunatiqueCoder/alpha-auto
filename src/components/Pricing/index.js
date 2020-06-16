@@ -14,12 +14,12 @@ const Pricing = (props) => {
   }
 
   return (
-    <div className="pricing-section">
+    <div id="packages" className="pricing-section">
         <div className="container">
             <div className="col-12">
                 <div className="section-title-s2 text-center">
-                    <span>Best Pricing Plan</span>
-                    <h2>Services Packages</h2>
+                    <span>Alpha Auto</span>
+                    <h2>Pachete</h2>
                 </div>
             </div>
             <div className="row">

@@ -92,7 +92,7 @@ const ServicesSingle = (props) => {
             </div>
         </div>
      )
-        
+
 }
 
 export default ServicesSingle;

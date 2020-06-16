@@ -480,11 +480,12 @@ content: "";
 }
 .fixed-navbar.active .header-style-1,
 .fixed-navbar.active .header-style-2,
-.fixed-navbar.active .header-style-3{
+.fixed-navbar.active .header-style-3 {
   position: fixed;
   z-index: 555;
   top: 0;
   left: 0;
+  height: 9.5vh;
   width: 100%;
   background: #fff;
   border: none;

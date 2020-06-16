@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import logo from '../../images/logo.png'
 import post1 from '../../images/footer/img-1.jpg'
 import post2 from '../../images/footer/img-2.jpg'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import './style.css'
 
@@ -11,8 +12,8 @@ const FooterSection = () => {
     const ClickHandler = () =>{
         window.scrollTo(500, 0);
      }
- 
-     
+
+
     return(
         <div className="hx-site-footer-area">
             <div className="hx-site-footer-top">
@@ -23,72 +24,56 @@ const FooterSection = () => {
                                 <div className="hx-site-logo">
                                     <img src={logo} alt=""/>
                                 </div>
-                                <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                                <p>Alpha Auto, cel mai profesionist service din Bariera Vâlcii. Ne puteti gasii si pe Facebook.</p>
                                 <div className="social">
                                     <ul className="d-flex">
-                                        <li><Link onClick={ClickHandler} to="/"><i className="fa fa-facebook" aria-hidden="true"></i></Link></li>
-                                        <li><Link onClick={ClickHandler} to="/"><i className="fa fa-twitter" aria-hidden="true"></i></Link></li>
-                                        <li><Link onClick={ClickHandler} to="/"><i className="fa fa-instagram" aria-hidden="true"></i></Link></li>
-                                        <li><Link onClick={ClickHandler} to="/"><i className="fa fa-google-plus" aria-hidden="true"></i></Link></li>
+                                        <li><a href="https://www.facebook.com/alphaautocraiova/"><i className="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+                                        {
+                                          // <li><Link onClick={ClickHandler} to="/"><i className="fa fa-twitter" aria-hidden="true"></i></Link></li>
+                                          // <li><Link onClick={ClickHandler} to="/"><i className="fa fa-instagram" aria-hidden="true"></i></Link></li>
+                                          // <li><Link onClick={ClickHandler} to="/"><i className="fa fa-google-plus" aria-hidden="true"></i></Link></li>
+                                        }
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-12 footer-t">
-                            <div className="hx-site-footer-link">
-                                <h3>Recent post</h3>
-                                <div className="hx-latest-section">
-                                    <div className="posts">
-                                        <div className="post">
-                                            <div className="img-holder">
-                                               <img src={post1} alt=""/>
-                                            </div>
-                                            <div className="details">
-                                                <p><Link onClick={ClickHandler} to="/blog-details">Most Importent Issue For your car.</Link> </p>
-                                                <span>18 Feb 2019</span>
-                                            </div>
-                                        </div>
-                                        <div className="post">
-                                            <div className="img-holder">
-                                                <img src={post2} alt=""/>
-                                            </div>
-                                            <div className="details">
-                                                <p><Link onClick={ClickHandler} to="/blog-details"> Most Importent Issue For your car.</Link></p>
-                                                <span>18 Feb 2019</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                         <div className="col-lg-3 col-md-6 col-sm-12 footer-t">
                             <div className="hx-site-footer-adress">
-                                <h3>Address</h3>
+                                <h3>Adresă</h3>
                                 <div className="adress-section">
                                     <ul>
-                                        <li>Head Office Address</li>
-                                        <li>121 King Street, Melbourne West, </li>
-                                        <li>Australia</li>
+                                        <li>str. Teilor 115</li>
+                                        <li>Craiova</li>
                                     </ul>
                                     <ul className="ad">
-                                        <li><span>Phone:</span> 888 123-4587</li>
-                                        <li><span>Email:</span> info@example.com</li>
+                                        <li><span>Telefon: </span> 0722 968 318</li>
+                                        <li><span>Email: </span> alphaauto20@gmail.com</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-2 col-md-6 col-sm-12 footer-t">
                             <div className="hx-site-footer-service">
-                                <h3>Services</h3>
+                                <h3>Pagini</h3>
                                 <div className="service-section">
-                                    <ul>
-                                        <li><Link onClick={ClickHandler} to="/about">About</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/services">Service</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/service-details">Service single</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/Pricing">Pricing</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/testimonials">Testimonials</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/blog-grid">Blog List</Link></li>
-                                    </ul>
+                                  <ul>
+                                      <li className="active">
+                                        <AnchorLink href='#hero'>Acasă</AnchorLink>
+                                      </li>
+                                      <li>
+                                        <AnchorLink offset='100' href='#services'>Servicii</AnchorLink>
+                                      </li>
+                                      <li>
+                                        <AnchorLink offset='27' href='#packages'>Pachete</AnchorLink>
+                                      </li>
+                                      <li>
+                                        <AnchorLink offset='10' href='#contact'>Contact</AnchorLink>
+                                      </li>
+                                      <li>
+                                        <AnchorLink offset='10' href='#team'>Despre</AnchorLink>
+                                      </li>
+                                  </ul>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +85,7 @@ const FooterSection = () => {
                     <div className="hx-site-footer-bottom-content">
                         <div className="row">
                             <div className="col-12">
-                                <span>Privacy Policy | © 2020 <Link to="/">Motonic</Link> All rights reserved</span>
+                                <span>Privacy Policy | © 2020 <Link to="/">Alpha Auto</Link></span>
                             </div>
                         </div>
                     </div>
@@ -108,7 +93,7 @@ const FooterSection = () => {
             </div>
         </div>
      )
-        
+
 }
 
 export default FooterSection;

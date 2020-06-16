@@ -10,26 +10,21 @@ import FunFact from '../../components/FunFact'
 import Pricing from '../../components/Pricing'
 import TeamSection from '../../components/Team'
 import BlogSection from '../../components/BlogSection'
-import ContactSection from '../../components/ContactSection'
+import ContactSection from '../../components/Contactpage'
 import PartnerSlider from '../../components/partner'
 
-
 const Homepage = () => {
-    return(
-       <div className="page-wrapper">
-           <Navbar/>
-           <SimpleSlider/>
-           <AboutSection/>
-           <Services/>
-           <FunFact/>
-           <Pricing/>
-           <TeamSection/>
-           <BlogSection/>
-           <ContactSection/>
-           <PartnerSlider/>
-           <FooterSection/>
-       </div>
-    )
+  return (
+   <div className="page-wrapper">
+     <Navbar/>
+     <SimpleSlider/>
+     <Services/>
+     <Pricing/>
+     <ContactSection/>
+     <TeamSection/>
+     <FooterSection/>
+   </div>
+  )
 }
 
 export default Homepage;

@@ -153,7 +153,7 @@
     left: 404px;
     top: 81px;
 }
- 
+
 .pricing-img-2:before {
     top: 51%;
 }
@@ -582,7 +582,7 @@
 .entry-media2 img{
     min-height: 217px;
 }
-} 
+}
 /* small mobile :576px. */
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -671,7 +671,7 @@
 .pricing-img:after, .pricing-img-2:after, .pricing-img-3:after, .pricing-img-4:after, .pricing-img-5:after, .pricing-img-6:after {
 display: none;
 }
- 
+
 .pricing-img-2:before {
     top: 86%;
     left: 24%;
@@ -896,7 +896,7 @@ display: none;
     display: none;
 }
 .fun-fact-section .fun-fact-grids{
-     margin: 0; 
+     margin: 0;
 }
 .fun-fact-section .fun-fact-grids .grid{
     width: calc(100% - 15px);
@@ -956,7 +956,7 @@ display: none;
 .pricing-img:after, .pricing-img-2:after, .pricing-img-3:after, .pricing-img-4:after, .pricing-img-5:after, .pricing-img-6:after {
 display: none;
 }
- 
+
 .pricing-img-2:before {
     top: 90%;
     left: 24%;
@@ -1131,7 +1131,7 @@ display: none;
     margin-left: 50px;
 }
 .fun-fact-section .fun-fact-grids .grid{
-    width: calc(50% - 15px); 
+    width: calc(50% - 15px);
     padding: 60px 3px;
 }
 .pricing-section-2  .nav-tabs {

@@ -77,7 +77,7 @@
   width: 100px;
   height: 100px;
   border: 10px solid #fee4da;
-  border-radius: 50%; 
+  border-radius: 50%;
   z-index: -11;
 }
 .service-icon-2:before{
@@ -112,4 +112,8 @@
   -webkit-box-shadow: 0px 10px 40px 0px rgba(50, 50, 50, 0.1);
   -moz-box-shadow: 0px 10px 40px 0px rgba(50, 50, 50, 0.1);
   box-shadow: 0px 10px 40px 0px rgba(50, 50, 50, 0.1);
+}
+
+.service-style-1.section-padding {
+  padding-top: 30px;
 }

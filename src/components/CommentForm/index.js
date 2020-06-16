@@ -32,19 +32,19 @@ class ContactForm extends Component {
             notes, error } = this.state;
 
         if (name === '') {
-            error.name = "Please enter your name";
+            error.name = "Numele este obligatoriu";
         }
         if (email === '') {
-            error.email = "Please enter your email";
+            error.email = "Email-ul este obligatoriu";
         }
         if (number === '') {
-            error.number = "Select your number of number";
+            error.number = "Numărul de telefon este obligatoriu";
         }
         if (events === '') {
-            error.events = "Select your event list";
+            error.events = "Alegeți o opțiune";
         }
         if (notes === '') {
-            error.notes = "Please enter your note";
+            error.notes = "Mesajul este obligatoriu";
         }
 
 
@@ -77,33 +77,33 @@ class ContactForm extends Component {
             <form onSubmit={this.subimtHandler}>
                 <div className="contact-form form-style row">
                     <div className="col-12 col-lg-6">
-                        <input type="text" value={name} onChange={this.changeHandler} placeholder="Your Name*" id="fname" name="name" />
+                        <input type="text" value={name} onChange={this.changeHandler} placeholder="Nume" id="fname" name="name" />
                         <p>{error.name ? error.name : ''}</p>
                     </div>
                     <div className="col col-lg-6">
-                        <input type="text" placeholder="Phone" onChange={this.changeHandler} value={number} id="number" name="number" />
+                        <input type="text" placeholder="Telefon" onChange={this.changeHandler} value={number} id="number" name="number" />
                         <p>{error.number ? error.number : ''}</p>
                     </div>
                     <div className="col-12  col-lg-6">
-                        <input type="email" placeholder="Your Email" onChange={this.changeHandler} value={email} id="email" name="email" />
+                        <input type="email" placeholder="Email" onChange={this.changeHandler} value={email} id="email" name="email" />
                         <p>{error.email ? error.email : ''}</p>
                     </div>
                     <div className="col col-lg-6">
                         <select className="form-control" onChange={this.changeHandler} value={events} name="events">
-                            <option disabled value="">Tires Replacement</option>
-                            <option value="1">Transmission</option>
+                            <option disabled value="">Schimb de anvelope</option>
+                            <option value="1">Transmisie</option>
                             <option value="2">Diagnostic</option>
-                            <option value="3">Batteries</option>
-                            <option value="4">Breaks</option>
+                            <option value="3">Baterie</option>
+                            <option value="4">Frâne</option>
                         </select>
                         <p>{error.events ? error.events : ''}</p>
                     </div>
                     <div className="col-12 col-sm-12">
-                        <textarea className="contact-textarea" value={notes} onChange={this.changeHandler} placeholder="Message" name="notes"></textarea>
+                        <textarea className="contact-textarea" value={notes} onChange={this.changeHandler} placeholder="Mesajul tău" name="notes"></textarea>
                         <p>{error.notes ? error.notes : ''}</p>
                     </div>
                     <div className="col-12">
-                            <button type="submit" className="theme-btn-s4">Appointment</button>
+                            <button type="submit" className="theme-btn-s4">Trimite mesaj</button>
                     </div>
                 </div>
             </form>

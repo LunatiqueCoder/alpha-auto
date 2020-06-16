@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 import './style.css'
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import team_1 from '../../images/team/img-1.jpg';
 import team_2 from '../../images/team/img-2.jpg';
@@ -14,12 +14,12 @@ class TeamSection extends Component {
             window.scrollTo(500, 0);
          }
         return (
-            <div className="hx-team-area section-padding">
+            <div id="team" className="hx-team-area section-padding">
                 <div className="container">
                     <div className="col-12">
                         <div className="section-title-s2 text-center">
-                            <span>Meet Our Expertise</span>
-                            <h2>Our Awesome Team</h2>
+                            <span>Alpha Auto</span>
+                            <h2>Despre echipă</h2>
                         </div>
                     </div>
                     <div className="row">
@@ -90,4 +90,4 @@ class TeamSection extends Component {
     }
 }
 
-export default TeamSection;            
+export default TeamSection;

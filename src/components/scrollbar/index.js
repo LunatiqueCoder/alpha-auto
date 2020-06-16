@@ -2,9 +2,8 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import './style.css'
 
-const Scrollbar = () => {
-
-    return(
+const Scrollbar = (props) => {
+    return (
         <div className="col-lg-12">
             <div className="header-menu">
                 <ul className="smothscroll">
@@ -12,7 +11,6 @@ const Scrollbar = () => {
                 </ul>
             </div>
         </div>
-        
     )
 }
 

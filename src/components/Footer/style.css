@@ -134,7 +134,7 @@
   left: 0;
   top: 8px;
   background:#ed5217;
-  border-radius: 50%; 
+  border-radius: 50%;
 
 }
 
@@ -153,4 +153,8 @@
 }
 .hx-site-footer-bottom-content span a{
   color:#ed5217
+}
+
+.fa-facebook {
+  margin-right: 10px;
 }

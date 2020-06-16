@@ -1,5 +1,5 @@
 .hx-team-area {
-    background: #fff;
+    background: #f8f8f8;;
     padding-bottom: 90px!important;
 }
 
@@ -157,4 +157,8 @@
      opacity: 1;
      bottom: 8%;
      transform:rotatex(0deg);
+ }
+
+ .hx-team-area.section-padding {
+   padding-bottom: 120px!important;
  }

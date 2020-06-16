@@ -70,10 +70,6 @@
   font-size: 14px;
 }
 
-.hx-contact-grid-area {
-  padding-top: 0!important;
-}
-
 .hx-contact-gd-wrap {
   background: #f8f8f8;
   overflow: hidden;
@@ -166,4 +162,8 @@
 
 .hx-contact-area-s2{
   padding-bottom: 70px!important;
+}
+
+.section-padding {
+  padding-bottom: 0px!important;
 }

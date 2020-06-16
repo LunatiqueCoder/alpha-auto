@@ -5,12 +5,12 @@ import './style.css'
 const Services = (props) => {
 
     return(
-        <div className="service-style-1 section-padding">
+        <div id="services" className="service-style-1 section-padding">
             <div className="container">
                 <div className="col-12">
                     <div className="section-title-s2 text-center">
-                        <span>What We Do</span>
-                        <h2>Our Services</h2>
+                        <span>Alpha Auto</span>
+                        <h2>Servicii</h2>
                     </div>
                 </div>
                 <div className="row">
@@ -84,7 +84,7 @@ const Services = (props) => {
             </div>
         </div>
      )
-        
+
 }
 
 export default Services;

@@ -1,6 +1,3 @@
-
-
-
 .header-style-2{
     position: absolute;
     z-index: 999;
@@ -49,8 +46,14 @@
 .header-top-1 .btn-style {
     text-align: right;
 }
-.logo {
-    margin-top: 10px;
+.logo-image {
+    width: 20vh;
+    height: auto;
+}
+.logo-image.minified {
+  width: 7vh;
+  height: auto;
+  margin-top: 2px;
 }
 .main-menu .submenu li a {
     padding: 10px 15px 10px 0px;
@@ -138,7 +141,7 @@
 .main-menu nav>ul>li:hover>.submenu {
     top: 100%;
     opacity: 1;
-    visibility: visible; 
+    visibility: visible;
 }
 .header-style-1 .main-menu nav ul li a:before,.header-style-2 .main-menu nav ul li a:before,.header-style-3 .main-menu nav ul li a:before{
   display: none;
@@ -189,11 +192,11 @@
 }
 
 .header-style-2 .logo{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-.logo{
-    max-width: 200px;
+.logo {
+    max-width: 300px;
 }
 
   .header-middle .btn-style a {
@@ -276,7 +279,7 @@
   .search ul li:last-child a{
       padding-right: 0;
   }
-  
+
 
   .header-style-1 .search ul li a i,.header-style-2 .search ul li a i,.header-style-3 .search ul li a i {
     margin-top: 40px;
@@ -333,10 +336,10 @@
     background: #fdf3ed;
     position: relative;
     padding-top: 0;
-  } 
+  }
 
   .inner-page  .header-style-2{
     background: #fdf3ed;
     position: relative;
     padding-top: 0;
-  } 
+  }

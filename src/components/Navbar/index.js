@@ -1,10 +1,12 @@
 import React from "react";
 import Header from '../header';
 
-export default function Navbar() {
+const Navbar = (props) => {
   const [scroll, setScroll] = React.useState(0);
 
-  const handleScroll = () => setScroll(document.documentElement.scrollTop);
+  const handleScroll = () => {
+    setScroll(document.documentElement.scrollTop);
+  }
 
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -12,10 +14,13 @@ export default function Navbar() {
   }, []);
 
   const className = scroll > 80 ? "fixed-navbar animated fadeInDown active" : "fixed-navbar";
+  const logoStyle = scroll > 80 ? "logo-image minified" : "logo-image";
 
   return (
     <div className={className}>
-        <Header />
+        <Header logoStyle={logoStyle} handleSectionChange={props.handleSectionChange}/>
     </div>
-  ); 
+  );
 }
+
+export default Navbar;

@@ -4,6 +4,8 @@
 .hero {
   position: relative;
   height: 100vh;
+  padding: 120px 0;
+  z-index: 1;
   /** slider controls **/
   /*** hero slider animation ***/
 }
@@ -81,6 +83,10 @@
   font-family: "themify";
   content: "\e628";
   opacity: 1;
+}
+
+.hero .slide-caption {
+  margin-top: 50px;
 }
 
 .hero .slide-caption > div {
@@ -324,7 +330,7 @@ hero-style-2
 
 .header-style-1{
  background:#fdf3ed;
- position: relative; 
+ position: relative;
  padding-top: 0;
 }
 .header-style-1  .sticky-header{
