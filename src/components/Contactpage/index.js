@@ -1,21 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactForm from "../CommentForm";
 import ct1 from "../../images/contact/img-1.png";
 import "./style.css";
-import { GoogleMap, LoadScript } from "@react-google-maps/api";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-const containerStyle = {
-  width: "400px",
-  height: "400px",
+const mapContainerStyle = {
+  width: "100%",
+  height: "100%",
 };
 
-const center = {
-  lat: -3.745,
-  lng: -38.523,
-};
+// const center = {
+//   lat: 44.33497,
+//   lng: 23.83385,
+// };
 
 const Contactpage = () => {
-  const [map, setMap] = React.useState(null);
+  const [map, setMap] = useState(null);
+
+  const [center, setCenter] = useState({
+    lat: 44.33497,
+    lng: 23.83385,
+  });
 
   const onLoad = React.useCallback(function callback(map) {
     const bounds = new window.google.maps.LatLngBounds();
@@ -75,10 +80,22 @@ const Contactpage = () => {
           <div className="row">
             <div className="col col-xs-12">
               <div className="contact-map">
-                <iframe
+                {/* <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.9147703055!2d-74.11976314309273!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbd!4v1547528325671"
                   allowfullscreen
-                ></iframe>
+                ></iframe> */}
+                <LoadScript googleMapsApiKey="AIzaSyC5tinHO-IhtGkHdXMYUufLOa-5ICmgjE8">
+                  <GoogleMap
+                    mapContainerStyle={mapContainerStyle}
+                    center={center}
+                    zoom={200}
+                    onLoad={onLoad}
+                    onUnmount={onUnmount}
+                  >
+                    <Marker position={center} />
+                    <></>
+                  </GoogleMap>
+                </LoadScript>
               </div>
             </div>
           </div>
