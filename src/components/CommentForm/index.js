@@ -90,7 +90,7 @@ class ContactForm extends Component {
     }
 
     return (
-      <form onSubmit={this.sendEmail}>
+      <form onSubmit={sendEmail}>
         <div className="contact-form form-style row">
           <div className="col-12 col-lg-6">
             <input
