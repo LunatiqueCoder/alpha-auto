@@ -4,33 +4,50 @@ import ct1 from "../../images/contact/img-1.png";
 import "./style.css";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
+
 const mapContainerStyle = {
   width: "100%",
   height: "100%",
 };
 
-// const center = {
-//   lat: 44.33497,
-//   lng: 23.83385,
-// };
-
 const Contactpage = () => {
-  const [map, setMap] = useState(null);
+  const [instance, setInstance] = React.useState(null);
 
+  // Strada Teilor 115, Craiova
   const [center, setCenter] = useState({
-    lat: 44.33497,
-    lng: 23.83385,
+    lat: 44.3353,
+    lng: 23.83384,
   });
 
-  const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds();
-    map.fitBounds(bounds);
-    setMap(map);
-  }, []);
+  // const [map, setMap] = useState(null);
 
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null);
-  }, []);
+  const onLoad = React.useCallback(
+    function onLoad(map) {
+      console.log("instance: ", map.getCenter());
+      setInstance(map);
+    },
+    [setInstance]
+  );
+
+  // const onUnmount = React.useCallback(function callback(map) {
+  //   setMap(null);
+  // }, []);
+
+  const onCenterChanged = React.useCallback(
+    function onCenterChanged() {
+      console.log("INSTANCE:", instance);
+
+      if (instance) {
+        const newCenter = instance.getCenter();
+        console.log(newCenter);
+        const lat = newCenter.lat();
+        const lng = newCenter.lng();
+        console.log("lat: ", lat);
+        console.log("lng: ", lng);
+      }
+    },
+    [instance]
+  );
 
   return (
     <div id="contact" className="contact-page-area section-padding">
@@ -88,9 +105,10 @@ const Contactpage = () => {
                   <GoogleMap
                     mapContainerStyle={mapContainerStyle}
                     center={center}
-                    zoom={200}
+                    zoom={18}
                     onLoad={onLoad}
-                    onUnmount={onUnmount}
+                    // onUnmount={onUnmount}
+                    onCenterChanged={onCenterChanged}
                   >
                     <Marker position={center} />
                     <></>
