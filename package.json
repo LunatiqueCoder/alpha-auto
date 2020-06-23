@@ -8,6 +8,7 @@
     "@react-google-maps/api": "^1.9.7",
     "animate-css-grid": "^1.4.3",
     "bootstrap": "^4.3.1",
+    "emailjs-com": "^2.4.1",
     "imagesloaded": "^4.1.4",
     "isotope-layout": "^3.0.6",
     "node-sass": "^4.13.1",

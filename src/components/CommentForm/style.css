@@ -1,0 +1,19 @@
+.success-message {
+    color: #1b5e20;
+    margin: auto;
+    padding-top: 12px;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 0;
+    padding-top: 12px;
+}
+
+.error {
+    padding: 0 15px 0!important;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
