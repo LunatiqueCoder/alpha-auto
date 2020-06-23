@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-
+import ReCAPTCHA from "react-google-recaptcha";
 // import "./ContactUs.css";
 
 export default function ContactForm() {
@@ -9,6 +9,10 @@ export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [events, setEvents] = useState("");
   const [notes, setNotes] = useState("");
+
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
 
   function sendEmail(e) {
     e.preventDefault();
@@ -32,6 +36,11 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={sendEmail}>
+      {/* <ReCAPTCHA
+        sitekey="6LfCe6gZAAAAACMOSAaAS2WcHZejNtAEpEuhNgtp"
+        onChange={onChange}
+      />
+  */}
       <div className="contact-form form-style row">
         <div className="col-12 col-lg-6">
           <input
