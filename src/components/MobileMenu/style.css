@@ -83,15 +83,27 @@
 .mobileMenu{
     display: none;
 }
-.showmenu{
+.mobile-only {
     display: none;
 }
+.showmenu {
+    display: none;
+}
+.large-screen-only {
+    display: block;
+}
 @media (max-width:992px){
-    .showmenu{
+    .showmenu {
         display: block;
     }
-    .mobileMenu{
+    .mobileMenu {
         display: block;
+    }
+    .mobile-only {
+        display: block;
+    }
+    .large-screen-only {
+        display: none;
     }
 }
 

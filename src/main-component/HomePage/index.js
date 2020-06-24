@@ -19,9 +19,9 @@ const Homepage = () => {
      <Navbar/>
      <SimpleSlider/>
      <Services/>
-     <Pricing/>
+     {/*<Pricing/>*/}
      <ContactSection/>
-     <TeamSection/>
+     {/*<TeamSection/>*/}
      <FooterSection/>
    </div>
   )

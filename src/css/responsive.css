@@ -286,7 +286,7 @@
     top: 302px;
 }
 .about-page-style .about-section .right-content {
-    padding: 0px 0;
+    padding: 0 0;
 }
 .about-page-style .about-section .left-content{
     padding-top: 40px;
@@ -1153,4 +1153,17 @@ display: none;
     font-size: 9px;
     padding: 0;
 }
+}
+
+@media (max-width:992px){
+  .logo-image {
+      width: 32vh;
+      height: auto;
+  }
+  .showmenu {
+      margin-top: 17px;
+  }
+  .showmenu.minified {
+     margin-top: 0;
+  }
 }

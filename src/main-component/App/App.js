@@ -1,7 +1,6 @@
 import React from 'react';
 import AllRoute from '../router'
 import Scrollbar from '../../components/scrollbar'
-import ReactPageScroller from 'react-page-scroller'
 import './App.css';
 
 const App = () => {

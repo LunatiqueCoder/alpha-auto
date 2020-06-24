@@ -13,12 +13,19 @@ const Navbar = (props) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const className = scroll > 80 ? "fixed-navbar animated fadeInDown active" : "fixed-navbar";
-  const logoStyle = scroll > 80 ? "logo-image minified" : "logo-image";
+  const className = scroll > 30 ? "fixed-navbar animated fadeInDown active" : "fixed-navbar";
+  const logoStyle = scroll > 30 ? "logo-image minified" : "logo-image";
+  const menuStyle = scroll > 30 ? "main-menu minified" : "main-menu";
+  const showMenuStyle = scroll > 30 ? "showmenu minified" : "showmenu";
 
   return (
     <div className={className}>
-        <Header logoStyle={logoStyle} handleSectionChange={props.handleSectionChange}/>
+        <Header
+          logoStyle={logoStyle}
+          menuStyle={menuStyle}
+          handleSectionChange={props.handleSectionChange}
+          showMenuStyle={showMenuStyle}
+        />
     </div>
   );
 }

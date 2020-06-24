@@ -117,3 +117,8 @@
 .service-style-1.section-padding {
   padding-top: 30px;
 }
+
+#services {
+    padding-top: 70px;
+    /*padding-bottom: 100px;*/
+}

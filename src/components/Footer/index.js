@@ -11,7 +11,7 @@ const FooterSection = () => {
             <div className="hx-site-footer-top">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-4 col-md-6 col-sm-12 footer-t">
+                        <div className="col-lg-6 col-md-12 col-sm-12 footer-t footer-info-section">
                             <div className="hx-site-footer-text">
                                 <div className="hx-site-logo">
                                     <img src={logo} alt=""/>
@@ -24,8 +24,7 @@ const FooterSection = () => {
                                 </div>
                             </div>
                         </div>
-
-                        <div className="col-lg-3 col-md-6 col-sm-12 footer-t">
+                        <div className="col-lg-4 col-md-8 col-sm-12 footer-t">
                             <div className="hx-site-footer-adress">
                                 <h3>Adresă</h3>
                                 <div className="adress-section">
@@ -40,7 +39,7 @@ const FooterSection = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-2 col-md-6 col-sm-12 footer-t">
+                        <div className="col-lg-2 col-md-4 col-sm-12 footer-t">
                             <div className="hx-site-footer-service">
                                 <h3>Pagini</h3>
                                 <div className="service-section">
@@ -56,6 +55,9 @@ const FooterSection = () => {
                                       </li>
                                       <li>
                                         <AnchorLink offset='10' href='#contact'>Contact</AnchorLink>
+                                      </li>
+                                      <li>
+                                        <AnchorLink offset='10' href='#contact-form'>Programări</AnchorLink>
                                       </li>
                                       <li>
                                         <AnchorLink offset='10' href='#team'>Despre</AnchorLink>

@@ -5,7 +5,7 @@
   position: relative;
   height: 100vh;
   padding: 120px 0;
-  z-index: -1;
+  z-index: 1;
   /** slider controls **/
   /*** hero slider animation ***/
 }
@@ -16,7 +16,6 @@
     top: 0;
     width: 100vw;
     height: auto;
-    background: url('../../images/background.jpg') center no-repeat local;
 }
 
 @media (max-width: 767px) {
@@ -155,7 +154,6 @@ content: "";
 top: 0;
 width: 100vw;
 height: auto;
-background: url('../../images/background.jpg') center no-repeat local;
 }
 
 @media (max-width: 1199px) {
@@ -285,7 +283,6 @@ hero-style-2
     top: 74px;
     width: 146%;
     height: 104%;
-    background: url('../../images/slider/hero.png') center center/100% no-repeat local;
 }
 
 
@@ -338,4 +335,8 @@ hero-style-2
 }
 .header-style-1  .sticky-header{
   padding: 0;
+}
+
+.primary-contact-button {
+    margin: auto;
 }

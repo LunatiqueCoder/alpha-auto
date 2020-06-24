@@ -80,7 +80,7 @@ const Contactpage = () => {
                 <div className="hx-contact-gd-icon">
                   <i className="fi flaticon-placeholder" />
                 </div>
-                <div className="hx-contact-gd-text">
+                <div id="pre-map" className="hx-contact-gd-text">
                   <h4>Localizare</h4>
                   <span>Str. Teilor 115, Craiova</span>
                 </div>
@@ -112,7 +112,7 @@ const Contactpage = () => {
           </div>
         </div>
       </div>
-      <div className="hx-contact-area-s2 section-padding">
+      <div id="appointment" className="hx-contact-area-s2 section-padding">
         <div className="container">
           <div className="row">
             <div className="col col-lg-7 col-md-12 col-sm-12 col-12">

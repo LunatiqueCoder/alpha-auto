@@ -21,3 +21,15 @@
 .btn-lg {
     font-size: 1.1rem!important;
 }
+
+.contact-form {
+    margin-bottom: 200px;
+}
+
+.contact-form-field {
+    margin-bottom: 30px;
+}
+
+textarea.form-control.contact-textarea {
+    height: 170px;
+}

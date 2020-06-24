@@ -17,9 +17,17 @@ class SimpleSlider extends Component {
                       <div className="slide-subtitle">
                           <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
                       </div>
-                      <div className="btns">
+                      <div className="large-screen-only btns">
                         <AnchorLink offset='27' href='#contact' className="theme-btn-s2">Contactează-ne</AnchorLink>
                       </div>
+                    <div className="row col-12">
+                      <div className="mobile-only col-md-6">
+                        <AnchorLink offset='110' href='#pre-map' className="theme-btn-s2">Localizare</AnchorLink>
+                      </div>
+                      <div className="mobile-only col-md-6">
+                        <a href="tel:+40722 968 318" className="theme-btn-s2">Apelează-ne</a>
+                      </div>
+                    </div>
                   </div>
               </div>
           </div>

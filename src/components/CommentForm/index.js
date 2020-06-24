@@ -194,7 +194,7 @@ export default function ContactForm() {
       />
   */}
       <div className="contact-form form-style row">
-        <div className="col-12 col-lg-6">
+        <div className="col-12 col-lg-6 contact-form-field">
           <input
             type="text"
             value={name}
@@ -205,7 +205,7 @@ export default function ContactForm() {
             className={`form-control ${nameError ? 'is-invalid' : ''}`}
           />
         </div>
-        <div className="col col-lg-6">
+        <div className="col-12 col-lg-6 contact-form-field">
           <input
             type="text"
             placeholder="Telefon"
@@ -216,7 +216,7 @@ export default function ContactForm() {
             className={`form-control ${numberError ? 'is-invalid' : ''}`}
           />
         </div>
-        <div className="col-12  col-lg-6">
+        <div className="col-12  col-lg-6 contact-form-field">
           <input
             type="email"
             placeholder="Email"
@@ -227,7 +227,7 @@ export default function ContactForm() {
             className={`form-control ${emailError ? 'is-invalid' : ''}`}
           />
         </div>
-        <div className="col-12  col-lg-6">
+        <div className="col-12  col-lg-6 contact-form-field">
           <input
             type="text"
             placeholder="Mașină"
@@ -238,7 +238,7 @@ export default function ContactForm() {
             className={`form-control ${emailError ? 'is-invalid' : ''}`}
           />
         </div>
-        <div className="col col-lg-12">
+        <div className="col-12 col-lg-12 contact-form-field">
           <select
             onChange={handleChange}
             value={events}
@@ -255,7 +255,7 @@ export default function ContactForm() {
             <option value="5">Schimb de anvelope</option>
           </select>
         </div>
-        <div className="col-12 col-sm-12">
+        <div className="col-12 col-sm-12 contact-form-field">
           <textarea
             value={notes}
             onChange={handleChange}
