@@ -47,16 +47,17 @@
     text-align: right;
 }
 .logo-image {
-    width: 20vh;
+    width: 40vh;
     height: auto;
+    max-width: 500px;
 }
 .logo-image.minified {
-  width: 7vh;
+  width: 20vh;
   height: auto;
   margin-top: 2px;
 }
 .main-menu .submenu li a {
-    padding: 10px 15px 10px 0px;
+    padding: 10px 15px 10px 0;
     color:#333;
     font-size: 14px;
 }
@@ -85,7 +86,7 @@
 }
 .main-menu nav ul li a {
     display: block;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     color: #283a5e;
     letter-spacing: 0;
@@ -106,11 +107,11 @@
 
 .main-menu nav ul li a:hover:before{
   opacity: 1;
-  left: 0px;
+  left: 0;
 }
 .main-menu nav ul li.active :before{
   opacity: 1;
-  left: 0px;
+  left: 0;
 }
 
 .main-menu nav ul li>ul li a {
@@ -182,9 +183,9 @@
     width: 100%;
     background:#fff;
     z-index: 1200;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, .1);
-    -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, .1);
-    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
     animation: 600ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 .header-style-2.sticky{
@@ -196,7 +197,7 @@
 }
 
 .logo {
-    max-width: 300px;
+    max-height: 300px;
 }
 
   .header-middle .btn-style a {
@@ -236,9 +237,9 @@
       opacity: 0;
       transition: all .3s;
       text-align: center;
-      box-shadow: 0px 1px 5px rgba(0, 0, 0, .1);
-      -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, .1);
-      -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, .1);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+      -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+      -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
   }
   .search ul li:hover > ul{
        visibility:visible;

@@ -5,9 +5,18 @@
   position: relative;
   height: 100vh;
   padding: 120px 0;
-  z-index: 1;
+  z-index: -1;
   /** slider controls **/
   /*** hero slider animation ***/
+}
+
+.hero-static-image:before,.hero-static-image-2:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100vw;
+    height: auto;
+    background: url('../../images/background.jpg') center no-repeat local;
 }
 
 @media (max-width: 767px) {
@@ -20,7 +29,6 @@
   height: 100vh;
   position: relative;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 @media (max-width: 767px) {
@@ -144,11 +152,10 @@
 .hero-static-image:before,.hero-static-image-2:before{
 position: absolute;
 content: "";
-right: 0;
 top: 0;
-width: 1000px;
-height: 900px;
-background: url("../../images/slider/hero-shape-1.png") center center/100% no-repeat local;
+width: 100vw;
+height: auto;
+background: url('../../images/background.jpg') center no-repeat local;
 }
 
 @media (max-width: 1199px) {
@@ -183,7 +190,6 @@ background: url("../../images/slider/hero-shape-1.png") center center/100% no-re
 }
 
 .hero-static-image h2,.hero-static-image-2 h2,.hero-static-image-3 h2 {
-  font-size: 48px;
   font-size: 3rem;
   line-height: 1.3em;
   margin: 0 0 0.63em;
@@ -192,21 +198,18 @@ background: url("../../images/slider/hero-shape-1.png") center center/100% no-re
 
 @media (max-width: 1199px) {
   .hero-static-image h2,.hero-static-image-2 h2,.hero-static-image-3 h2  {
-    font-size: 40px;
     font-size: 2.5rem;
   }
 }
 
 @media (max-width: 991px) {
   .hero-static-image h2,.hero-static-image-2 h2,.hero-static-image-3 h2 {
-    font-size: 35px;
     font-size: 2.1875rem;
   }
 }
 
 @media (max-width: 767px) {
   .hero-static-image h2,.hero-static-image-2 h2,.hero-static-image-3 h2 {
-    font-size: 30px;
     font-size: 1.875rem;
   }
 }

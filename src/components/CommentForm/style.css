@@ -17,3 +17,7 @@
 .disabled {
     cursor: not-allowed;
 }
+
+.btn-lg {
+    font-size: 1.1rem!important;
+}

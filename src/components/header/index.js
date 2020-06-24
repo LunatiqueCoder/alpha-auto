@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
 import MobileMenu from '../../components/MobileMenu'
 import logo from '../../images/logo.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -7,14 +6,6 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import './style.css'
 
 const Header = (props) => {
-    const SubmitHandler = ( e ) => {
-       e.preventDefault()
-    }
-
-    const ClickHandler = () => {
-      window.scrollTo(500, 0);
-    }
-
     return(
             <header>
                 <div className="header-style-2">
@@ -22,7 +13,7 @@ const Header = (props) => {
                         <div className="row">
                             <div className="col-lg-3 col-md-10 col-sm-10 col-8 col-t">
                                 <div className="logo">
-                                    <AnchorLink href='#hero'><img className={props.logoStyle} src={logo} alt=""/></AnchorLink>
+                                    <AnchorLink href='#hero'><img className={props.logoStyle} src={logo} alt="Alpha Auto Logo"/></AnchorLink>
                                 </div>
                             </div>
                             <div className="col-lg-8 d-none d-lg-block col-m">

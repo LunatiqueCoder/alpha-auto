@@ -1,7 +1,7 @@
 .hx-contact-area-s2 .hx-contact-img {
   position: relative;
   width: 180%;
-  top: 0%;
+  top: 0;
   left: -84%;
 }
 
@@ -44,6 +44,10 @@
   color: #777;
 }
 
+.hx-contact-form {
+    margin-bottom: 50px;
+}
+
 .hx-contact-area-s2 .hx-contact-form ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #777;
@@ -73,7 +77,7 @@
 .hx-contact-gd-wrap {
   background: #f8f8f8;
   overflow: hidden;
-  padding: 30px 30px;
+  padding: 20px 20px;
   margin-bottom: 30px;
 }
 
@@ -165,5 +169,5 @@
 }
 
 .section-padding {
-  padding-bottom: 0px!important;
+  padding-bottom: 0!important;
 }

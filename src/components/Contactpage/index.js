@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ContactForm from "../CommentForm";
-import ct1 from "../../images/contact/img-1.png";
 import "./style.css";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
@@ -19,8 +18,6 @@ const Contactpage = () => {
     lng: 23.83384,
   });
 
-  // const [map, setMap] = useState(null);
-
   const onLoad = React.useCallback(
     function onLoad(map) {
       console.log("instance: ", map.getCenter());
@@ -28,10 +25,6 @@ const Contactpage = () => {
     },
     [setInstance]
   );
-
-  // const onUnmount = React.useCallback(function callback(map) {
-  //   setMap(null);
-  // }, []);
 
   const onCenterChanged = React.useCallback(
     function onCenterChanged() {
@@ -60,10 +53,10 @@ const Contactpage = () => {
       <div className="hx-contact-grid-area">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 col-md-6 col-sm-12 col-12">
+            <div className="col-lg-3 col-md-6 col-sm-12 col-12">
               <div className="hx-contact-gd-wrap">
                 <div className="hx-contact-gd-icon">
-                  <i className="fi flaticon-call"></i>
+                  <i className="fi flaticon-call" />
                 </div>
                 <div className="hx-contact-gd-text">
                   <h4>Telefon</h4>
@@ -71,21 +64,21 @@ const Contactpage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-12 col-12">
+            <div className="col-lg-5 col-md-6 col-sm-12 col-12">
               <div className="hx-contact-gd-wrap">
                 <div className="hx-contact-gd-icon">
-                  <i className="fi flaticon-message"></i>
+                  <i className="fi flaticon-message" />
                 </div>
                 <div className="hx-contact-gd-text">
                   <h4>Email</h4>
-                  <span>alphaauto20@gmail.com</span>
+                  <span>contact@alpha-auto-craiova.ro</span>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 col-12">
               <div className="hx-contact-gd-wrap">
                 <div className="hx-contact-gd-icon">
-                  <i className="fi flaticon-placeholder"></i>
+                  <i className="fi flaticon-placeholder" />
                 </div>
                 <div className="hx-contact-gd-text">
                   <h4>Localizare</h4>
@@ -122,16 +115,9 @@ const Contactpage = () => {
       <div className="hx-contact-area-s2 section-padding">
         <div className="container">
           <div className="row">
-            {
-              // <div className="col-lg-5 col-md-12">
-              //     <div className="hx-contact-img">
-              //         <img src={ct1} alt=""/>
-              //     </div>
-              // </div>
-            }
             <div className="col col-lg-7 col-md-12 col-sm-12 col-12">
               <div className="hx-contact-content">
-                <h2>Lăsați-ne un mesaj</h2>
+                <h2>Programări online</h2>
                 <div className="hx-contact-form">
                   <ContactForm />
                 </div>

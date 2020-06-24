@@ -1,19 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import logo from '../../images/logo.png'
-import post1 from '../../images/footer/img-1.jpg'
-import post2 from '../../images/footer/img-2.jpg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import './style.css'
 
 const FooterSection = () => {
-
-    const ClickHandler = () =>{
-        window.scrollTo(500, 0);
-     }
-
-
     return(
         <div className="hx-site-footer-area">
             <div className="hx-site-footer-top">
@@ -27,12 +19,7 @@ const FooterSection = () => {
                                 <p>Alpha Auto, cel mai profesionist service din Bariera Vâlcii. Ne puteti gasii si pe Facebook.</p>
                                 <div className="social">
                                     <ul className="d-flex">
-                                        <li><a href="https://www.facebook.com/alphaautocraiova/"><i className="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                                        {
-                                          // <li><Link onClick={ClickHandler} to="/"><i className="fa fa-twitter" aria-hidden="true"></i></Link></li>
-                                          // <li><Link onClick={ClickHandler} to="/"><i className="fa fa-instagram" aria-hidden="true"></i></Link></li>
-                                          // <li><Link onClick={ClickHandler} to="/"><i className="fa fa-google-plus" aria-hidden="true"></i></Link></li>
-                                        }
+                                      <li><a href="https://www.facebook.com/alphaautocraiova/"><i className="fa fa-facebook" aria-hidden="true" />Facebook</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -48,7 +35,7 @@ const FooterSection = () => {
                                     </ul>
                                     <ul className="ad">
                                         <li><span>Telefon: </span> 0722 968 318</li>
-                                        <li><span>Email: </span> alphaauto20@gmail.com</li>
+                                        <li><span>Email: </span> contact@alpha-auto-craiova.ro</li>
                                     </ul>
                                 </div>
                             </div>

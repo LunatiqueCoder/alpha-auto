@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import {Link} from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import './style.css';
@@ -13,7 +12,7 @@ class SimpleSlider extends Component {
               <div className="row">
                   <div className="col col-lg-6 col-md-7 slide-caption">
                       <div className="slide-title">
-                          <h2>We Ensure Your Safe<span>& Happy Journey</span></h2>
+                          <h2>Vă asigurăm o călătorie sigură și fericită!</h2>
                       </div>
                       <div className="slide-subtitle">
                           <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
