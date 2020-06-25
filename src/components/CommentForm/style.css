@@ -22,8 +22,12 @@
     font-size: 1.1rem!important;
 }
 
-.contact-form {
-    margin-bottom: 200px;
+#appointment .contact-form {
+    margin-bottom: 0;
+}
+
+#appointment .hx-contact-form {
+    margin-bottom: 0;
 }
 
 .contact-form-field {

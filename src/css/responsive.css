@@ -604,7 +604,7 @@
 }
 .hero-static-image,.hero-static-image-3 {
     height: 450px;
-    background: #fdf3ed;
+    /*background: #fdf3ed;*/
 }
 .about-section .right-content {
     padding: 0 0 100px;
@@ -864,7 +864,7 @@ display: none;
 }
 .hero-static-image,.hero-static-image-2,.hero-static-image-3  {
     height: 450px;
-    background: #fdf3ed;
+    /*background: #fdf3ed;*/
 }
 .about-section {
     padding-top: 70px;

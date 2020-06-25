@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="53dc5bfb-af74-4533-b6d2-71caf78d777e" name="alpha-auto-craiova.ro" url="http://alpha-auto-craiova.ro">
+        <fileTransfer rootFolder="/public_html" accessType="FTPS" host="alpha-auto-craiova.ro" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

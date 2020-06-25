@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ContactForm from "../CommentForm";
 import "./style.css";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 
 const mapContainerStyle = {
@@ -54,37 +55,43 @@ const Contactpage = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-6 col-sm-12 col-12">
-              <div className="hx-contact-gd-wrap">
-                <div className="hx-contact-gd-icon">
-                  <i className="fi flaticon-call" />
+              <a href="tel:+40722 968 318">
+                <div className="hx-contact-gd-wrap">
+                  <div className="hx-contact-gd-icon">
+                    <i className="fi flaticon-call" />
+                  </div>
+                  <div className="hx-contact-gd-text">
+                    <h4>Telefon</h4>
+                    <span>0722 968 318</span>
+                  </div>
                 </div>
-                <div className="hx-contact-gd-text">
-                  <h4>Telefon</h4>
-                  <span>0722 968 318</span>
-                </div>
-              </div>
+              </a>
             </div>
             <div className="col-lg-5 col-md-6 col-sm-12 col-12">
-              <div className="hx-contact-gd-wrap">
-                <div className="hx-contact-gd-icon">
-                  <i className="fi flaticon-message" />
+              <AnchorLink offset='75' href='#appointment'>
+                <div className="hx-contact-gd-wrap">
+                  <div className="hx-contact-gd-icon">
+                    <i className="fi flaticon-message" />
+                  </div>
+                  <div className="hx-contact-gd-text">
+                    <h4>Email</h4>
+                    <span>contact@alpha-auto-craiova.ro</span>
+                  </div>
                 </div>
-                <div className="hx-contact-gd-text">
-                  <h4>Email</h4>
-                  <span>contact@alpha-auto-craiova.ro</span>
-                </div>
-              </div>
+              </AnchorLink>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-              <div className="hx-contact-gd-wrap">
-                <div className="hx-contact-gd-icon">
-                  <i className="fi flaticon-placeholder" />
+              <AnchorLink offset='110' href='#map'>
+                <div className="hx-contact-gd-wrap">
+                  <div className="hx-contact-gd-icon">
+                    <i className="fi flaticon-placeholder" />
+                  </div>
+                  <div id="pre-map" className="hx-contact-gd-text">
+                    <h4>Localizare</h4>
+                    <span>Str. Teilor 115, Craiova</span>
+                  </div>
                 </div>
-                <div id="pre-map" className="hx-contact-gd-text">
-                  <h4>Localizare</h4>
-                  <span>Str. Teilor 115, Craiova</span>
-                </div>
-              </div>
+              </AnchorLink>
             </div>
           </div>
           <div className="row">
@@ -96,6 +103,7 @@ const Contactpage = () => {
                 ></iframe> */}
                 <LoadScript googleMapsApiKey="AIzaSyC5tinHO-IhtGkHdXMYUufLOa-5ICmgjE8">
                   <GoogleMap
+                    id="map"
                     mapContainerStyle={mapContainerStyle}
                     center={center}
                     zoom={18}

@@ -56,6 +56,25 @@
   height: auto;
   margin-top: 2px;
 }
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .logo-image {
+        width: 30vh;
+        height: auto;
+        max-width: 500px;
+    }
+    .main-menu {
+        padding-top: 20px;
+    }
+    .showmenu {
+        padding-top: 39px;
+    }
+    .main-menu.minified {
+        padding-top: 0;
+        margin-top: 5px;
+    }
+}
+
 .main-menu .submenu li a {
     padding: 10px 15px 10px 0;
     color:#333;
@@ -345,11 +364,13 @@
     padding-top: 0;
   }
 
-  .main-menu {
-    padding-top: 40px;
-  }
+@media (min-width: 1200px) {
+    .main-menu {
+        padding-top: 40px;
+    }
 
-  .main-menu.minified {
-    padding-top: 0;
-    margin-top: 5px;
-  }
+    .main-menu.minified {
+        padding-top: 0;
+        margin-top: 5px;
+    }
+}
