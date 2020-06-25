@@ -147,11 +147,6 @@ export default function ContactForm() {
       sendEmail(e);
 
       setButtonClassName("btn btn-secondary btn-lg disabled");
-
-      setTimeout(() => {
-        setSuccessMessage(false);
-        setButtonClassName("btn btn-primary btn-lg");
-      }, 5000)
     } else {
       setSuccessMessage(false);
       setErrorMessage(true);
@@ -180,6 +175,11 @@ export default function ContactForm() {
 
           setSuccessMessage(true);
           setErrorMessage(false);
+
+          setTimeout(() => {
+            setSuccessMessage(false);
+            setButtonClassName("btn btn-primary btn-lg");
+          }, 5000)
         },
         () => {
           alert('Mesajul nu a putut fi trimis. Va rugam verificati conexiunea la internet.');
