@@ -485,7 +485,7 @@ content: "";
   z-index: 555;
   top: 0;
   left: 0;
-  height: 9.5vh;
+  height: 65px;
   width: 100%;
   background: #fff;
   border: none;
@@ -495,4 +495,10 @@ content: "";
 }
 .fixed-navbar.active .header-style-1{
   background: #fff;
+}
+
+@media (min-width: 1080px) {
+    .fixed-navbar.active .header-style-2 {
+        height: 103px;
+    }
 }

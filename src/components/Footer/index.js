@@ -30,10 +30,10 @@ const FooterSection = () => {
                                 <div className="adress-section">
                                     <ul>
                                         <li>str. Teilor, nr. 115</li>
-                                        <li>Craiova</li>
+                                        <li>Bariera Vâlcii, Craiova</li>
                                     </ul>
                                     <ul className="ad">
-                                        <li><span>Telefon: </span> 0722 968 318</li>
+                                      <li><span>Telefon: </span> <a href="tel:+40722 968 318">0722 968 318</a> | <a href="tel:+40746 132 939">0746 132 939</a></li>
                                         <li><span>Email: </span> contact@alpha-auto-craiova.ro</li>
                                     </ul>
                                 </div>
@@ -48,19 +48,13 @@ const FooterSection = () => {
                                         <AnchorLink href='#hero'>Acasă</AnchorLink>
                                       </li>
                                       <li>
-                                        <AnchorLink offset='100' href='#services'>Servicii</AnchorLink>
-                                      </li>
-                                      <li>
-                                        <AnchorLink offset='27' href='#packages'>Pachete</AnchorLink>
+                                        <AnchorLink offset='10' href='#services'>Servicii</AnchorLink>
                                       </li>
                                       <li>
                                         <AnchorLink offset='10' href='#contact'>Contact</AnchorLink>
                                       </li>
                                       <li>
-                                        <AnchorLink offset='10' href='#contact-form'>Programări</AnchorLink>
-                                      </li>
-                                      <li>
-                                        <AnchorLink offset='10' href='#team'>Despre</AnchorLink>
+                                        <AnchorLink offset='0' href='#appointment'>Programări</AnchorLink>
                                       </li>
                                   </ul>
                                 </div>

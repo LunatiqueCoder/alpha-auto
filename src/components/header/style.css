@@ -51,10 +51,17 @@
     height: auto;
     max-width: 500px;
 }
+
 .logo-image.minified {
-  width: 20vh;
-  height: auto;
-  margin-top: 2px;
+    width: 37vw;
+    height: auto;
+}
+
+@media (min-width: 500px) {
+    .logo-image.minified {
+        width: 21vh;
+        height: auto;
+    }
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
@@ -212,7 +219,7 @@
 }
 
 .header-style-2 .logo{
-    margin-top: 10px;
+    margin-top: 9px;
 }
 
 .logo {

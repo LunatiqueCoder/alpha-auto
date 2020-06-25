@@ -1157,13 +1157,13 @@ display: none;
 
 @media (max-width:992px){
   .logo-image {
-      width: 32vh;
+      width: 250px;
       height: auto;
   }
   .showmenu {
-      margin-top: 17px;
+      margin-top: 27px;
   }
   .showmenu.minified {
-     margin-top: 0;
+     margin-top: 6px;
   }
 }

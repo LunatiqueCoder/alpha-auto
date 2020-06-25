@@ -22,10 +22,10 @@ class SimpleSlider extends Component {
                     </div>
                     <div className="mobile-buttons-container">
                       <div className="mobile-only localisation-button">
-                        <AnchorLink offset='110' href='#pre-map' className="theme-btn-s2">Contact</AnchorLink>
+                        <AnchorLink offset='20' href='#contact' className="theme-btn-s2">Contact</AnchorLink>
                       </div>
                       <div className="mobile-only call-now-button">
-                        <a href="tel:+40722 968 318" className="theme-btn-s2">Programări</a>
+                        <AnchorLink offset='10' href='#appointment' className="theme-btn-s2">Programări</AnchorLink>
                       </div>
                     </div>
                   </div>

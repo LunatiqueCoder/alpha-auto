@@ -72,7 +72,7 @@ const Contactpage = () => {
               </div>
             </div>
             <div className="col-lg-5 col-md-6 col-sm-12 col-12">
-              <AnchorLink offset='75' href='#appointment'>
+              <AnchorLink offset='10' href='#appointment'>
                 <div className="hx-contact-gd-wrap">
                   <div className="hx-contact-gd-icon">
                     <i className="fi flaticon-message" />
@@ -85,7 +85,7 @@ const Contactpage = () => {
               </AnchorLink>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-              <AnchorLink offset='110' href='#map'>
+              <AnchorLink offset='90' href='#map'>
                 <div className="hx-contact-gd-wrap">
                   <div className="hx-contact-gd-icon">
                     <i className="fi flaticon-placeholder" />
