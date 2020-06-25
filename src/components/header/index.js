@@ -32,9 +32,6 @@ const Header = (props) => {
                                             <li>
                                               <AnchorLink offset='10' href='#appointment'>Programări</AnchorLink>
                                             </li>
-                                            <li>
-                                              <AnchorLink offset='10' href='#feedback'>Feedback</AnchorLink>
-                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
