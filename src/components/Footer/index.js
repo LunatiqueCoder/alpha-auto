@@ -29,7 +29,7 @@ const FooterSection = () => {
                                 <h3>Adresă</h3>
                                 <div className="adress-section">
                                     <ul>
-                                        <li>str. Teilor 115</li>
+                                        <li>str. Teilor, nr. 115</li>
                                         <li>Craiova</li>
                                     </ul>
                                     <ul className="ad">

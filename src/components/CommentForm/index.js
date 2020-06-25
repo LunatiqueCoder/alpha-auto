@@ -165,7 +165,7 @@ export default function ContactForm() {
   function sendEmail(e) {
     emailjs
       .sendForm(
-        "alpha_auto",
+        "alpha_auto_prod",
         "template_JcskLVzi",
         e.target,
         "user_vNMUBbS8OmkDh2DOMFJ44"
@@ -174,6 +174,7 @@ export default function ContactForm() {
           setName('');
           setNumber('');
           setEmail('');
+          setCar('');
           setEvents('');
           setNotes('');
 

@@ -29,21 +29,21 @@ class MobileMenu extends Component {
                             <AnchorLink onClick={() => this.setState({isMenuShow: false})} href='#hero'>Acasă</AnchorLink>
                           </li>
                           <li>
-                            <AnchorLink onClick={() => this.setState({isMenuShow: false})} offset='40' href='#services'>Servicii</AnchorLink>
+                            <AnchorLink onClick={() => this.setState({isMenuShow: false})} offset='20' href='#services'>Servicii</AnchorLink>
                           </li>
                           <li>
-                            <AnchorLink onClick={() => this.setState({isMenuShow: false})}  offset='40' href='#contact'>Contact</AnchorLink>
+                            <AnchorLink onClick={() => this.setState({isMenuShow: false})}  offset='20' href='#contact'>Contact</AnchorLink>
                           </li>
                           <li>
-                            <AnchorLink onClick={() => this.setState({isMenuShow: false})}  offset='20' href='#appointment'>Programări</AnchorLink>
+                            <AnchorLink onClick={() => this.setState({isMenuShow: false})}  offset='0' href='#appointment'>Programări</AnchorLink>
                           </li>
-                          <li>
-                            <AnchorLink onClick={() => this.setState({isMenuShow: false})}  offset='10' href='#feedback'>Feedback</AnchorLink>
-                          </li>
+                          {/*<li>*/}
+                          {/*  <AnchorLink onClick={() => this.setState({isMenuShow: false})}  offset='10' href='#feedback'>Feedback</AnchorLink>*/}
+                          {/*</li>*/}
                         </ul>
                     </div>
                     </PerfectScrollbar>
-                <div className={this.props.showMenuStyle} onClick={this.menuHandler}><i className="fa fa-bars" aria-hidden="true"></i></div>
+                <div className={this.props.showMenuStyle} onClick={this.menuHandler}><i className={`fa ${this.state.isMenuShow ? 'fa-times' : 'fa-bars'}`} aria-hidden="true"/></div>
             </div>
         )
     }

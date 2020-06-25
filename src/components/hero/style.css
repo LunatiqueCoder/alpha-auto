@@ -351,10 +351,12 @@ hero-style-2
     padding: 0 20px 0;
 }
 
-.slide-subtitle {
-
+.quote-by {
+    color: gray;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    float: right;
 }
-
 /*.call-now-button {*/
 /*    float: right;*/
 /*}*/

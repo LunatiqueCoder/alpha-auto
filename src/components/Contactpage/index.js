@@ -55,17 +55,21 @@ const Contactpage = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-6 col-sm-12 col-12">
-              <a href="tel:+40722 968 318">
-                <div className="hx-contact-gd-wrap">
-                  <div className="hx-contact-gd-icon">
-                    <i className="fi flaticon-call" />
-                  </div>
-                  <div className="hx-contact-gd-text">
-                    <h4>Telefon</h4>
-                    <span>0722 968 318</span>
-                  </div>
+              <div className="hx-contact-gd-wrap phone-tile">
+                <div className="hx-contact-gd-icon">
+                  <i className="fi flaticon-call" />
                 </div>
-              </a>
+                <div className="hx-contact-gd-text">
+                  <h4 className="no-margin">Telefon</h4>
+                  <a href="tel:+40722 968 318">
+                   <span className="phone-number">0722 968 318</span>
+                  </a>
+                  <br/>
+                  <a href="tel:+40746 132 939">
+                    <span className="phone-number">0746 132 939</span>
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="col-lg-5 col-md-6 col-sm-12 col-12">
               <AnchorLink offset='75' href='#appointment'>
@@ -88,7 +92,7 @@ const Contactpage = () => {
                   </div>
                   <div id="pre-map" className="hx-contact-gd-text">
                     <h4>Localizare</h4>
-                    <span>Str. Teilor 115, Craiova</span>
+                    <span>Str. Teilor nr. 115</span>
                   </div>
                 </div>
               </AnchorLink>
