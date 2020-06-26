@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import ContactForm from "../CommentForm";
 import "./style.css";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const mapContainerStyle = {
   width: "100%",
@@ -62,9 +61,9 @@ const Contactpage = () => {
                 <div className="hx-contact-gd-text">
                   <h4 className="no-margin">Telefon</h4>
                   <a href="tel:+40722 968 318">
-                   <span className="phone-number">0722 968 318</span>
+                    <span className="phone-number">0722 968 318</span>
                   </a>
-                  <br/>
+                  <br />
                   <a href="tel:+40746 132 939">
                     <span className="phone-number">0746 132 939</span>
                   </a>
@@ -72,7 +71,7 @@ const Contactpage = () => {
               </div>
             </div>
             <div className="col-lg-5 col-md-6 col-sm-12 col-12">
-              <AnchorLink offset='10' href='#appointment'>
+              <AnchorLink offset="10" href="#appointment">
                 <div className="hx-contact-gd-wrap">
                   <div className="hx-contact-gd-icon">
                     <i className="fi flaticon-message" />
@@ -85,7 +84,7 @@ const Contactpage = () => {
               </AnchorLink>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-              <AnchorLink offset='90' href='#map'>
+              <AnchorLink offset="90" href="#map">
                 <div className="hx-contact-gd-wrap">
                   <div className="hx-contact-gd-icon">
                     <i className="fi flaticon-placeholder" />
@@ -110,7 +109,7 @@ const Contactpage = () => {
                     id="map"
                     mapContainerStyle={mapContainerStyle}
                     center={center}
-                    zoom={18}
+                    zoom={13}
                     onLoad={onLoad}
                     // onUnmount={onUnmount}
                     onCenterChanged={onCenterChanged}
