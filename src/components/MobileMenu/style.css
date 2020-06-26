@@ -2,9 +2,10 @@
     position: fixed;
     left: -280px;
     top: 0;
-    z-index: 9999;
+    z-index: 9998;
     height: 100vh;
     width: 280px;
+    /*padding-top: 50px;*/
     background: black;
     opacity: 0.95;
     transition: all 0.3s ease 0s;

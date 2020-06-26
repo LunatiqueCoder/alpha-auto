@@ -57,9 +57,16 @@
     height: auto;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 500px) and (max-width: 1079px) {
     .logo-image.minified {
-        width: 21vh;
+        width: 140px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1080px) {
+    .logo-image.minified {
+        width: 230px;
         height: auto;
     }
 }

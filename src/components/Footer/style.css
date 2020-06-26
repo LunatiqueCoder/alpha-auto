@@ -1,20 +1,20 @@
 .hx-site-footer-area{
-  background: #fdf3ed;
+  background: #edeefd;
 }
 .hx-site-footer-top .container{
   position: relative;
 }
-.hx-site-footer-top .container:before {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: -60px;
-    height: 1px;
-    width: 100%;
-    background: #feddd3;
-}
+/*.hx-site-footer-top .container:before {*/
+/*    position: absolute;*/
+/*    content: "";*/
+/*    left: 0;*/
+/*    bottom: -60px;*/
+/*    height: 1px;*/
+/*    width: 100%;*/
+/*    background: #d3d8fe;*/
+/*}*/
 .hx-site-footer-top {
-    padding: 80px 0 60px;
+    padding: 80px 0 0 20px;
 }
 .hx-site-footer-text{
   max-width: 290px;
@@ -139,7 +139,7 @@
 }
 
 .hx-site-footer-bottom{
-  background: #fdf3ed;
+  background: #dee2fa;
   padding: 30px 0;
 }
 
