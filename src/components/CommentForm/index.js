@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import ReCAPTCHA from "react-google-recaptcha";
 // import "./ContactUs.css";
 
-import './style.css'
+import "./style.css";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
@@ -20,14 +20,21 @@ export default function ContactForm() {
   const [eventsError, setEventsError] = useState(false);
   const [successMessage, setSuccessMessage] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
-  const [buttonClassName, setButtonClassName] = useState("btn btn-primary btn-lg");
+  const [buttonClassName, setButtonClassName] = useState(
+    "btn btn-primary btn-lg"
+  );
+  const recaptchaRef = React.createRef();
+
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
 
   function handleChange(e) {
     const target = e.target;
     let value;
 
     switch (target.name) {
-      case 'name':
+      case "name":
         value = target.value;
 
         if (!value) {
@@ -39,7 +46,7 @@ export default function ContactForm() {
         setName(target.value);
 
         break;
-      case 'number':
+      case "number":
         value = target.value;
 
         if (value && value.length === 10) {
@@ -51,7 +58,7 @@ export default function ContactForm() {
         setNumber(target.value);
 
         break;
-      case 'email':
+      case "email":
         value = target.value;
 
         if (!value) {
@@ -63,7 +70,7 @@ export default function ContactForm() {
         setEmail(target.value);
 
         break;
-      case 'car':
+      case "car":
         value = target.value;
 
         if (!value) {
@@ -75,7 +82,7 @@ export default function ContactForm() {
         setCar(target.value);
 
         break;
-      case 'notes':
+      case "notes":
         value = target.value;
 
         if (value && value.length > 10) {
@@ -87,7 +94,7 @@ export default function ContactForm() {
         setNotes(target.value);
 
         break;
-      case 'events':
+      case "events":
         value = target.value;
 
         if (value) {
@@ -135,6 +142,10 @@ export default function ContactForm() {
       error = true;
     }
 
+    const recaptchaValue = recaptchaRef.current.getValue();
+
+    console.log("!!!!!!!!!!!!!!!!!!!!!!!!!", recaptchaValue);
+
     return !error;
   }
 
@@ -153,7 +164,7 @@ export default function ContactForm() {
 
       setTimeout(() => {
         setErrorMessage(false);
-      }, 10000)
+      }, 10000);
     }
   }
 
@@ -165,13 +176,14 @@ export default function ContactForm() {
         e.target,
         "user_vNMUBbS8OmkDh2DOMFJ44"
       )
-      .then(() => {
-          setName('');
-          setNumber('');
-          setEmail('');
-          setCar('');
-          setEvents('');
-          setNotes('');
+      .then(
+        () => {
+          setName("");
+          setNumber("");
+          setEmail("");
+          setCar("");
+          setEvents("");
+          setNotes("");
 
           setSuccessMessage(true);
           setErrorMessage(false);
@@ -179,21 +191,18 @@ export default function ContactForm() {
           setTimeout(() => {
             setSuccessMessage(false);
             setButtonClassName("btn btn-primary btn-lg");
-          }, 5000)
+          }, 5000);
         },
         () => {
-          alert('Mesajul nu a putut fi trimis. Va rugam verificati conexiunea la internet.');
+          alert(
+            "Mesajul nu a putut fi trimis. Va rugam verificati conexiunea la internet."
+          );
         }
       );
   }
 
   return (
     <form onSubmit={handleSubmit}>
-      {/* <ReCAPTCHA
-        sitekey="6LfCe6gZAAAAACMOSAaAS2WcHZejNtAEpEuhNgtp"
-        onChange={onChange}
-      />
-  */}
       <div className="contact-form form-style row">
         <div className="col-12 col-lg-6 contact-form-field">
           <input
@@ -203,7 +212,7 @@ export default function ContactForm() {
             placeholder="Nume"
             id="fname"
             name="name"
-            className={`form-control ${nameError ? 'is-invalid' : ''}`}
+            className={`form-control ${nameError ? "is-invalid" : ""}`}
           />
         </div>
         <div className="col-12 col-lg-6 contact-form-field">
@@ -214,7 +223,7 @@ export default function ContactForm() {
             value={number}
             id="number"
             name="number"
-            className={`form-control ${numberError ? 'is-invalid' : ''}`}
+            className={`form-control ${numberError ? "is-invalid" : ""}`}
           />
         </div>
         <div className="col-12  col-lg-6 contact-form-field">
@@ -225,7 +234,7 @@ export default function ContactForm() {
             value={email}
             id="email"
             name="email"
-            className={`form-control ${emailError ? 'is-invalid' : ''}`}
+            className={`form-control ${emailError ? "is-invalid" : ""}`}
           />
         </div>
         <div className="col-12  col-lg-6 contact-form-field">
@@ -236,7 +245,7 @@ export default function ContactForm() {
             value={car}
             id="car"
             name="car"
-            className={`form-control ${emailError ? 'is-invalid' : ''}`}
+            className={`form-control ${emailError ? "is-invalid" : ""}`}
           />
         </div>
         <div className="col-12 col-lg-12 contact-form-field">
@@ -244,7 +253,7 @@ export default function ContactForm() {
             onChange={handleChange}
             value={events}
             name="events"
-            className={`form-control ${eventsError ? 'is-invalid' : ''}`}
+            className={`form-control ${eventsError ? "is-invalid" : ""}`}
           >
             <option disabled value="">
               Selectează manopera
@@ -262,35 +271,45 @@ export default function ContactForm() {
             onChange={handleChange}
             placeholder="Detalii manoperă"
             name="notes"
-            className={`contact-textarea form-control ${notesError ? 'is-invalid' : ''}`}
+            className={`contact-textarea form-control ${
+              notesError ? "is-invalid" : ""
+            }`}
           />
         </div>
+
         <div className="col-12 col-lg-3">
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey="6LfCe6gZAAAAACMOSAaAS2WcHZejNtAEpEuhNgtp"
+            onChange={onChange}
+          />
           <button type="submit" className={buttonClassName}>
             Finalizare
           </button>
         </div>
         <div className="col-12 col-lg-6">
-          {
-            successMessage && <p className="success-message">Mesajul a fost trimis!</p>
-          }
-          {
-            nameError && !name ? (
-                <p className="error-message">Numele este obligatoriu!</p>
-              ) : numberError && !number ? (
-                <p className="error-message">Numarul de telefon este obligatoriu!</p>
-              ) : numberError && number && number.length !== 10 ? (
-              <p className="error-message">Numarul de telefon nu este valid!</p>
-            ) : carError ? (
-              <p className="error-message">Mașina este obligatorie!</p>
-            ) : eventsError ? (
-                <p className="error-message">Alegeți tipul intervenției!</p>
-              ) : notesError && notes && notes.length < 10 ? (
-              <p className="error-message">Mesajul este prea scurt!</p>
-                ) : (
-                  errorMessage && <p className="error-message">Toate campurile sunt obligatorii!</p>
-                )
-          }
+          {successMessage && (
+            <p className="success-message">Mesajul a fost trimis!</p>
+          )}
+          {nameError && !name ? (
+            <p className="error-message">Numele este obligatoriu!</p>
+          ) : numberError && !number ? (
+            <p className="error-message">
+              Numarul de telefon este obligatoriu!
+            </p>
+          ) : numberError && number && number.length !== 10 ? (
+            <p className="error-message">Numarul de telefon nu este valid!</p>
+          ) : carError ? (
+            <p className="error-message">Mașina este obligatorie!</p>
+          ) : eventsError ? (
+            <p className="error-message">Alegeți tipul intervenției!</p>
+          ) : notesError && notes && notes.length < 10 ? (
+            <p className="error-message">Mesajul este prea scurt!</p>
+          ) : (
+            errorMessage && (
+              <p className="error-message">Toate campurile sunt obligatorii!</p>
+            )
+          )}
         </div>
       </div>
     </form>
