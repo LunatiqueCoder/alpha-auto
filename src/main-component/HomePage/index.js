@@ -16,7 +16,7 @@ const Homepage = () => {
      <Navbar/>
      <SimpleSlider/>
      <Services/>
-     {/*<Pricing/>*/}
+     <Pricing/>
      <ContactSection/>
      {/*<FeedbackForm/>*/}
      {/*<TeamSection/>*/}

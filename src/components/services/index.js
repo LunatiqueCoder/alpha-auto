@@ -5,7 +5,7 @@ import './style.css'
 const Services = (props) => {
 
     return(
-        <div id="services" className="service-style-1 section-padding">
+        <div id="services" className="large-screen-only service-style-1 section-padding">
             <div className="container">
                 <div className="col-12">
                     <div className="section-title-s2 text-center">

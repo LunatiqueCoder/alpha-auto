@@ -1,5 +1,5 @@
 .pricing-section {
-  padding: 100px 0;
+  padding: 50px 0;
   position: relative;
   padding-bottom: 80px;
   background: #f8f8f8;
@@ -111,26 +111,27 @@ max-width: 76%;
 .pricing-img-5,
 .pricing-img-6{
 overflow: hidden;
-float: right;
+/*float: right;*/
 position: relative;
 }
 .pricing-img:before, 
 .pricing-img-2:before, 
 .pricing-img-3:before, 
 .pricing-img-4:before, 
-.pricing-img-5:before, 
-.pricing-img-6:before{
-  content: "";
-  position: absolute;
-  left: 38%;
-  top: 30%;
-  width: 25px;
-  height: 25px;
-  background: #ffbdc6;
-  border-radius: 50%;
+.pricing-img-5:before,
+/* FMK */
+.active.nav-link{
+  /*content: "";*/
+  /*position: absolute;*/
+  /*left: 38%;*/
+  /*top: 30%;*/
+  /*width: 25px;*/
+  /*height: 25px;*/
+  /*background: #ffbdc6;*/
+  /*border-radius: 50%;*/
   -webkit-animation: spineer 2s infinite;
   animation: spineer 2s infinite;
-} 
+}
 .pricing-img-2:before{
   top: 53%;
   background: #d1ffec;

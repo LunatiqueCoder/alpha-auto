@@ -14,12 +14,12 @@ const Pricing = (props) => {
   }
 
   return (
-    <div id="packages" className="pricing-section">
+    <div id="packages" className="mobile-only pricing-section">
         <div className="container">
             <div className="col-12">
                 <div className="section-title-s2 text-center">
                     <span>Alpha Auto</span>
-                    <h2>Pachete</h2>
+                    <h2>Servicii</h2>
                 </div>
             </div>
             <div className="row">
@@ -87,7 +87,7 @@ const Pricing = (props) => {
                                                     <h4><Link to="/">Engine Repair</Link></h4>
                                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
                                                 </div>
-                                                <img src={pr1} alt=""/>
+                                                {/*<img src={pr1} alt=""/>*/}
                                             </div>
                                         </div>
                                     </div>
@@ -105,7 +105,7 @@ const Pricing = (props) => {
                                                     <h4><Link to="/">Tires Replacement</Link></h4>
                                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
                                                 </div>
-                                                <img src={pr1} alt=""/>
+                                                {/*<img src={pr1} alt=""/>*/}
                                             </div>
                                         </div>
                                     </div>
@@ -123,7 +123,7 @@ const Pricing = (props) => {
                                                 <h4><Link to="/">Transmission</Link></h4>
                                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
                                             </div>
-                                            <img src={pr1} alt=""/>
+                                            {/*<img src={pr1} alt=""/>*/}
                                         </div>
                                     </div>
                                 </div>
@@ -141,7 +141,7 @@ const Pricing = (props) => {
                                                     <h4><Link to="/">Diagnostic</Link></h4>
                                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
                                                 </div>
-                                                <img src={pr1} alt=""/>
+                                                {/*<img src={pr1} alt=""/>*/}
                                             </div>
                                         </div>
                                     </div>
@@ -159,7 +159,7 @@ const Pricing = (props) => {
                                                     <h4><Link to="/">Batteries</Link></h4>
                                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
                                                 </div>
-                                                <img src={pr1} alt=""/>
+                                                {/*<img src={pr1} alt=""/>*/}
                                             </div>
                                         </div>
                                     </div>
@@ -177,7 +177,7 @@ const Pricing = (props) => {
                                                     <h4><Link to="/">Breaks repair</Link></h4>
                                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
                                                 </div>
-                                                <img src={pr1} alt=""/>
+                                                {/*<img src={pr1} alt=""/>*/}
                                             </div>
                                         </div>
                                     </div>
