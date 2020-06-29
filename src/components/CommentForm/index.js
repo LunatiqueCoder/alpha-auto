@@ -277,12 +277,14 @@ export default function ContactForm() {
           />
         </div>
 
-        <div className="col-12 col-lg-3">
+        <div className="recaptcha col-12 col-lg-3">
           <ReCAPTCHA
             ref={recaptchaRef}
             sitekey="6LfCe6gZAAAAACMOSAaAS2WcHZejNtAEpEuhNgtp"
             onChange={onChange}
           />
+        </div>
+        <div className="col-12 col-lg-3">
           <button type="submit" className={buttonClassName}>
             Finalizare
           </button>
