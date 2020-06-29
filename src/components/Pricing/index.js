@@ -1,20 +1,53 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink,} from 'reactstrap';
-import classnames from 'classnames';
-import pr1 from '../../images/pricing/img-1.png'
 import {Link} from 'react-router-dom'
+import classnames from 'classnames';
 import './style.css'
 
-const Pricing = (props) => {
+function useInterval(callback, delay) {
+  const savedCallback = useRef();
 
+  useEffect(() => {
+    savedCallback.current = callback;
+  }, [callback]);
+
+  useEffect(() => {
+    function tick() {
+      savedCallback.current();
+    }
+    if (delay !== null) {
+      let id = setInterval(tick, delay);
+
+      return () => clearInterval(id);
+    }
+  }, [delay]);
+}
+
+const Pricing = () => {
   const [activeTab, setActiveTab] = useState('1');
+  const [isRunning, setIsRunning] = useState(true);
+  const [transitionIndex, setTransitionIndex] = useState(2);
 
-  const toggle = tab => {
-    if(activeTab !== tab) setActiveTab(tab);
+  useInterval(() => {
+    if (transitionIndex <= 6) {
+      setActiveTab(transitionIndex.toString());
+      setTransitionIndex(transitionIndex + 1);
+    } else {
+      setActiveTab('1');
+      setTransitionIndex(2);
+    }
+  }, isRunning ? 2000 : null);
+
+  const toggle = (tab) => {
+    setIsRunning(false);
+
+    if (activeTab !== tab) {
+      setActiveTab(tab);
+    }
   }
 
   return (
-    <div id="packages" className="mobile-only pricing-section">
+    <div id="services-mobile" className="mobile-only pricing-section">
         <div className="container">
             <div className="col-12">
                 <div className="section-title-s2 text-center">

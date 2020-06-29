@@ -86,7 +86,7 @@
     display: none;
 }
 .mobile-only {
-    display: none;
+    display: none!important;
 }
 .showmenu {
     display: none;
@@ -102,7 +102,7 @@
         display: block;
     }
     .mobile-only {
-        display: block;
+        display: block!important;
     }
     .large-screen-only {
         display: none;

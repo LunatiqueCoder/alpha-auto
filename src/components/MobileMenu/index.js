@@ -29,7 +29,7 @@ class MobileMenu extends Component {
                             <AnchorLink onClick={() => this.setState({isMenuShow: false})} href='#hero'>Acasă</AnchorLink>
                           </li>
                           <li>
-                            <AnchorLink onClick={() => this.setState({isMenuShow: false})} offset='20' href='#services'>Servicii</AnchorLink>
+                            <AnchorLink onClick={() => this.setState({isMenuShow: false})} offset='50' href='#services-mobile'>Servicii</AnchorLink>
                           </li>
                           <li>
                             <AnchorLink onClick={() => this.setState({isMenuShow: false})}  offset='20' href='#contact'>Contact</AnchorLink>

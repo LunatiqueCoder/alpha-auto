@@ -47,8 +47,11 @@ const FooterSection = () => {
                                       <li className="active">
                                         <AnchorLink href='#hero'>Acasă</AnchorLink>
                                       </li>
-                                      <li>
+                                      <li className="large-screen-only">
                                         <AnchorLink offset='10' href='#services'>Servicii</AnchorLink>
+                                      </li>
+                                      <li className="mobile-only">
+                                        <AnchorLink offset='50' href='#services-mobile'>Servicii</AnchorLink>
                                       </li>
                                       <li>
                                         <AnchorLink offset='10' href='#contact'>Contact</AnchorLink>

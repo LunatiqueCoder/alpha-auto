@@ -741,9 +741,6 @@ display: none;
 .pricing-img img, .pricing-img-2 img, .pricing-img-3 img, .pricing-img-4 img, .pricing-img-5 img, .pricing-img-6 img {
     max-width: 100%;
 }
-.pricing-section ul.nav.nav-tabs {
-    margin-left: 70px;
-}
 .features-wrap{
     max-width: 500px;
     margin: auto;
@@ -1127,9 +1124,9 @@ display: none;
   left: 50px;
   top: 60px;
 }
-.pricing-section ul.nav.nav-tabs {
-    margin-left: 50px;
-}
+/*.pricing-section ul.nav.nav-tabs {*/
+/*    margin-left: 50px;*/
+/*}*/
 .fun-fact-section .fun-fact-grids .grid{
     width: calc(50% - 15px);
     padding: 60px 3px;
