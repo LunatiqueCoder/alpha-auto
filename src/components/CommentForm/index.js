@@ -148,7 +148,13 @@ export default function ContactForm() {
       error = true;
     }
 
-    // const recaptchaValue = recaptchaRef.current.getValue();
+    // const recaptchaValue = recaptchaRef.current.getValue(); // FMK
+
+    if (error) {
+      setButtonClassName("btn btn-secondary btn-lg disabled");
+    } else {
+      setButtonClassName("btn btn-primary btn-lg");
+    }
 
     return !error;
   }
@@ -163,7 +169,6 @@ export default function ContactForm() {
     if (isValid) {
       sendEmail(e);
 
-      setButtonClassName("btn btn-secondary btn-lg disabled");
     } else {
       setSuccessMessage(false);
       setErrorMessage(true);
@@ -175,6 +180,8 @@ export default function ContactForm() {
   }
 
   function sendEmail(e) {
+    setButtonClassName("btn btn-secondary btn-lg disabled");
+
     emailjs
       .sendForm(
         "alpha_auto_prod",
@@ -310,7 +317,7 @@ export default function ContactForm() {
           ) : carError ? (
             <p className="error-message">Mașina este obligatorie!</p>
           ) : eventsError ? (
-            <p className="error-message">Alegeți tipul intervenției!</p>
+            <p className="error-message">Alegeți manopera!</p>
           ) : notesError && !notes ? (
             <p className="error-message">Mesajul este obligatoriu!</p>
           ) : notesError && notes && notes.length < 10 ? (
