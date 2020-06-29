@@ -18,7 +18,9 @@ export default function ContactForm() {
   const [carError, setCarError] = useState(false);
   const [notesError, setNotesError] = useState(false);
   const [eventsError, setEventsError] = useState(false);
+  const [captchaError, setCaptchaError] = useState(true);
   const [successMessage, setSuccessMessage] = useState(false);
+  const [submitClicked, setSubmitClicked] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
   const [buttonClassName, setButtonClassName] = useState(
     "btn btn-primary btn-lg"
@@ -26,7 +28,7 @@ export default function ContactForm() {
   const recaptchaRef = React.createRef();
 
   function onChange(value) {
-    console.log("Captcha value:", value);
+    setCaptchaError(false);
   }
 
   function handleChange(e) {
@@ -51,7 +53,7 @@ export default function ContactForm() {
 
         if (value && value.length === 10) {
           setNumberError(false);
-        } else if (!value || value.length > 10) {
+        } else if (!value || value.length !== 10) {
           setNumberError(true);
         }
 
@@ -87,7 +89,7 @@ export default function ContactForm() {
 
         if (value && value.length > 10) {
           setNotesError(false);
-        } else if (!value) {
+        } else {
           setNotesError(true);
         }
 
@@ -142,15 +144,19 @@ export default function ContactForm() {
       error = true;
     }
 
-    const recaptchaValue = recaptchaRef.current.getValue();
+    if (captchaError) {
+      error = true;
+    }
 
-    console.log("!!!!!!!!!!!!!!!!!!!!!!!!!", recaptchaValue);
+    // const recaptchaValue = recaptchaRef.current.getValue();
 
     return !error;
   }
 
   function handleSubmit(e) {
     e.preventDefault();
+
+    setSubmitClicked(true);
 
     const isValid = validateForm();
 
@@ -245,7 +251,7 @@ export default function ContactForm() {
             value={car}
             id="car"
             name="car"
-            className={`form-control ${emailError ? "is-invalid" : ""}`}
+            className={`form-control ${carError ? "is-invalid" : ""}`}
           />
         </div>
         <div className="col-12 col-lg-12 contact-form-field">
@@ -277,7 +283,7 @@ export default function ContactForm() {
           />
         </div>
 
-        <div className="recaptcha col-12 col-lg-3">
+        <div className="recaptcha col-12 col-lg-6">
           <ReCAPTCHA
             ref={recaptchaRef}
             sitekey="6LfCe6gZAAAAACMOSAaAS2WcHZejNtAEpEuhNgtp"
@@ -305,11 +311,15 @@ export default function ContactForm() {
             <p className="error-message">Mașina este obligatorie!</p>
           ) : eventsError ? (
             <p className="error-message">Alegeți tipul intervenției!</p>
+          ) : notesError && !notes ? (
+            <p className="error-message">Mesajul este obligatoriu!</p>
           ) : notesError && notes && notes.length < 10 ? (
             <p className="error-message">Mesajul este prea scurt!</p>
           ) : (
-            errorMessage && (
+            errorMessage && !name && !email && !number && !notes && !car ? (
               <p className="error-message">Toate campurile sunt obligatorii!</p>
+            ) : submitClicked && captchaError && (
+              <p className="error-message">Confirmati va rog ca nu sunteti robot!</p>
             )
           )}
         </div>
