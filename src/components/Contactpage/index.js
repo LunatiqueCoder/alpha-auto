@@ -10,37 +10,10 @@ const mapContainerStyle = {
 };
 
 const Contactpage = () => {
-  const [instance, setInstance] = React.useState(null);
-
-  // Strada Teilor 115, Craiova
-  const [center, setCenter] = useState({
+  const center = {
     lat: 44.3353,
     lng: 23.83384,
-  });
-
-  const onLoad = React.useCallback(
-    function onLoad(map) {
-      console.log("instance: ", map.getCenter());
-      setInstance(map);
-    },
-    [setInstance]
-  );
-
-  const onCenterChanged = React.useCallback(
-    function onCenterChanged() {
-      console.log("INSTANCE:", instance);
-
-      if (instance) {
-        const newCenter = instance.getCenter();
-        console.log(newCenter);
-        const lat = newCenter.lat();
-        const lng = newCenter.lng();
-        console.log("lat: ", lat);
-        console.log("lng: ", lng);
-      }
-    },
-    [instance]
-  );
+  }
 
   return (
     <div id="contact" className="contact-page-area section-padding">
@@ -100,22 +73,14 @@ const Contactpage = () => {
           <div className="row">
             <div className="col col-xs-12">
               <div className="contact-map">
-                {/* <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.9147703055!2d-74.11976314309273!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbd!4v1547528325671"
-                  allowfullscreen
-                ></iframe> */}
                 <LoadScript googleMapsApiKey="AIzaSyC5tinHO-IhtGkHdXMYUufLOa-5ICmgjE8">
                   <GoogleMap
                     id="map"
                     mapContainerStyle={mapContainerStyle}
                     center={center}
                     zoom={13}
-                    onLoad={onLoad}
-                    // onUnmount={onUnmount}
-                    onCenterChanged={onCenterChanged}
                   >
                     <Marker position={center} />
-                    <></>
                   </GoogleMap>
                 </LoadScript>
               </div>
