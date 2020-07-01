@@ -122,3 +122,7 @@
     padding-top: 70px;
     /*padding-bottom: 100px;*/
 }
+
+.service-text h2.service-small-font {
+    font-size: 23px;
+}
