@@ -184,7 +184,8 @@ height: auto;
 
 .hero-static-image .row,.hero-static-image-2 .row,.hero-static-image-3 .row  {
   display: table-cell;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
+    padding-top: 100px;
 }
 
 .hero-static-image h2,.hero-static-image-2 h2,.hero-static-image-3 h2 {
@@ -347,6 +348,17 @@ hero-style-2
     justify-content: center;
 }
 
+.desktop-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 100px;
+}
+
+.desktop-button {
+    padding-right: 40px;
+}
+
 .localisation-button, .call-now-button {
     padding: 0 20px 0;
 }
@@ -360,3 +372,10 @@ hero-style-2
 /*.call-now-button {*/
 /*    float: right;*/
 /*}*/
+.hashtag-alpha-auto {
+    color: red;
+}
+
+.slide-title {
+    margin-bottom: 50px;
+}

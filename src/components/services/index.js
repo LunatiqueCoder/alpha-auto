@@ -17,11 +17,11 @@ const Services = (props) => {
                     <div className="col-lg-4 col-md-6">
                         <div className="service-wrap">
                             <div className="service-icon">
-                                <i className="fi flaticon-turbo"></i>
+                                <i className="fi flaticon-car-1"></i>
                             </div>
                             <div className="service-text">
-                                <h2>Engine Repair</h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+                                <h2>Revizie</h2>
+                                {/*<p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>*/}
                             </div>
                         </div>
                     </div>
@@ -31,19 +31,19 @@ const Services = (props) => {
                                 <i className="fi flaticon-tyre"></i>
                             </div>
                             <div className="service-text">
-                                <h2>Tires Replacement</h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+                                <h2>Mecanică</h2>
+                                {/*<p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>*/}
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4  col-md-6">
                         <div className="service-wrap">
                             <div className="service-icon-3">
-                                <i className="fi flaticon-car-1"></i>
+                                <i className="fi flaticon-tyre"></i>
                             </div>
                             <div className="service-text">
-                                <h2>Transmission</h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+                                <h2>Frânare</h2>
+                                {/*<p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>*/}
                             </div>
                         </div>
                     </div>
@@ -53,8 +53,8 @@ const Services = (props) => {
                                 <i className="fi flaticon-car-repair"></i>
                             </div>
                             <div className="service-text">
-                                <h2>Diagnostic</h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+                                <h2 className="service-small-font">Diagnoză computerizată</h2>
+                                {/*<p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>*/}
                             </div>
                         </div>
                     </div>
@@ -64,8 +64,8 @@ const Services = (props) => {
                                 <i className="fi flaticon-battery"></i>
                             </div>
                             <div className="service-text">
-                                <h2>Batteries</h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+                                <h2>Electrică</h2>
+                                {/*<p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>*/}
                             </div>
                         </div>
                     </div>
@@ -75,8 +75,8 @@ const Services = (props) => {
                                 <i className="fi flaticon-electricity"></i>
                             </div>
                             <div className="service-text">
-                                <h2>Breaks</h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+                                <h2>Vopsitorie & tinichigerie</h2>
+                                {/*<p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>*/}
                             </div>
                         </div>
                     </div>
