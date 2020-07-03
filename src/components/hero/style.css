@@ -379,3 +379,39 @@ hero-style-2
 .slide-title {
     margin-bottom: 50px;
 }
+
+.h1-heading {
+  margin-bottom: 50px;
+}
+
+.mobile-only .h1-heading {
+    margin-bottom: 10px;
+}
+
+.mobile-only .slide-title {
+    margin-bottom: 10px;
+}
+
+.mobile-only.slide-caption {
+    margin-top: 0;
+}
+
+.mobile-only.row {
+    padding: 0;
+}
+
+@media (max-width:991px){
+    .hero-static-image .large-screen-only {
+        display: none;
+    }
+
+    .hero-container .mobile-only {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+    }
+
+    .mobile-buttons-container {
+        padding-top: 50px;
+    }
+}
