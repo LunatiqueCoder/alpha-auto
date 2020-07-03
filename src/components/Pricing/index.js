@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink,} from 'reactstrap';
+import BeenhereIcon from '@material-ui/icons/Beenhere';
 import {Link} from 'react-router-dom'
 import classnames from 'classnames';
 import './style.css'
@@ -64,7 +65,7 @@ const Pricing = () => {
                                 className={ classnames({  active: activeTab === '1' })}
                                 onClick={() => { toggle('1'); }}
                             >
-                                <i className="fi flaticon-turbo"></i>
+                              <BeenhereIcon style={{ fontSize: 40 }}/>
                             </NavLink>
                         </NavItem>
                         <NavItem className="pricing-content-2">
@@ -72,7 +73,7 @@ const Pricing = () => {
                                 className={classnames({ active: activeTab === '2' })}
                                 onClick={() => { toggle('2'); }}
                             >
-                                <i className="fi flaticon-tyre"></i>
+                                <i className="fi flaticon-system"></i>
                             </NavLink>
                         </NavItem>
                         <NavItem className="pricing-content-3">
@@ -80,7 +81,7 @@ const Pricing = () => {
                                 className={classnames({ active: activeTab === '3' })}
                                 onClick={() => { toggle('3'); }}
                             >
-                                <i className="fi flaticon-car-1"></i>
+                                <i className="fi flaticon-brake"></i>
                             </NavLink>
                         </NavItem>
                         <NavItem className="pricing-content-4">
@@ -88,7 +89,7 @@ const Pricing = () => {
                                 className={classnames({ active: activeTab === '4' })}
                                 onClick={() => { toggle('4'); }}
                             >
-                                <i className="fi flaticon-car-repair"></i>
+                              <i className="fi flaticon-check"></i>
                             </NavLink>
                         </NavItem>
                         <NavItem className="pricing-content-5">
@@ -104,7 +105,7 @@ const Pricing = () => {
                                 className={classnames({ active: activeTab === '6' })}
                                 onClick={() => { toggle('6'); }}
                             >
-                                <i className="fi flaticon-electricity"></i>
+                                <i className="fi flaticon-spray-gun"></i>
                             </NavLink>
                         </NavItem>
                     </Nav>
@@ -116,9 +117,9 @@ const Pricing = () => {
                                         <div className="pricing-single">
                                             <div className="pricing-img">
                                                 <div className="pricing-text">
-                                                    <span><small>$</small>25</span>
-                                                    <h4><Link to="/">Engine Repair</Link></h4>
-                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                                                    {/*<span><small>$</small>25</span>*/}
+                                                    <h4>Revizie</h4>
+                                                    {/*<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>*/}
                                                 </div>
                                                 {/*<img src={pr1} alt=""/>*/}
                                             </div>
@@ -134,9 +135,9 @@ const Pricing = () => {
                                         <div className="pricing-single">
                                             <div className="pricing-img-2">
                                                 <div className="pricing-text-1">
-                                                    <span><small>$</small>35</span>
-                                                    <h4><Link to="/">Tires Replacement</Link></h4>
-                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                                                    {/*<span><small>$</small>35</span>*/}
+                                                    <h4>Mecanică</h4>
+                                                    {/*<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>*/}
                                                 </div>
                                                 {/*<img src={pr1} alt=""/>*/}
                                             </div>
@@ -152,9 +153,9 @@ const Pricing = () => {
                                     <div className="pricing-single">
                                         <div className="pricing-img-3">
                                             <div className="pricing-text-2">
-                                                <span><small>$</small>45</span>
-                                                <h4><Link to="/">Transmission</Link></h4>
-                                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                                                {/*<span><small>$</small>45</span>*/}
+                                                <h4>Frânare</h4>
+                                                {/*<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>*/}
                                             </div>
                                             {/*<img src={pr1} alt=""/>*/}
                                         </div>
@@ -170,9 +171,9 @@ const Pricing = () => {
                                         <div className="pricing-single">
                                             <div className="pricing-img-4">
                                                 <div className="pricing-text-3">
-                                                    <span><small>$</small>65</span>
-                                                    <h4><Link to="/">Diagnostic</Link></h4>
-                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                                                    {/*<span><small>$</small>65</span>*/}
+                                                    <h4>Diagnoză computerizată</h4>
+                                                    {/*<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>*/}
                                                 </div>
                                                 {/*<img src={pr1} alt=""/>*/}
                                             </div>
@@ -188,9 +189,9 @@ const Pricing = () => {
                                         <div className="pricing-single">
                                             <div className="pricing-img-5">
                                                 <div className="pricing-text-4">
-                                                    <span><small>$</small>50</span>
-                                                    <h4><Link to="/">Batteries</Link></h4>
-                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                                                    {/*<span><small>$</small>50</span>*/}
+                                                    <h4>Electrică</h4>
+                                                    {/*<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>*/}
                                                 </div>
                                                 {/*<img src={pr1} alt=""/>*/}
                                             </div>
@@ -206,9 +207,9 @@ const Pricing = () => {
                                         <div className="pricing-single">
                                             <div className="pricing-img-6">
                                                 <div className="pricing-text-5">
-                                                    <span><small>$</small>25</span>
-                                                    <h4><Link to="/">Breaks repair</Link></h4>
-                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                                                    {/*<span><small>$</small>25</span>*/}
+                                                    <h4>Vopsitorie & tinichigerie</h4>
+                                                    {/*<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>*/}
                                                 </div>
                                                 {/*<img src={pr1} alt=""/>*/}
                                             </div>

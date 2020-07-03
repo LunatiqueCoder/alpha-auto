@@ -256,19 +256,22 @@ font-family: 'Josefin Sans', sans-serif;
 
 }
 
-.pricing-text-1 span{
+.pricing-text h4{
+color:#ed5217;
+}
+.pricing-text-1 h4{
 color:#19d78b;
 }
-.pricing-text-2 span{
+.pricing-text-2 h4{
 color:#b471ff;
 }
-.pricing-text-3 span{
+.pricing-text-3 h4{
 color:#75cdff;
 }
-.pricing-text-4 span{
+.pricing-text-4 h4{
 color:#fec14e;
 }
-.pricing-text-5 span{
+.pricing-text-5 h4{
 color:#ff477d;
 }
 .pricing-text small,

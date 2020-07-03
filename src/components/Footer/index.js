@@ -16,7 +16,7 @@ const FooterSection = () => {
                                 <div className="hx-site-logo">
                                     <img src={logo} alt=""/>
                                 </div>
-                                <p>Alpha Auto, cel mai profesionist service din Bariera Vâlcii. Ne puteti gasii si pe Facebook.</p>
+                                <p>Alpha Auto, Craiova. Ne puteti gasii si pe Facebook.</p>
                                 <div className="social">
                                     <ul className="d-flex">
                                       <li><a href="https://www.facebook.com/alphaautocraiova/"><i className="fa fa-facebook" aria-hidden="true" />Facebook</a></li>

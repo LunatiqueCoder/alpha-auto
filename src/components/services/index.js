@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './style.css'
+import BeenhereIcon from '@material-ui/icons/Beenhere';
 
 const Services = (props) => {
 
@@ -17,7 +18,7 @@ const Services = (props) => {
                     <div className="col-lg-4 col-md-6">
                         <div className="service-wrap">
                             <div className="service-icon">
-                                <i className="fi flaticon-car-1"></i>
+                              <BeenhereIcon style={{ fontSize: 40 }}/>
                             </div>
                             <div className="service-text">
                                 <h2>Revizie</h2>
@@ -28,7 +29,7 @@ const Services = (props) => {
                     <div className="col-lg-4  col-md-6">
                         <div className="service-wrap">
                             <div className="service-icon-2">
-                                <i className="fi flaticon-tyre"></i>
+                              <i className="fi flaticon-system"></i>
                             </div>
                             <div className="service-text">
                                 <h2>Mecanică</h2>
@@ -39,7 +40,7 @@ const Services = (props) => {
                     <div className="col-lg-4  col-md-6">
                         <div className="service-wrap">
                             <div className="service-icon-3">
-                                <i className="fi flaticon-tyre"></i>
+                               <i className="fi flaticon-brake"></i>
                             </div>
                             <div className="service-text">
                                 <h2>Frânare</h2>
@@ -50,7 +51,7 @@ const Services = (props) => {
                     <div className="col-lg-4  col-md-6">
                         <div className="service-wrap">
                             <div className="service-icon-4">
-                                <i className="fi flaticon-car-repair"></i>
+                              <i className="fi flaticon-check"></i>
                             </div>
                             <div className="service-text">
                                 <h2 className="service-small-font">Diagnoză computerizată</h2>
@@ -72,7 +73,7 @@ const Services = (props) => {
                     <div className="col-lg-4  col-md-6">
                         <div className="service-wrap">
                             <div className="service-icon-6">
-                                <i className="fi flaticon-electricity"></i>
+                              <i className="fi flaticon-spray-gun"></i>
                             </div>
                             <div className="service-text">
                                 <h2>Vopsitorie & tinichigerie</h2>
