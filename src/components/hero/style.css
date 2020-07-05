@@ -146,7 +146,7 @@
 --------------------------------------------------------------*/
 .hero-static-image,.hero-static-image-2,.hero-static-image-3 {
   background: #fff;
-  height: 900px;
+  height: 800px;
   position: relative;
 }
 .hero-static-image:before,.hero-static-image-2:before{
@@ -378,8 +378,18 @@ hero-style-2
 /*.call-now-button {*/
 /*    float: right;*/
 /*}*/
-.hashtag-alpha-auto {
-    color: red;
+.hashtag-alpha-auto-desktop {
+    background: -webkit-linear-gradient(left, yellow, orangered);
+    background: -o-linear-gradient(right, yellow, orangered);
+    background: -moz-linear-gradient(right, yellow, orangered);
+    background: linear-gradient(to right, yellow, orangered);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hashtag-alpha-auto-mobile {
+    background: none;
+    color: orange;
 }
 
 .slide-title {
@@ -440,4 +450,21 @@ hero-style-2
     .call-now-button {
         padding-left: 0!important;
     }
+}
+
+.background-image {
+    background: url('../../images/background.jpg') no-repeat;
+    background-size: cover;
+    height: 660px;
+}
+
+@media (max-width:991px){
+    .background-image {
+        background: white;
+        height: auto;
+    }
+}
+
+.slide-title.large-screen-only h1, .slide-title.large-screen-only h3 {
+    color: white;
 }

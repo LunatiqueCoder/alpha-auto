@@ -8,6 +8,7 @@ class SimpleSlider extends Component {
   render() {
     return (
       <section id="hero" className="hero hero-static-image">
+        <div className="background-image">
           <div className="container">
             <div className="row hero-container large-screen-only">
                 <div className="col col-lg-9 col-md-7 slide-caption large-screen-only">
@@ -26,7 +27,7 @@ class SimpleSlider extends Component {
                     </div>
                     <div className="large-screen-only desktop-button btns">
                       <AnchorLink offset='27' href='#appointment'>
-                        <button type="button" className="btn btn-outline-primary btn-lg programari-btn">Programări</button>
+                        <button type="button" className="btn btn-light btn-lg programari-btn">Programări</button>
                       </AnchorLink>
                     </div>
                   </div>
@@ -54,6 +55,7 @@ class SimpleSlider extends Component {
               </div>
             </div>
           </div>
+        </div>
       </section>
     );
   }

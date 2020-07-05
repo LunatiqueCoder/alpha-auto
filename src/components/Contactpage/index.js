@@ -58,17 +58,19 @@ const Contactpage = () => {
           <div className="row">
             <div className="col-lg-3 col-md-6 col-sm-12 col-12">
               <div className="hx-contact-gd-wrap phone-tile">
-                <div className="hx-contact-gd-icon">
-                  <PhoneIcon style={{ color: 'white', fontSize: 40 }} />
-                </div>
+                <a href="tel:+40722 968 318">
+                  <div className="hx-contact-gd-icon">
+                    <PhoneIcon style={{ color: 'white', fontSize: 40 }} />
+                  </div>
+                </a>
                 <div className="hx-contact-gd-text">
                   <h4 className="no-margin">Telefon</h4>
-                  <a href="tel:+40722 968 318">
-                    <span className="phone-number">0722 968 318</span>
+                  <a className="hoverable-link phone-number" href="tel:+40722 968 318">
+                    0722 968 318
                   </a>
                   <br />
-                  <a href="tel:+40746 132 939">
-                    <span className="phone-number">0746 132 939</span>
+                  <a className="hoverable-link phone-number" href="tel:+40746 132 939">
+                    0746 132 939
                   </a>
                 </div>
               </div>

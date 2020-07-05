@@ -175,3 +175,11 @@
 .section-padding {
   padding-bottom: 0!important;
 }
+
+.hoverable-link {
+    color: #666;
+}
+
+.hoverable-link:hover {
+    color: #ed5217;
+}
