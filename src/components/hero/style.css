@@ -4,7 +4,8 @@
 .hero {
   position: relative;
   height: 100vh;
-  padding: 120px 0;
+  padding-top: 140px;
+  padding-bottom: 0;
   z-index: 1;
   /** slider controls **/
   /*** hero slider animation ***/
@@ -20,7 +21,7 @@
 
 @media (max-width: 767px) {
   .hero {
-    min-height: 420px;
+    min-height: 320px;
   }
 }
 
@@ -32,7 +33,7 @@
 
 @media (max-width: 767px) {
   .hero .slide {
-    min-height: 420px;
+    min-height: 320px;
   }
 }
 
@@ -164,7 +165,7 @@ height: auto;
 
 @media (max-width: 991px) {
   .hero-static-image,.hero-static-image-2,.hero-static-image-3 {
-    height: 600px;
+    height: 450px;
   }
 }
 
@@ -356,7 +357,12 @@ hero-style-2
 }
 
 .desktop-button {
-    padding-right: 40px;
+    padding-right: 15px;
+    margin-left: 5px;
+}
+
+.contact-btn {
+    width: 200px;
 }
 
 .localisation-button, .call-now-button {
@@ -408,10 +414,30 @@ hero-style-2
     .hero-container .mobile-only {
         padding-left: 15px;
         padding-right: 15px;
-        padding-top: 20px;
+        /*padding-top: 20px;*/
     }
 
     .mobile-buttons-container {
-        padding-top: 50px;
+        padding-top: 15px;
+    }
+
+    .header-first-half {
+        margin-bottom: 30px;
+    }
+
+    .hero.hero-static-image {
+        padding-bottom: 0!important;
+    }
+
+    .contact-btn {
+        width: 150px;
+    }
+
+    .programari-btn {
+        width: 150px;
+    }
+
+    .call-now-button {
+        padding-left: 0!important;
     }
 }

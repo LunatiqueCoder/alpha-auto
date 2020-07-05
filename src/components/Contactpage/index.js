@@ -3,6 +3,9 @@ import ContactForm from "../CommentForm";
 import "./style.css";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import PhoneIcon from '@material-ui/icons/Phone';
+import EmailIcon from '@material-ui/icons/Email';
+import PlaceIcon from '@material-ui/icons/Place';
 
 const mapContainerStyle = {
   width: "100%",
@@ -29,7 +32,7 @@ const Contactpage = () => {
             <div className="col-lg-3 col-md-6 col-sm-12 col-12">
               <div className="hx-contact-gd-wrap phone-tile">
                 <div className="hx-contact-gd-icon">
-                  <i className="fi flaticon-call" />
+                  <PhoneIcon style={{ color: 'white', fontSize: 40 }} />
                 </div>
                 <div className="hx-contact-gd-text">
                   <h4 className="no-margin">Telefon</h4>
@@ -47,7 +50,7 @@ const Contactpage = () => {
               <AnchorLink offset="10" href="#appointment">
                 <div className="hx-contact-gd-wrap">
                   <div className="hx-contact-gd-icon">
-                    <i className="fi flaticon-message" />
+                    <EmailIcon style={{ color: 'white', fontSize: 40 }} />
                   </div>
                   <div className="hx-contact-gd-text">
                     <h4>Email</h4>
@@ -57,10 +60,10 @@ const Contactpage = () => {
               </AnchorLink>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-              <AnchorLink offset="90" href="#map">
+              <AnchorLink offset="110" href="#map">
                 <div className="hx-contact-gd-wrap">
                   <div className="hx-contact-gd-icon">
-                    <i className="fi flaticon-placeholder" />
+                    <PlaceIcon style={{ color: 'white', fontSize: 40 }} />
                   </div>
                   <div id="pre-map" className="hx-contact-gd-text">
                     <h4>Localizare</h4>
