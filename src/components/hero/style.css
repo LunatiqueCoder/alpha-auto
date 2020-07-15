@@ -4,7 +4,7 @@
 .hero {
   position: relative;
   height: 100vh;
-  padding-top: 140px;
+  padding-top: 150px;
   padding-bottom: 0;
   z-index: 1;
   /** slider controls **/
@@ -23,6 +23,12 @@
   .hero {
     min-height: 320px;
   }
+}
+
+@media (max-width:991px){
+    .hero {
+        padding-top: 120px;
+    }
 }
 
 .hero .slide {
@@ -455,7 +461,8 @@ hero-style-2
 .background-image {
     background: url('../../images/background.jpg') no-repeat;
     background-size: cover;
-    height: 660px;
+    height: 620px;
+    margin-top: 30px;
 }
 
 @media (max-width:991px){

@@ -166,3 +166,7 @@
 .footer-info-section {
     padding-bottom: 80px;
 }
+
+.hx-site-footer-bottom-content .mobile-only {
+    margin-bottom: 50px;
+}

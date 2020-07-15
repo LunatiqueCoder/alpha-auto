@@ -47,12 +47,13 @@
     text-align: right;
 }
 .logo-image {
-    width: 40vh;
+    width: 450px;
     height: auto;
     max-width: 500px;
 }
 
 .logo-image.minified {
+    display: block;
     width: 37vw;
     height: auto;
 }
