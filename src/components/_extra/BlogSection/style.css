@@ -1,0 +1,139 @@
+.blog-section {
+  padding-bottom: 90px!important;
+  background: #f8f8f8;
+}
+
+@media (max-width: 991px) {
+  .blog-section {
+      padding-bottom: 70px!important;
+      padding-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-section {
+      padding-bottom: 60px!important;
+      padding-top: 0;
+  }
+}
+
+.blog-section .blog-grids {
+  margin: 0-15px;
+}
+
+@media (max-width: 767px) {
+  .blog-section .blog-grids {
+      margin: 0 -7.5px;
+  }
+}
+
+.blog-section .blog-grids .grid {
+  width: calc(33.33% - 30px);
+  margin: 0 15px 30px;
+  float: left;
+}
+
+@media (max-width: 1199px) {
+  .blog-section .blog-grids .grid {
+      width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-section .blog-grids .grid {
+    width: calc(100% - 15px);
+      margin: 0 7.5px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-section .blog-grids .grid {
+      width: calc(100% - 15px);
+      float: none;
+  }
+}
+.blog-section .blog-grids .grid .entry-media img{
+  width: 100%;
+}
+
+.blog-section .grid .details {
+  padding: 35px 30px;
+  -webkit-box-shadow: 0px 5px 9px 1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 5px 9px 1px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 1199px) {
+  .blog-section .grid .details {
+      padding: 30px 20px;
+  }
+}
+
+.blog-section .grid .details h3 {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.4em;
+  margin: 0 0 0.7em;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 1199px) {
+  .blog-section .grid .details h3 {
+      font-size: 18px;
+      font-size: 1.125rem;
+      font-family: 'Open Sans', sans-serif;
+  }
+}
+
+.blog-section .grid .details h3 a {
+  color: #283a5e;
+}
+
+.blog-section .grid .details h3 a:hover {
+  color: #ed5217;
+}
+
+.blog-section .details p {
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
+.blog-section .entry-meta {
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.blog-section .entry-meta>li {
+  font-size: 14px;
+  font-size: 0.875rem;
+  float: left;
+}
+
+@media (max-width: 767px) {
+  .blog-section .entry-meta>li {
+      font-size: 13px;
+      font-size: 0.8125rem;
+  }
+}
+
+.blog-section .entry-meta>li+li {
+  margin-left: 15px;
+  padding-left: 15px;
+  padding-top: 9px;
+  position: relative;
+}
+
+.blog-section .entry-meta>li+li:before {
+  content: "|";
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+
+.blog-section .entry-meta li a {
+  color: #ed5217;
+}
+
+.blog-section .entry-meta img {
+  border-radius: 50%;
+}

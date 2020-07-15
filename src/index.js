@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './main-component/App/App';
 import * as serviceWorker from './serviceWorker';
+import App from './App';
 import './css/font-awesome.min.css';
 import './css/responsive.css';
 import './css/flaticon.css';

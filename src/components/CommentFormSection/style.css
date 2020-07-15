@@ -1,0 +1,43 @@
+.success-message {
+    color: #1b5e20;
+    margin: auto;
+    padding-top: 12px;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 0;
+    padding-top: 12px;
+}
+
+.error {
+    padding: 0 15px 0!important;
+}
+
+.disabled {
+    cursor: not-allowed!important;
+}
+
+.btn-lg {
+    font-size: 1.1rem!important;
+}
+
+#appointment .contact-form {
+    margin-bottom: 0;
+}
+
+#appointment .hx-contact-form {
+    margin-bottom: 150px;
+}
+
+.contact-form-field {
+    margin-bottom: 30px;
+}
+
+textarea.form-control.contact-textarea {
+    height: 170px;
+}
+
+.recaptcha {
+    margin-bottom: 25px;
+}

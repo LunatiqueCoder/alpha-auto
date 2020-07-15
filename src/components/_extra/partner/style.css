@@ -1,0 +1,13 @@
+.hx-client-area {
+    padding: 100px 0;
+}
+
+.hx-client-area .hx-client-item {
+    padding-left: 50px;
+}
+
+@media(max-width:530px){
+	.hx-client-area .hx-client-item{
+		padding-left: 0;
+	}
+}

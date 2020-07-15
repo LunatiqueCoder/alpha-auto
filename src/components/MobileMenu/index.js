@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import PerfectScrollbar from 'react-perfect-scrollbar';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import PerfectScrollbar from 'react-perfect-scrollbar';
 
-import './style.css';
 import 'react-perfect-scrollbar/dist/css/styles.css';
+import './style.css';
 
 class MobileMenu extends Component {
     state = {
