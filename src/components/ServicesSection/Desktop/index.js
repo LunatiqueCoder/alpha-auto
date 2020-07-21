@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BeenhereIcon from "@material-ui/icons/Beenhere";
 
 import "./style.css";
@@ -25,9 +25,16 @@ const ServicesSectionDesktop = () => {
               <div className="service-text">
                 <h2>Revizie</h2>
                 <p>
-                  Verificarea și reglarea pieselor și aparatajelor, înlăturarea
-                  jocurilor survenite prin uzură, etc
+                  Verificarea, reglarea și/sau schimbarea pieselor și
+                  aparatajelor:
                 </p>
+                <br></br>
+                <div style={{ textAlign: "left" }}>
+                  <p> - schimbare filtre de ulei, aer, habitaclu;</p>
+                  <p> - inspecția nivelelor lichidelor;</p>
+                  <p> - verificarea plăcuțelor de frână.</p>
+                  <p> - înlăturarea jocurilor survenite prin uzură, etc</p>
+                </div>
               </div>
             </div>
           </div>
@@ -43,6 +50,12 @@ const ServicesSectionDesktop = () => {
                   să-și mențină parametrii constructivi și funcționali și să se
                   încadreze în normele tehnice.
                 </p>
+                <p>
+                  Mașina este un ansamblu de mii de piese care, în mod normal,
+                  se completează perfect și îi oferă utilizatorului libertate de
+                  mișcare. Din păcate, piesele auto nu sunt nemuritoare și
+                  ocazional, o parte dintre ele cedează.
+                </p>
               </div>
             </div>
           </div>
@@ -54,8 +67,15 @@ const ServicesSectionDesktop = () => {
               <div className="service-text">
                 <h2>Direcția și frânarea</h2>
                 <p>
-                  Direcția și frânarea sunt doua sisteme ale unui autoturism ce
-                  trebuie sa funcționeze ireproșabil.
+                  Direcția și frânarea sunt două sisteme ale unui autoturism ce
+                  trebuie să funcționeze ireproșabil.
+                </p>
+                <p>
+                  De la frână pe disc și cea de mână la frână hidraulică și
+                  sistemul antiblocare roți (ABS), specialiștii noștri știu
+                  totul despre sistemul de frânare, oferind reparații pentru
+                  orice mașină indiferent de model, fabricant sau an de
+                  fabricație.
                 </p>
               </div>
             </div>
@@ -84,11 +104,11 @@ const ServicesSectionDesktop = () => {
               <div className="service-text">
                 <h2>Electrică</h2>
                 <p>
-                  Instalatiile electrice ale autovehiculelor sunt complexe si
-                  sustin multe dintre sistemele vitale pentru functionarea
-                  normala a masinii. De la pornire si franare pana la
+                  Instalațiile electrice ale autovehiculelor sunt complexe și
+                  susțin multe dintre sistemele vitale pentru funcționarea
+                  normală a mașinii. De la pornire și frânare până la
                   deschiderea unui geam, sistemul electric este utilizat
-                  continuu in timpul mersului si in timpul stationarii.
+                  continuu în timpul mersului și în timpul staționării.
                 </p>
               </div>
             </div>
@@ -102,12 +122,12 @@ const ServicesSectionDesktop = () => {
                 <h2>Vopsitorie & tinichigerie</h2>
                 <p>
                   Cabina de vopsit este profesională și de ultimă generație,
-                  asigurându-ne specialistii ca vor obține exact rezultatul
+                  asigurându-ne specialiștii că vor obține exact rezultatul
                   dorit, iar atelierul de tinichigerie dispune de toate
-                  mijloacele tehnice necesare indreptarii elementelor de
-                  caroserie si interventiei pe structura de rezistenta,
-                  realizandu-se intr-un spatiu adecvat si cu o dotare
-                  corespunzatoare.
+                  mijloacele tehnice necesare îndreptării elementelor de
+                  caroserie și intervenției pe structura de rezistență,
+                  realizându-se într-un spațiu adecvat și cu o dotare
+                  corespunzătoare.
                 </p>
               </div>
             </div>
