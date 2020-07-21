@@ -1164,3 +1164,12 @@ display: none;
      margin-top: 6px;
   }
 }
+
+  @media (max-width:991px){
+      .mobile-only {
+          display: block!important;
+      }
+      .large-screen-only {
+          display: none;
+      }
+  }

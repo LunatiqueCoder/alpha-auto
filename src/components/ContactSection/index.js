@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ContactForm from "../CommentFormSection";
 import "./style.css";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";

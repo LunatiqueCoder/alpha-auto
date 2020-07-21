@@ -27,7 +27,7 @@
 
 @media (max-width:991px){
     .hero {
-        padding-top: 120px;
+        padding-top: 68px;
     }
 }
 
@@ -467,11 +467,19 @@ hero-style-2
 
 @media (max-width:991px){
     .background-image {
-        background: white;
-        height: auto;
+        background: black;
+        height: 280px;
+    }
+
+    h5 {
+        color: white!important;
     }
 }
 
 .slide-title.large-screen-only h1, .slide-title.large-screen-only h3 {
     color: white;
+}
+
+.hero .background-image .container {
+    padding-top: 50px;
 }

@@ -9,8 +9,8 @@ class Hero extends Component {
       <section id="hero" className="hero hero-static-image">
         <div className="background-image">
           <div className="container">
-            {HeroDesktop}
-            {HeroMobile}
+            <HeroDesktop />
+            <HeroMobile />
           </div>
         </div>
       </section>
