@@ -25,16 +25,15 @@ const ServicesSectionDesktop = () => {
               <div className="service-text">
                 <h2>Revizie</h2>
                 <p>
-                  Verificarea, reglarea și/sau schimbarea pieselor și
-                  aparatajelor:
+                  Revizia auto este un serviciu obligatoriu, care trebuie
+                  efectuat regulat, uneori chiar mai des decât este specificat
+                  de către producător. Cand spunem revizie, ne referim la
+                  verificarea, reglarea și/sau schimbarea pieselor și
+                  aparatajelor acestea adesea constând în: schimbarea filtrelor
+                  de ulei, aer, habitaclu, inspecția nivelelor lichidelor,
+                  verificarea plăcuțelor de frână, înlăturarea jocurilor
+                  survenite prin uzură, etc.
                 </p>
-                <br></br>
-                <div style={{ textAlign: "left" }}>
-                  <p> - schimbare filtre de ulei, aer, habitaclu;</p>
-                  <p> - inspecția nivelelor lichidelor;</p>
-                  <p> - verificarea plăcuțelor de frână.</p>
-                  <p> - înlăturarea jocurilor survenite prin uzură, etc</p>
-                </div>
               </div>
             </div>
           </div>
@@ -46,15 +45,13 @@ const ServicesSectionDesktop = () => {
               <div className="service-text">
                 <h2>Mecanică</h2>
                 <p>
-                  Exploatarea și repararea autovehiculelor, astfel încât acestea
-                  să-și mențină parametrii constructivi și funcționali și să se
-                  încadreze în normele tehnice.
-                </p>
-                <p>
                   Mașina este un ansamblu de mii de piese care, în mod normal,
                   se completează perfect și îi oferă utilizatorului libertate de
                   mișcare. Din păcate, piesele auto nu sunt nemuritoare și
-                  ocazional, o parte dintre ele cedează.
+                  ocazional, o parte dintre ele cedează,fiind necesară
+                  exploatarea și repararea autovehiculelor, astfel încât acestea
+                  să-și mențină parametrii constructivi și funcționali și să se
+                  încadreze în normele tehnice.
                 </p>
               </div>
             </div>
@@ -68,14 +65,11 @@ const ServicesSectionDesktop = () => {
                 <h2>Direcția și frânarea</h2>
                 <p>
                   Direcția și frânarea sunt două sisteme ale unui autoturism ce
-                  trebuie să funcționeze ireproșabil.
-                </p>
-                <p>
-                  De la frână pe disc și cea de mână la frână hidraulică și
-                  sistemul antiblocare roți (ABS), specialiștii noștri știu
-                  totul despre sistemul de frânare, oferind reparații pentru
-                  orice mașină indiferent de model, fabricant sau an de
-                  fabricație.
+                  trebuie să funcționeze ireproșabil. De la frână pe disc și cea
+                  de mână la frână hidraulică și sistemul antiblocare roți
+                  (ABS), specialiștii noștri știu totul despre sistemul de
+                  frânare, oferind reparații pentru orice mașină indiferent de
+                  model, fabricant sau an de fabricație.
                 </p>
               </div>
             </div>
@@ -88,10 +82,12 @@ const ServicesSectionDesktop = () => {
               <div className="service-text">
                 <h2 className="service-small-font">Diagnoză computerizată</h2>
                 <p>
-                  Verificarea condițiilor tehnice generale ale mașinii, inclusiv
-                  verificarea parametrilor reali cu cei teoretici și
-                  identificarea cauzelor și localizării oricărei defecțiuni,
-                  pentru a le elimina rapid.
+                  Diagnoza reprezintă verificarea computerizată a condițiilor
+                  tehnice generale ale unui autoturism (folosind sisteme
+                  computerizate şi interfeţe specifice fiecărui tip de
+                  automobil), inclusiv verificarea parametrilor reali cu cei
+                  teoretici și identificarea cauzelor și localizării oricărei
+                  defecțiuni, pentru a le elimina rapid.
                 </p>
               </div>
             </div>
