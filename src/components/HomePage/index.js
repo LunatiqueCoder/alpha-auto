@@ -1,14 +1,11 @@
 import React from  'react';
-import ContactSection from '../ContactSection';
 import CallNowSection from '../CallNowButton';
+import ContactSection from '../ContactSection';
 import FooterSection from '../Footer';
+import Hero from '../Hero';
 import Navbar from '../Navbar';
 import ServicesSectionDesktop from '../ServicesSection/Desktop';
 import ServicesSectionMobile from '../ServicesSection/Mobile';
-import Hero from '../Hero';
-
-// import FeedbackForm from '../../components/FeedbackForm';
-// import TeamSection from '../../components/Team';
 
 const Homepage = () => {
   return (

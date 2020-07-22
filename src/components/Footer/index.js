@@ -1,6 +1,6 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import logo from '../../images/logo.png';
+import logo from '../../images/logo-black.png';
 import {Link} from 'react-router-dom';
 
 import './style.css'

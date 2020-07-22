@@ -1,7 +1,7 @@
 .header-style-2{
     position: absolute;
     z-index: 999;
-    background:transparent;
+    background: black;
     width: 100%;
 }
 .header-top-1 .container .row {
@@ -232,7 +232,7 @@
 
 .logo {
     max-height: 300px;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
 }
 
   .header-middle .btn-style a {
@@ -388,5 +388,11 @@
     .main-menu.minified {
         padding-top: 0;
         margin-top: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-style-2{
+        background: white;
     }
 }

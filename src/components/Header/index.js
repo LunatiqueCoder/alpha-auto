@@ -1,9 +1,15 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import logo from '../../images/logo.png';
+import blackLogo from '../../images/logo-black.png';
+import whiteLogo from '../../images/logo-white.png';
 import MobileMenu from '../../components/MobileMenu';
 
 import './style.css';
+
+const logo = {
+  black: blackLogo,
+  white: whiteLogo
+}
 
 const Header = (props) => {
     return(
@@ -11,9 +17,10 @@ const Header = (props) => {
                 <div className="header-style-2">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-5 col-md-10 col-sm-10 col-10 col-t">
+                            <div className="col-lg-5 col-md-10 col-sm-10 col-10 col-t no-padding-right">
                                 <div className="logo">
-                                    <AnchorLink href='#hero'><img className={props.logoStyle} src={logo} alt="Alpha Auto Logo"/></AnchorLink>
+                                    <AnchorLink className="large-screen-only" href='#hero'><img className={props.logoStyle} src={logo.black} alt="Alpha Auto Logo"/></AnchorLink>
+                                    <AnchorLink className="mobile-only" href='#hero'><img className={props.logoStyle} src={props.logoTheme === 'white' ? logo.white : logo.black} alt="Alpha Auto Logo"/></AnchorLink>
                                 </div>
                             </div>
                             <div className="col-lg-7 col-md-6 d-none d-lg-block col-m">
