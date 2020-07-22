@@ -26,10 +26,10 @@
   }
 }
 
-@media (max-width:991px){
-    .hero {
-        padding-top: 68px;
-    }
+@media (max-width: 991px) {
+  .hero {
+    padding-top: 68px;
+  }
 }
 
 .hero .slide {
@@ -52,12 +52,10 @@
   content: "";
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
-  height: 65%;
+  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  align-items: center;
-  align-content: center;
 }
 
 .hero .slide:focus {
@@ -500,25 +498,27 @@ hero-style-2
 .background-image {
   background: url("../../images/background.jpg") no-repeat;
   background-size: cover;
-  height: 420px;
+  height: 620px;
+
   margin-top: 30px;
 }
 
-@media (max-width:991px){
-    .background-image {
-        background: black;
-        height: 280px;
-    }
+@media (max-width: 991px) {
+  .background-image {
+    background: black;
+    height: 280px;
+  }
 
-    h5 {
-        color: white!important;
-    }
+  h5 {
+    color: white !important;
+  }
 }
 
-.slide-title.large-screen-only h1, .slide-title.large-screen-only h3 {
-    color: white;
+.slide-title.large-screen-only h1,
+.slide-title.large-screen-only h3 {
+  color: white;
 }
 
 .hero .background-image .container {
-    padding-top: 50px;
+  padding-top: 50px;
 }
