@@ -392,7 +392,11 @@
 }
 
 @media (min-width: 992px) {
-    .header-style-2{
+    .header-style-2 {
         background: white;
+    }
+
+    .logo-container {
+        padding-left: 0!important;
     }
 }

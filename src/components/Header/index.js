@@ -17,7 +17,7 @@ const Header = (props) => {
                 <div className="header-style-2">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-5 col-md-10 col-sm-10 col-10 col-t no-padding-right">
+                            <div className="logo-container col-lg-5 col-md-10 col-sm-10 col-10 col-t">
                                 <div className="logo">
                                     <AnchorLink className="large-screen-only" href='#hero'><img className={props.logoStyle} src={logo.black} alt="Alpha Auto Logo"/></AnchorLink>
                                     <AnchorLink className="mobile-only" href='#hero'><img className={props.logoStyle} src={props.logoTheme === 'white' ? logo.white : logo.black} alt="Alpha Auto Logo"/></AnchorLink>
