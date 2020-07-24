@@ -1,3 +1,7 @@
+# 1.3
+
+- Add app version to footer (desktop)
+
 # 1.2
 
 - Fix service containers height (desktop)
