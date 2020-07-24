@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
-import { TabContent, TabPane, Nav, NavItem, NavLink } from "reactstrap";
-import BeenhereIcon from "@material-ui/icons/Beenhere";
-import classnames from "classnames";
+import React, { useState, useEffect, useRef } from 'react';
+import { TabContent, TabPane, Nav, NavItem, NavLink,} from 'reactstrap';
+import BeenhereIcon from '@material-ui/icons/Beenhere';
+import classnames from 'classnames';
 
-import "./style.css";
+import './style.css'
 
 function useInterval(callback, delay) {
   const savedCallback = useRef();
@@ -25,22 +25,19 @@ function useInterval(callback, delay) {
 }
 
 const ServicesSectionMobile = () => {
-  const [activeTab, setActiveTab] = useState("1");
+  const [activeTab, setActiveTab] = useState('1');
   const [isRunning, setIsRunning] = useState(true);
   const [transitionIndex, setTransitionIndex] = useState(2);
 
-  useInterval(
-    () => {
-      if (transitionIndex <= 6) {
-        setActiveTab(transitionIndex.toString());
-        setTransitionIndex(transitionIndex + 1);
-      } else {
-        setActiveTab("1");
-        setTransitionIndex(2);
-      }
-    },
-    isRunning ? 2000 : null
-  );
+  useInterval(() => {
+    if (transitionIndex <= 6) {
+      setActiveTab(transitionIndex.toString());
+      setTransitionIndex(transitionIndex + 1);
+    } else {
+      setActiveTab('1');
+      setTransitionIndex(2);
+    }
+  }, isRunning ? 2000 : null);
 
   const toggle = (tab) => {
     setIsRunning(false);
