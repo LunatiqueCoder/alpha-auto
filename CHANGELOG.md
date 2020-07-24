@@ -1,3 +1,7 @@
+# 1.2
+
+- Fix service containers height (desktop)
+
 # 1.1
 
 - Remove logo left padding
