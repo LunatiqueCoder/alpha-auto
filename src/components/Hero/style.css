@@ -514,12 +514,12 @@ hero-style-2
 
     .contact-btn {
         width: 150px;
-        box-shadow: 2px 3px black;
+        box-shadow: 1px 5px 5px black;
     }
 
     .programari-btn {
         width: 150px;
-        box-shadow: 2px 3px black;
+        box-shadow: -2px 5px 5px black;
     }
 
     .call-now-button {
