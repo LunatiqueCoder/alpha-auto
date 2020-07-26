@@ -501,7 +501,7 @@ hero-style-2
     }
 
     .mobile-buttons-container {
-        padding-top: 5px;
+        padding-top: 10px;
     }
 
     .header-first-half {
@@ -514,12 +514,16 @@ hero-style-2
 
     .contact-btn {
         width: 150px;
-        box-shadow: 1px 5px 5px black;
+        box-shadow: 1px 1px 3px black;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
     }
 
     .programari-btn {
         width: 150px;
-        box-shadow: -2px 5px 5px black;
+        box-shadow: -1px 1px 3px black;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
     }
 
     .call-now-button {
