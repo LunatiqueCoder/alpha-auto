@@ -2,6 +2,6 @@
     .main-section-container {
         background: url("../../images/background.jpg") no-repeat;
         background-size: cover;
-        height: 450px;
+        height: 100vh;
     }
 }
