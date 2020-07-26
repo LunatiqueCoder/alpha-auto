@@ -71,7 +71,7 @@ const FooterSection = () => {
           <div className="hx-site-footer-bottom-content">
             <div className="row">
               <div className="col-12 large-screen-only">
-                <span>Privacy Policy | © 2020 <Link to="/">Alpha Auto</Link> | v1.4</span>
+                <span>Privacy Policy | © 2020 <Link to="/">Alpha Auto</Link> | v1.5</span>
               </div>
               <div className="col-12 mobile-only">
                 <span>Privacy Policy | © 2020 <Link to="/">Alpha Auto</Link></span>

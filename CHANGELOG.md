@@ -1,3 +1,7 @@
+# 1.5
+
+- Fix phone icon and header logo alignment
+
 # 1.4
 
 - Add paths configuration
