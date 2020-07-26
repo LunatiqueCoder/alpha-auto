@@ -5,7 +5,7 @@ import Navbar from '../../Navbar'
 import PageTitle from '../breadcumb'
 import FooterSection from '../../Footer'
 import AboutSection from '../about'
-import Services from '../../ServicesSection/Desktop'
+import Services from '../../ServicesSection/components/Desktop'
 import FunFact2 from '../FunFact2'
 import TeamSection from '../TeamSection'
 

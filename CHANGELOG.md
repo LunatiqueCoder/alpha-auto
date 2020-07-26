@@ -1,3 +1,8 @@
+# 1.4
+
+- Add paths configuration
+- Small component refactor
+
 # 1.3
 
 - Add app version to footer (desktop)

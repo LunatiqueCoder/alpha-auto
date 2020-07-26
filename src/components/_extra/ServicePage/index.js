@@ -4,8 +4,8 @@ import React from  'react';
 import Navbar from '../../Navbar'
 import PageTitle from '../breadcumb'
 import FooterSection from '../../Footer'
-import Services from '../../ServicesSection/Desktop'
-import Pricing from '../../ServicesSection/Mobile'
+import Services from '../../ServicesSection/components/Desktop'
+import Pricing from '../../ServicesSection/components/Mobile'
 import TeamSection from '../TeamSection'
 import Testimonial from '../testimonial'
 

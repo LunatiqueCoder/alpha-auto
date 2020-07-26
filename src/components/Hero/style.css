@@ -505,7 +505,7 @@ hero-style-2
 
 @media (max-width: 991px) {
   .background-image {
-    background: black;
+    background: url("../../images/background.jpg") no-repeat;
     height: 280px;
   }
 

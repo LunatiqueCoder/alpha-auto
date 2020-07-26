@@ -1,22 +1,24 @@
 import React from  'react';
-import CallNowSection from '../CallNowButton';
-import ContactSection from '../ContactSection';
-import FooterSection from '../Footer';
-import Hero from '../Hero';
-import Navbar from '../Navbar';
-import ServicesSectionDesktop from '../ServicesSection/Desktop';
-import ServicesSectionMobile from '../ServicesSection/Mobile';
+import {
+  CallNowButton,
+  ContactSection,
+  Footer,
+  Hero,
+  Navbar,
+  ServicesSectionDesktop,
+  ServicesSectionMobile
+} from '@components';
 
 const Homepage = () => {
   return (
    <div className="page-wrapper">
-     <CallNowSection/>
+     <CallNowButton/>
      <Navbar/>
      <Hero/>
      <ServicesSectionDesktop/>
      <ServicesSectionMobile/>
      <ContactSection/>
-     <FooterSection/>
+     <Footer/>
    </div>
   )
 }

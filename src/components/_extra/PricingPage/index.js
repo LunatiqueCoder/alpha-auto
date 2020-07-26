@@ -4,7 +4,7 @@ import React from  'react';
 import Navbar from '../../Navbar'
 import PageTitle from '../breadcumb'
 import FooterSection from '../../Footer'
-import Pricing from '../../ServicesSection/Mobile'
+import Pricing from '../../ServicesSection/components/Mobile'
 
 
 const PricingPage = () => {
