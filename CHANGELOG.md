@@ -1,3 +1,7 @@
+# 2.0
+
+- Beta release
+
 # 1.5
 
 - Fix phone icon and header logo alignment

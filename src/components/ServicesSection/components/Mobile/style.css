@@ -253,7 +253,6 @@ font-size: 40px;
 font-weight: 700;
 color:#ed5217;
 font-family: 'Josefin Sans', sans-serif;
-
 }
 
 .pricing-text h4{
@@ -309,6 +308,7 @@ color: #444;
 font-size: 15px;
 color:#666;
 margin-bottom: 0;
+    height: 350px;
 }
 
 .pricing-section ul.nav.nav-tabs {
