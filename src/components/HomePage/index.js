@@ -3,8 +3,7 @@ import {
   CallNowButton,
   ContactSection,
   Footer,
-  Hero,
-  Navbar,
+  MainSection,
   ServicesSectionDesktop,
   ServicesSectionMobile
 } from '@components';
@@ -12,13 +11,12 @@ import {
 const Homepage = () => {
   return (
    <div className="page-wrapper">
-     <CallNowButton/>
-     <Navbar/>
-     <Hero/>
+     <MainSection/>
      <ServicesSectionDesktop/>
      <ServicesSectionMobile/>
      <ContactSection/>
      <Footer/>
+     <CallNowButton/>
    </div>
   )
 }

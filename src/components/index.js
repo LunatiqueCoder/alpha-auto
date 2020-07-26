@@ -2,6 +2,7 @@
 import HomePage from './HomePage';
 
 // Sections
+import MainSection from './MainSection';
 import CommentFormSection from './CommentFormSection'; // TODO
 import ContactSection from './ContactSection';
 import { ServicesSectionDesktop, ServicesSectionMobile } from './ServicesSection';
@@ -24,6 +25,7 @@ export {
   Footer,
   Header,
   Hero,
+  MainSection,
   MobileMenu,
   Navbar
 };

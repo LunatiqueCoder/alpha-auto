@@ -2,6 +2,7 @@
 
 - Add paths configuration
 - Small component refactor
+- Update MainSection / Hero background (Mobile)
 
 # 1.3
 

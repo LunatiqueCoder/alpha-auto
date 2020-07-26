@@ -418,9 +418,8 @@ hero-style-2
   margin-right: 50px;
   float: right;
 }
-/*.call-now-button {*/
-/*    float: right;*/
-/*}*/
+
+/*  this should be deleted  */
 .hashtag-alpha-auto-desktop {
   background: -webkit-linear-gradient(left, yellow, orangered);
   background: -o-linear-gradient(right, yellow, orangered);
@@ -429,7 +428,7 @@ hero-style-2
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+/*  this should be deleted  */
 .hashtag-alpha-auto-mobile {
   background: none;
   color: orange;
@@ -459,66 +458,79 @@ hero-style-2
   padding: 0;
 }
 
-@media (max-width: 991px) {
-  .hero-static-image .large-screen-only {
-    display: none;
-  }
-
-  .hero-container .mobile-only {
-    padding-left: 15px;
-    padding-right: 15px;
-    /*padding-top: 20px;*/
-  }
-
-  .mobile-buttons-container {
-    padding-top: 15px;
-  }
-
-  .header-first-half {
-    margin-bottom: 30px;
-  }
-
-  .hero.hero-static-image {
-    padding-bottom: 0 !important;
-  }
-
-  .contact-btn {
-    width: 150px;
-  }
-
-  .programari-btn {
-    width: 150px;
-  }
-
-  .call-now-button {
-    padding-left: 0 !important;
-  }
-}
-
-.background-image {
-  background: url("../../images/background.jpg") no-repeat;
-  background-size: cover;
-  height: 620px;
-
-  margin-top: 30px;
-}
-
-@media (max-width: 991px) {
-  .background-image {
-    background: url("../../images/background.jpg") no-repeat;
-    height: 280px;
-  }
-
-  h5 {
-    color: white !important;
-  }
-}
-
 .slide-title.large-screen-only h1,
 .slide-title.large-screen-only h3 {
-  color: white;
+    color: white;
 }
 
 .hero .background-image .container {
-  padding-top: 50px;
+    padding-top: 50px;
+}
+
+.background-image {
+    background: url("../../images/background.jpg") no-repeat;
+    background-size: cover;
+    height: 620px;
+    margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+    .background-image {
+        background: transparent;
+        height: 280px;
+    }
+
+    .hero {
+        background: transparent;
+    }
+
+    .hero h5 {
+        color: white !important;
+        font-size: 1.5rem!important;
+        padding-top: 10px;
+        text-shadow: 2px 2px black;
+    }
+
+    .hero-static-image .large-screen-only {
+        display: none;
+    }
+
+    .hero-container .mobile-only {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .mobile-buttons-container {
+        padding-top: 30px;
+    }
+
+    .header-first-half {
+        margin-bottom: 30px;
+    }
+
+    .hero.hero-static-image {
+        padding-bottom: 0 !important;
+    }
+
+    .contact-btn {
+        width: 150px;
+    }
+
+    .programari-btn {
+        width: 150px;
+    }
+
+    .call-now-button {
+        padding-left: 0 !important;
+    }
+
+    .slide-title.mobile-only {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .hashtag-alpha-auto {
+        font-size: 2rem;
+        text-shadow: 3px 2px black;
+    }
 }

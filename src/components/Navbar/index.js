@@ -25,8 +25,8 @@ const Navbar = (props) => {
           logoTheme={logoTheme}
           logoStyle={logoStyle}
           menuStyle={menuStyle}
-          handleSectionChange={props.handleSectionChange}
           showMenuStyle={showMenuStyle}
+          handleSectionChange={props.handleSectionChange}
         />
     </div>
   );
