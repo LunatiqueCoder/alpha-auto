@@ -1,5 +1,6 @@
 import React from "react";
-import AllRoute from "./router";
+import AllRoute from "./router.js";
+
 import "./App.css";
 
 const App = () => {
