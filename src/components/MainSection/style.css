@@ -1,7 +1,7 @@
 @media (max-width: 991px) {
-    .main-section-container {
-        background: url("../../images/background.jpg") no-repeat;
-        background-size: cover;
-        height: 100vh;
-    }
+  .main-section-container {
+    background: url("../../images/background.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
 }

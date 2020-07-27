@@ -167,7 +167,6 @@ export default function ContactForm() {
 
     if (isValid) {
       sendEmail(e);
-
     } else {
       setSuccessMessage(false);
       setErrorMessage(true);
@@ -305,31 +304,34 @@ export default function ContactForm() {
           {successMessage && (
             <p className="success-message">Mesajul a fost trimis!</p>
           )}
-          {
-            errorMessage && !name && !email && !number && !notes && !car ? (
-              <p className="error-message">Toate campurile sunt obligatorii!</p>
-            ) : nameError && !name ? (
-              <p className="error-message">Numele este obligatoriu!</p>
-            ) : numberError && !number ? (
+          {errorMessage && !name && !email && !number && !notes && !car ? (
+            <p className="error-message">Toate campurile sunt obligatorii!</p>
+          ) : nameError && !name ? (
+            <p className="error-message">Numele este obligatoriu!</p>
+          ) : numberError && !number ? (
+            <p className="error-message">
+              Numarul de telefon este obligatoriu!
+            </p>
+          ) : numberError && number && number.length !== 10 ? (
+            <p className="error-message">Numarul de telefon nu este valid!</p>
+          ) : emailError ? (
+            <p className="error-message">Email-ul este obligatoriu!</p>
+          ) : carError ? (
+            <p className="error-message">Mașina este obligatorie!</p>
+          ) : eventsError ? (
+            <p className="error-message">Alegeți manopera!</p>
+          ) : notesError && !notes ? (
+            <p className="error-message">Mesajul este obligatoriu!</p>
+          ) : notesError && notes && notes.length < 10 ? (
+            <p className="error-message">Mesajul este prea scurt!</p>
+          ) : (
+            submitClicked &&
+            captchaError && (
               <p className="error-message">
-                Numarul de telefon este obligatoriu!
+                Confirmati va rog ca nu sunteti robot!
               </p>
-            ) : numberError && number && number.length !== 10 ? (
-              <p className="error-message">Numarul de telefon nu este valid!</p>
-            ) : emailError ? (
-              <p className="error-message">Email-ul este obligatoriu!</p>
-            ) : carError ? (
-              <p className="error-message">Mașina este obligatorie!</p>
-            ) : eventsError ? (
-              <p className="error-message">Alegeți manopera!</p>
-            ) : notesError && !notes ? (
-              <p className="error-message">Mesajul este obligatoriu!</p>
-            ) : notesError && notes && notes.length < 10 ? (
-              <p className="error-message">Mesajul este prea scurt!</p>
-            ) : submitClicked && captchaError && (
-              <p className="error-message">Confirmati va rog ca nu sunteti robot!</p>
             )
-          }
+          )}
         </div>
       </div>
     </form>

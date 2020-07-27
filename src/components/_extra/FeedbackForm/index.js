@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
-import './style.css'
+import "./style.css";
 
 export default function FeedbackForm() {
   const [name, setName] = useState("");
@@ -18,14 +18,16 @@ export default function FeedbackForm() {
   const [eventsError, setEventsError] = useState(false);
   const [successMessage, setSuccessMessage] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
-  const [buttonClassName, setButtonClassName] = useState("btn btn-primary btn-lg");
+  const [buttonClassName, setButtonClassName] = useState(
+    "btn btn-primary btn-lg"
+  );
 
   function handleChange(e) {
     const target = e.target;
     let value;
 
     switch (target.name) {
-      case 'name':
+      case "name":
         value = target.value;
 
         if (!value) {
@@ -37,7 +39,7 @@ export default function FeedbackForm() {
         setName(target.value);
 
         break;
-      case 'number':
+      case "number":
         value = target.value;
 
         if (value && value.length === 10) {
@@ -49,7 +51,7 @@ export default function FeedbackForm() {
         setNumber(target.value);
 
         break;
-      case 'email':
+      case "email":
         value = target.value;
 
         if (!value) {
@@ -61,7 +63,7 @@ export default function FeedbackForm() {
         setEmail(target.value);
 
         break;
-      case 'car':
+      case "car":
         value = target.value;
 
         if (!value) {
@@ -73,7 +75,7 @@ export default function FeedbackForm() {
         setCar(target.value);
 
         break;
-      case 'notes':
+      case "notes":
         value = target.value;
 
         if (value && value.length > 10) {
@@ -85,7 +87,7 @@ export default function FeedbackForm() {
         setNotes(target.value);
 
         break;
-      case 'events':
+      case "events":
         value = target.value;
 
         if (value) {
@@ -149,14 +151,14 @@ export default function FeedbackForm() {
       setTimeout(() => {
         setSuccessMessage(false);
         setButtonClassName("btn btn-primary btn-lg");
-      }, 5000)
+      }, 5000);
     } else {
       setSuccessMessage(false);
       setErrorMessage(true);
 
       setTimeout(() => {
         setErrorMessage(false);
-      }, 10000)
+      }, 10000);
     }
   }
 
@@ -168,18 +170,21 @@ export default function FeedbackForm() {
         e.target,
         "user_vNMUBbS8OmkDh2DOMFJ44"
       )
-      .then(() => {
-          setName('');
-          setNumber('');
-          setEmail('');
-          setEvents('');
-          setNotes('');
+      .then(
+        () => {
+          setName("");
+          setNumber("");
+          setEmail("");
+          setEvents("");
+          setNotes("");
 
           setSuccessMessage(true);
           setErrorMessage(false);
         },
         () => {
-          alert('Mesajul nu a putut fi trimis. Va rugam verificati conexiunea la internet.');
+          alert(
+            "Mesajul nu a putut fi trimis. Va rugam verificati conexiunea la internet."
+          );
         }
       );
   }
@@ -207,7 +212,9 @@ export default function FeedbackForm() {
                         placeholder="Nume"
                         id="fname"
                         name="name"
-                        className={`form-control ${nameError ? 'is-invalid' : ''}`}
+                        className={`form-control ${
+                          nameError ? "is-invalid" : ""
+                        }`}
                       />
                     </div>
                     <div className="col-12 col-lg-6 contact-form-field">
@@ -218,7 +225,9 @@ export default function FeedbackForm() {
                         value={number}
                         id="number"
                         name="number"
-                        className={`form-control ${numberError ? 'is-invalid' : ''}`}
+                        className={`form-control ${
+                          numberError ? "is-invalid" : ""
+                        }`}
                       />
                     </div>
                     <div className="col-12  col-lg-6 contact-form-field">
@@ -229,7 +238,9 @@ export default function FeedbackForm() {
                         value={email}
                         id="email"
                         name="email"
-                        className={`form-control ${emailError ? 'is-invalid' : ''}`}
+                        className={`form-control ${
+                          emailError ? "is-invalid" : ""
+                        }`}
                       />
                     </div>
                     <div className="col-12  col-lg-6 contact-form-field">
@@ -240,7 +251,9 @@ export default function FeedbackForm() {
                         value={car}
                         id="car"
                         name="car"
-                        className={`form-control ${emailError ? 'is-invalid' : ''}`}
+                        className={`form-control ${
+                          emailError ? "is-invalid" : ""
+                        }`}
                       />
                     </div>
                     <div className="col-12 col-lg-12 contact-form-field">
@@ -248,7 +261,9 @@ export default function FeedbackForm() {
                         onChange={handleChange}
                         value={events}
                         name="events"
-                        className={`form-control ${eventsError ? 'is-invalid' : ''}`}
+                        className={`form-control ${
+                          eventsError ? "is-invalid" : ""
+                        }`}
                       >
                         <option disabled value="">
                           Selectează manopera
@@ -266,7 +281,9 @@ export default function FeedbackForm() {
                         onChange={handleChange}
                         placeholder="Detalii manoperă"
                         name="notes"
-                        className={`contact-textarea form-control ${notesError ? 'is-invalid' : ''}`}
+                        className={`contact-textarea form-control ${
+                          notesError ? "is-invalid" : ""
+                        }`}
                       />
                     </div>
                     <div className="col-12 col-lg-3">
@@ -275,26 +292,42 @@ export default function FeedbackForm() {
                       </button>
                     </div>
                     <div className="col-12 col-lg-6">
-                      {
-                        successMessage && <p className="success-message">Mesajul a fost trimis!</p>
-                      }
-                      {
-                        nameError && !name ? (
-                            <p className="error-message">Numele este obligatoriu!</p>
-                          ) : numberError && !number ? (
-                            <p className="error-message">Numarul de telefon este obligatoriu!</p>
-                          ) : numberError && number && number.length !== 10 ? (
-                          <p className="error-message">Numarul de telefon nu este valid!</p>
-                        ) : carError ? (
-                          <p className="error-message">Mașina este obligatorie!</p>
-                        ) : eventsError ? (
-                            <p className="error-message">Alegeți tipul intervenției!</p>
-                          ) : notesError && notes && notes.length < 10 ? (
-                          <p className="error-message">Mesajul este prea scurt!</p>
-                            ) : (
-                              errorMessage && <p className="error-message">Toate campurile sunt obligatorii!</p>
-                            )
-                      }
+                      {successMessage && (
+                        <p className="success-message">
+                          Mesajul a fost trimis!
+                        </p>
+                      )}
+                      {nameError && !name ? (
+                        <p className="error-message">
+                          Numele este obligatoriu!
+                        </p>
+                      ) : numberError && !number ? (
+                        <p className="error-message">
+                          Numarul de telefon este obligatoriu!
+                        </p>
+                      ) : numberError && number && number.length !== 10 ? (
+                        <p className="error-message">
+                          Numarul de telefon nu este valid!
+                        </p>
+                      ) : carError ? (
+                        <p className="error-message">
+                          Mașina este obligatorie!
+                        </p>
+                      ) : eventsError ? (
+                        <p className="error-message">
+                          Alegeți tipul intervenției!
+                        </p>
+                      ) : notesError && notes && notes.length < 10 ? (
+                        <p className="error-message">
+                          Mesajul este prea scurt!
+                        </p>
+                      ) : (
+                        errorMessage && (
+                          <p className="error-message">
+                            Toate campurile sunt obligatorii!
+                          </p>
+                        )
+                      )}
                     </div>
                   </div>
                 </form>

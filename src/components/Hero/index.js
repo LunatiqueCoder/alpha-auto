@@ -1,8 +1,8 @@
 import React from "react";
-import HeroDesktop from './components/Desktop';
-import HeroMobile from './components/Mobile';
+import HeroDesktop from "./components/Desktop";
+import HeroMobile from "./components/Mobile";
 
-import './style.css';
+import "./style.css";
 
 const Hero = () => {
   return (
@@ -15,6 +15,6 @@ const Hero = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Hero;

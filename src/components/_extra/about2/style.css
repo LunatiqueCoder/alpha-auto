@@ -20,7 +20,8 @@
   top: -60px;
   width: 100%;
   height: 122%;
-  background: url('../../../images/about/about-shape.png') center center/100% no-repeat local;
+  background: url("../../../images/about/about-shape.png") center center/100%
+    no-repeat local;
 }
 
 .about-section-3 {
