@@ -22,9 +22,6 @@ const CookieToast = () => {
         website, ești de acord să permiți colectarea de informații prin
         cookie-uri sau tehnologii similare.
       </p>
-      {/* Află in sectiunea Politica de
-        Cookies mai multe despre cookie-uri, inclusiv despre posibilitatea
-        retragerii acordului. */}
     </CookieConsent>
   );
 };

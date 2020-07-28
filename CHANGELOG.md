@@ -1,3 +1,7 @@
+# 1.6
+
+- Add GDPR compliant popup message
+
 # 1.5
 
 - Fix phone icon and header logo alignment
