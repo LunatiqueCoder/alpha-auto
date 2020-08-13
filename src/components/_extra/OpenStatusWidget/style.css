@@ -1,0 +1,25 @@
+.open-status-widget {
+  width: 200px;
+  padding-top: 35px;
+  margin-left: 100px;
+}
+
+.open-status-widget.inline {
+    padding-top: 20px;
+}
+
+.open-status-widget__header {
+    /*color: orangered;*/
+    font-size: 1.0rem;
+}
+
+.open-status-widget__content {
+  color: orangered;
+  font-size: 1.2rem;
+  margin-left: 30px;
+    padding-bottom: 10px;
+}
+
+.open-status-widget.inline .row {
+    vertical-align: text-bottom;
+}

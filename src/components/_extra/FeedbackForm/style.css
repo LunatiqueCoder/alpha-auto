@@ -1,35 +1,35 @@
 .success-message {
-    color: #1b5e20;
-    margin: auto;
-    padding-top: 12px;
+  color: #1b5e20;
+  margin: auto;
+  padding-top: 12px;
 }
 
 .error-message {
-    color: red;
-    margin-bottom: 0;
-    padding-top: 12px;
+  color: red;
+  margin-bottom: 0;
+  padding-top: 12px;
 }
 
 .error {
-    padding: 0 15px 0!important;
+  padding: 0 15px 0 !important;
 }
 
 .disabled {
-    cursor: not-allowed;
+  cursor: not-allowed;
 }
 
 .btn-lg {
-    font-size: 1.1rem!important;
+  font-size: 1.1rem !important;
 }
 
 #feedback .contact-form {
-    margin-bottom: 150px;
+  margin-bottom: 150px;
 }
 
 .contact-form-field {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 textarea.form-control.contact-textarea {
-    height: 170px;
+  height: 170px;
 }

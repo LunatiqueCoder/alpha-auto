@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
+import EmailJS from "emailjs-com";
 import ReCAPTCHA from "react-google-recaptcha";
 
 import "./style.css";
@@ -21,9 +21,11 @@ export default function ContactForm() {
   const [successMessage, setSuccessMessage] = useState(false);
   const [submitClicked, setSubmitClicked] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
+  const [failMessage, setFailMessage] = useState(false);
   const [buttonClassName, setButtonClassName] = useState(
     "btn btn-primary btn-lg"
   );
+
   const recaptchaRef = React.createRef();
 
   function onChange(value) {
@@ -147,7 +149,7 @@ export default function ContactForm() {
       error = true;
     }
 
-    // const recaptchaValue = recaptchaRef.current.getValue(); // FMK
+    // const recaptchaValue = recaptchaRef.current.getValue(); // TODO: FMK
 
     if (error) {
       setButtonClassName("btn btn-secondary btn-lg disabled");
@@ -167,7 +169,6 @@ export default function ContactForm() {
 
     if (isValid) {
       sendEmail(e);
-
     } else {
       setSuccessMessage(false);
       setErrorMessage(true);
@@ -181,7 +182,7 @@ export default function ContactForm() {
   function sendEmail(e) {
     setButtonClassName("btn btn-secondary btn-lg disabled");
 
-    emailjs
+    EmailJS
       .sendForm(
         "alpha_auto_prod",
         "template_JcskLVzi",
@@ -199,16 +200,15 @@ export default function ContactForm() {
 
           setSuccessMessage(true);
           setErrorMessage(false);
+          setButtonClassName("btn btn-primary btn-lg");
 
           setTimeout(() => {
             setSuccessMessage(false);
-            setButtonClassName("btn btn-primary btn-lg");
           }, 5000);
         },
         () => {
-          alert(
-            "Mesajul nu a putut fi trimis. Va rugam verificati conexiunea la internet."
-          );
+          setFailMessage(true);
+          setErrorMessage(false);
         }
       );
   }
@@ -270,11 +270,11 @@ export default function ContactForm() {
             <option disabled value="">
               Selectează manopera
             </option>
-            <option value="1">Transmisie</option>
-            <option value="2">Diagnostic</option>
-            <option value="3">Baterie</option>
-            <option value="4">Frâne</option>
-            <option value="5">Schimb de anvelope</option>
+            <option value="Transmisie">Transmisie</option>
+            <option value="Diagnostic">Diagnostic</option>
+            <option value="Baterie">Baterie</option>
+            <option value="Frane">Frâne</option>
+            <option value="Schimb">Schimb de anvelope</option>
           </select>
         </div>
         <div className="col-12 col-sm-12 contact-form-field">
@@ -305,31 +305,37 @@ export default function ContactForm() {
           {successMessage && (
             <p className="success-message">Mesajul a fost trimis!</p>
           )}
-          {
-            errorMessage && !name && !email && !number && !notes && !car ? (
-              <p className="error-message">Toate campurile sunt obligatorii!</p>
-            ) : nameError && !name ? (
-              <p className="error-message">Numele este obligatoriu!</p>
-            ) : numberError && !number ? (
+          {failMessage && (
+            <p className="success-message">Mesajul nu a putut fi trimis. Va rugam verificati conexiunea la internet sau incercati mai tarziu.</p>
+          )}
+          {errorMessage && !name && !email && !number && !notes && !car ? (
+            <p className="error-message">Toate campurile sunt obligatorii!</p>
+          ) : nameError && !name ? (
+            <p className="error-message">Numele este obligatoriu!</p>
+          ) : numberError && !number ? (
+            <p className="error-message">
+              Numarul de telefon este obligatoriu!
+            </p>
+          ) : numberError && number && number.length !== 10 ? (
+            <p className="error-message">Numarul de telefon nu este valid!</p>
+          ) : emailError ? (
+            <p className="error-message">Email-ul este obligatoriu!</p>
+          ) : carError ? (
+            <p className="error-message">Mașina este obligatorie!</p>
+          ) : eventsError ? (
+            <p className="error-message">Alegeți manopera!</p>
+          ) : notesError && !notes ? (
+            <p className="error-message">Mesajul este obligatoriu!</p>
+          ) : notesError && notes && notes.length < 10 ? (
+            <p className="error-message">Mesajul este prea scurt!</p>
+          ) : (
+            submitClicked &&
+            captchaError && (
               <p className="error-message">
-                Numarul de telefon este obligatoriu!
+                Confirmati va rog ca nu sunteti robot!
               </p>
-            ) : numberError && number && number.length !== 10 ? (
-              <p className="error-message">Numarul de telefon nu este valid!</p>
-            ) : emailError ? (
-              <p className="error-message">Email-ul este obligatoriu!</p>
-            ) : carError ? (
-              <p className="error-message">Mașina este obligatorie!</p>
-            ) : eventsError ? (
-              <p className="error-message">Alegeți manopera!</p>
-            ) : notesError && !notes ? (
-              <p className="error-message">Mesajul este obligatoriu!</p>
-            ) : notesError && notes && notes.length < 10 ? (
-              <p className="error-message">Mesajul este prea scurt!</p>
-            ) : submitClicked && captchaError && (
-              <p className="error-message">Confirmati va rog ca nu sunteti robot!</p>
             )
-          }
+          )}
         </div>
       </div>
     </form>

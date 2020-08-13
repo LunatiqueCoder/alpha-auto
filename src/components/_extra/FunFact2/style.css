@@ -8,25 +8,25 @@
   padding: 45px 3px;
 }
 
-.fun-fact-section-s2 .fun-fact-grids>.grid:first-child {
+.fun-fact-section-s2 .fun-fact-grids > .grid:first-child {
   background: #e3f3fc;
   top: 0;
   left: 0;
 }
 
-.fun-fact-section-s2 .fun-fact-grids>.grid:nth-child(2) {
+.fun-fact-section-s2 .fun-fact-grids > .grid:nth-child(2) {
   background: #fdf4e3;
   top: 0;
   left: 0;
 }
 
-.fun-fact-section-s2 .fun-fact-grids>.grid:nth-child(3) {
+.fun-fact-section-s2 .fun-fact-grids > .grid:nth-child(3) {
   background: #f1e7fd;
   top: 0;
   left: 0;
 }
 
-.fun-fact-section-s2 .fun-fact-grids>.grid:nth-child(4) {
+.fun-fact-section-s2 .fun-fact-grids > .grid:nth-child(4) {
   background: #f9e8e2;
   top: 0;
   left: 0;
@@ -37,7 +37,7 @@
   font-weight: 700;
   color: #666;
   padding-top: 0;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .fun-fact-section-s2 .fun-fact-grids .grid h2 {
@@ -54,7 +54,7 @@
 
 .odometer.odometer-auto-theme,
 .odometer.odometer-theme-default {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,

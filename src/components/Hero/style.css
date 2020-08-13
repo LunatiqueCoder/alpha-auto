@@ -460,83 +460,83 @@ hero-style-2
 
 .slide-title.large-screen-only h1,
 .slide-title.large-screen-only h3 {
-    color: white;
+  color: white;
 }
 
 .hero .background-image .container {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .background-image {
-    background: url("../../images/background.jpg") no-repeat;
-    background-size: cover;
-    height: 620px;
-    margin-top: 30px;
+  background: url("../../images/background.jpg") no-repeat;
+  background-size: cover;
+  height: 620px;
+  margin-top: 30px;
 }
 
 @media (max-width: 991px) {
-    .background-image {
-        background: transparent;
-        height: 280px;
-    }
+  .background-image {
+    background: transparent;
+    height: 280px;
+  }
 
-    .hero {
-        background: transparent;
-    }
+  .hero {
+    background: transparent;
+  }
 
-    .hero h5 {
-        color: white !important;
-        font-size: 1.5rem!important;
-        padding-top: 10px;
-        text-shadow: 2px 2px black;
-    }
+  .hero h5 {
+    color: white !important;
+    font-size: 1.5rem !important;
+    padding-top: 10px;
+    text-shadow: 2px 2px black;
+  }
 
-    .hero-static-image .large-screen-only {
-        display: none;
-    }
+  .hero-static-image .large-screen-only {
+    display: none;
+  }
 
-    .hero-container .mobile-only {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+  .hero-container .mobile-only {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-    .mobile-buttons-container {
-        padding-top: 10px;
-    }
+  .mobile-buttons-container {
+    padding-top: 10px;
+  }
 
-    .header-first-half {
-        margin-bottom: 10px;
-    }
+  .header-first-half {
+    margin-bottom: 10px;
+  }
 
-    .hero.hero-static-image {
-        padding-bottom: 0 !important;
-    }
+  .hero.hero-static-image {
+    padding-bottom: 0 !important;
+  }
 
-    .contact-btn {
-        width: 150px;
-        box-shadow: 1px 1px 3px black;
-        padding-bottom: 5px;
-        margin-bottom: 5px;
-    }
+  .contact-btn {
+    width: 150px;
+    box-shadow: 1px 1px 3px black;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
 
-    .programari-btn {
-        width: 150px;
-        box-shadow: -1px 1px 3px black;
-        padding-bottom: 5px;
-        margin-bottom: 5px;
-    }
+  .programari-btn {
+    width: 150px;
+    box-shadow: -1px 1px 3px black;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
 
-    .call-now-button {
-        padding-left: 0 !important;
-    }
+  .call-now-button {
+    padding-left: 0 !important;
+  }
 
-    .slide-title.mobile-only {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+  .slide-title.mobile-only {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
-    .hashtag-alpha-auto {
-        font-size: 2rem;
-        text-shadow: 3px 2px black;
-    }
+  .hashtag-alpha-auto {
+    font-size: 2rem;
+    text-shadow: 3px 2px black;
+  }
 }

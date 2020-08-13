@@ -6,7 +6,7 @@ import {
   MainSection,
   ServicesSectionDesktop,
   ServicesSectionMobile,
-  CookieToast,
+  CookieToast
 } from "@components";
 
 const Homepage = () => {

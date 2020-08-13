@@ -1,4 +1,3 @@
-
 .hx-contact-area {
   position: relative;
   border-bottom: 1px solid #fdeee8;
@@ -28,11 +27,10 @@
 }
 
 @media (max-width: 600px) {
-
   .hx-contact-area form .half-col,
   .hx-contact-area-s2 form .half-col {
-      width: 100%;
-      float: left;
+    width: 100%;
+    float: left;
   }
 }
 
@@ -40,7 +38,6 @@
 .hx-contact-area-s2 form div {
   padding: 0 15px 30px;
 }
-
 
 .hx-contact-area form .submit-btn-wrapper,
 .hx-contact-area-s2 form .submit-btn-wrapper {
@@ -58,8 +55,8 @@
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: rgba(204, 204, 204, .2);
-  border: 1px solid rgba(204, 204, 204, .2);
+  background: rgba(204, 204, 204, 0.2);
+  border: 1px solid rgba(204, 204, 204, 0.2);
   color: #666;
   width: 100%;
 }
@@ -67,7 +64,7 @@
 .form-control {
   color: #666;
 }
- form p{
+form p {
   color: red;
   font-size: 14px;
 }
@@ -80,14 +77,15 @@
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: 1px solid rgba(204, 204, 204, .2);
+  border: 1px solid rgba(204, 204, 204, 0.2);
   position: relative;
   -webkit-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
   -moz-appearance: none;
-  background: rgba(204, 204, 204, .2) url('../../../images/select-icon.png') no-repeat calc(100% - 15px) center;
+  background: rgba(204, 204, 204, 0.2) url("../../../images/select-icon.png")
+    no-repeat calc(100% - 15px) center;
 }
 
 .hx-contact-area form input:focus,
@@ -96,8 +94,8 @@
 .hx-contact-area-s2 form textarea:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: rgba(204, 204, 204, .2);
-  border: 1px solid rgba(204, 204, 204, .2);
+  background: rgba(204, 204, 204, 0.2);
+  border: 1px solid rgba(204, 204, 204, 0.2);
   color: #666;
   outline: none;
 }
@@ -134,7 +132,6 @@
   border: none;
   padding: 13px 15px;
   font-size: 16px;
-
 }
 
 .contact-validation-active .error-handling-messages {

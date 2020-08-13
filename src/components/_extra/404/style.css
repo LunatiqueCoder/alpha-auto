@@ -9,14 +9,14 @@
 
 @media (max-width: 991px) {
   .error-404-section .error-message {
-      margin-top: 50px;
-      padding: 0 100px;
+    margin-top: 50px;
+    padding: 0 100px;
   }
 }
 
 @media (max-width: 767px) {
   .error-404-section .error-message {
-      padding: 0;
+    padding: 0;
   }
 }
 

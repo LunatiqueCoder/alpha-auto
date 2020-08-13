@@ -1,12 +1,12 @@
 import React from "react";
-import Header from '../Header';
+import Header from "../Header";
 
 const Navbar = (props) => {
   const [scroll, setScroll] = React.useState(0);
 
   const handleScroll = () => {
     setScroll(document.documentElement.scrollTop);
-  }
+  };
 
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -21,15 +21,15 @@ const Navbar = (props) => {
 
   return (
     <div className={className}>
-        <Header
-          logoTheme={logoTheme}
-          logoStyle={logoStyle}
-          menuStyle={menuStyle}
-          showMenuStyle={showMenuStyle}
-          handleSectionChange={props.handleSectionChange}
-        />
+      <Header
+        logoTheme={logoTheme}
+        logoStyle={logoStyle}
+        menuStyle={menuStyle}
+        showMenuStyle={showMenuStyle}
+        handleSectionChange={props.handleSectionChange}
+      />
     </div>
   );
-}
+};
 
 export default Navbar;
