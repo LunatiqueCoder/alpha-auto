@@ -2,7 +2,7 @@ import React from "react";
 import blackLogo from "@images/logo-black.png";
 import whiteLogo from "@images/logo-white.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import MobileMenu from "../MobileMenu";
+import { MobileMenu } from "@components";
 
 import "./style.css";
 

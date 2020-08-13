@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
+import EmailJS from "emailjs-com";
 import ReCAPTCHA from "react-google-recaptcha";
 
 import "./style.css";
@@ -21,9 +21,11 @@ export default function ContactForm() {
   const [successMessage, setSuccessMessage] = useState(false);
   const [submitClicked, setSubmitClicked] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
+  const [failMessage, setFailMessage] = useState(false);
   const [buttonClassName, setButtonClassName] = useState(
     "btn btn-primary btn-lg"
   );
+
   const recaptchaRef = React.createRef();
 
   function onChange(value) {
@@ -147,7 +149,7 @@ export default function ContactForm() {
       error = true;
     }
 
-    // const recaptchaValue = recaptchaRef.current.getValue(); // FMK
+    // const recaptchaValue = recaptchaRef.current.getValue(); // TODO: FMK
 
     if (error) {
       setButtonClassName("btn btn-secondary btn-lg disabled");
@@ -180,7 +182,7 @@ export default function ContactForm() {
   function sendEmail(e) {
     setButtonClassName("btn btn-secondary btn-lg disabled");
 
-    emailjs
+    EmailJS
       .sendForm(
         "alpha_auto_prod",
         "template_JcskLVzi",
@@ -198,16 +200,15 @@ export default function ContactForm() {
 
           setSuccessMessage(true);
           setErrorMessage(false);
+          setButtonClassName("btn btn-primary btn-lg");
 
           setTimeout(() => {
             setSuccessMessage(false);
-            setButtonClassName("btn btn-primary btn-lg");
           }, 5000);
         },
         () => {
-          alert(
-            "Mesajul nu a putut fi trimis. Va rugam verificati conexiunea la internet."
-          );
+          setFailMessage(true);
+          setErrorMessage(false);
         }
       );
   }
@@ -269,11 +270,11 @@ export default function ContactForm() {
             <option disabled value="">
               Selectează manopera
             </option>
-            <option value="1">Transmisie</option>
-            <option value="2">Diagnostic</option>
-            <option value="3">Baterie</option>
-            <option value="4">Frâne</option>
-            <option value="5">Schimb de anvelope</option>
+            <option value="Transmisie">Transmisie</option>
+            <option value="Diagnostic">Diagnostic</option>
+            <option value="Baterie">Baterie</option>
+            <option value="Frane">Frâne</option>
+            <option value="Schimb">Schimb de anvelope</option>
           </select>
         </div>
         <div className="col-12 col-sm-12 contact-form-field">
@@ -303,6 +304,9 @@ export default function ContactForm() {
         <div className="col-12 col-lg-6">
           {successMessage && (
             <p className="success-message">Mesajul a fost trimis!</p>
+          )}
+          {failMessage && (
+            <p className="success-message">Mesajul nu a putut fi trimis. Va rugam verificati conexiunea la internet sau incercati mai tarziu.</p>
           )}
           {errorMessage && !name && !email && !number && !notes && !car ? (
             <p className="error-message">Toate campurile sunt obligatorii!</p>

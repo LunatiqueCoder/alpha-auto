@@ -3,7 +3,7 @@ import HomePage from "./HomePage";
 
 // Sections
 import MainSection from "./MainSection";
-import CommentFormSection from "./CommentFormSection"; // TODO
+import CommentFormSection from "./ContactForm";
 import ContactSection from "./ContactSection";
 import {
   ServicesSectionDesktop,
@@ -19,16 +19,16 @@ import MobileMenu from "./MobileMenu";
 import Navbar from "./Navbar";
 
 export {
-  HomePage,
+  CallNowButton,
   CommentFormSection, // TODO
   ContactSection,
-  ServicesSectionDesktop,
-  ServicesSectionMobile,
-  CallNowButton,
   Footer,
   Header,
   Hero,
+  HomePage,
   MainSection,
   MobileMenu,
   Navbar,
+  ServicesSectionDesktop,
+  ServicesSectionMobile
 };
