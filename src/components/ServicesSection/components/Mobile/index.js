@@ -130,7 +130,7 @@ const ServicesSectionMobile = () => {
                     <div className="col-lg-12 col-md-12 col-12">
                       <div className="pricing-wrap">
                         <div className="pricing-single">
-                          <div className="pricing-img">
+                          {/* <div className="pricing-img"> */}
                             <div className="pricing-text">
                               {/*<span><small>$</small>25</span>*/}
                               <h4>Revizie</h4>
@@ -148,7 +148,7 @@ const ServicesSectionMobile = () => {
                               </p>
                             </div>
                             {/*<img src={pr1} alt=""/>*/}
-                          </div>
+                          {/* </div> */}
                         </div>
                       </div>
                     </div>
@@ -159,7 +159,7 @@ const ServicesSectionMobile = () => {
                     <div className="col-lg-12 col-md-12 col-12">
                       <div className="pricing-wrap">
                         <div className="pricing-single">
-                          <div className="pricing-img-2">
+                          {/* <div className="pricing-img-2"> */}
                             <div className="pricing-text-1">
                               {/*<span><small>$</small>35</span>*/}
                               <h4>Mecanică</h4>
@@ -176,7 +176,7 @@ const ServicesSectionMobile = () => {
                               </p>
                             </div>
                             {/*<img src={pr1} alt=""/>*/}
-                          </div>
+                          {/* </div> */}
                         </div>
                       </div>
                     </div>
@@ -187,7 +187,7 @@ const ServicesSectionMobile = () => {
                     <div className="col-lg-12 col-md-12 col-12">
                       <div className="pricing-wrap">
                         <div className="pricing-single">
-                          <div className="pricing-img-3">
+                          {/* <div className="pricing-img-3"> */}
                             <div className="pricing-text-2">
                               {/*<span><small>$</small>45</span>*/}
                               <h4>Direcția și frânarea</h4>
@@ -203,7 +203,7 @@ const ServicesSectionMobile = () => {
                               </p>
                             </div>
                             {/*<img src={pr1} alt=""/>*/}
-                          </div>
+                          {/* </div> */}
                         </div>
                       </div>
                     </div>
@@ -214,7 +214,7 @@ const ServicesSectionMobile = () => {
                     <div className="col-lg-12 col-md-12 col-12">
                       <div className="pricing-wrap">
                         <div className="pricing-single">
-                          <div className="pricing-img-4">
+                          {/* <div className="pricing-img-4"> */}
                             <div className="pricing-text-3">
                               {/*<span><small>$</small>65</span>*/}
                               <h4>Diagnoză computerizată</h4>
@@ -229,7 +229,7 @@ const ServicesSectionMobile = () => {
                               </p>
                             </div>
                             {/*<img src={pr1} alt=""/>*/}
-                          </div>
+                          {/* </div> */}
                         </div>
                       </div>
                     </div>
@@ -240,21 +240,21 @@ const ServicesSectionMobile = () => {
                     <div className="col-lg-12 col-md-12 col-12">
                       <div className="pricing-wrap">
                         <div className="pricing-single">
-                          <div className="pricing-img-5">
-                            <div className="pricing-text-4">
-                              {/*<span><small>$</small>50</span>*/}
-                              <h4>Electrică</h4>
-                              <p>
-                                Instalațiile electrice ale autovehiculelor sunt
-                                complexe și susțin multe dintre sistemele vitale
-                                pentru funcționarea normală a mașinii. De la
-                                pornire și frânare până la deschiderea unui
-                                geam, sistemul electric este utilizat continuu
-                                în timpul mersului și în timpul staționării.
-                              </p>
-                            </div>
-                            {/*<img src={pr1} alt=""/>*/}
+                          {/* <div className="pricing-img-5"> */}
+                          <div className="pricing-text-4">
+                            {/*<span><small>$</small>50</span>*/}
+                            <h4>Electrică</h4>
+                            <p>
+                              Instalațiile electrice ale autovehiculelor sunt
+                              complexe și susțin multe dintre sistemele vitale
+                              pentru funcționarea normală a mașinii. De la
+                              pornire și frânare până la deschiderea unui geam,
+                              sistemul electric este utilizat continuu în timpul
+                              mersului și în timpul staționării.
+                            </p>
                           </div>
+                          {/*<img src={pr1} alt=""/>*/}
+                          {/* </div> */}
                         </div>
                       </div>
                     </div>
@@ -265,23 +265,23 @@ const ServicesSectionMobile = () => {
                     <div className="col-lg-12 col-md-12 col-12">
                       <div className="pricing-wrap">
                         <div className="pricing-single">
-                          <div className="pricing-img-6">
-                            <div className="pricing-text-5">
-                              {/*<span><small>$</small>25</span>*/}
-                              <h4>Vopsitorie & tinichigerie</h4>
-                              <p>
-                                Cabina de vopsit este profesională și de ultimă
-                                generație, asigurându-ne specialiștii că vor
-                                obține exact rezultatul dorit, iar atelierul de
-                                tinichigerie dispune de toate mijloacele tehnice
-                                necesare îndreptării elementelor de caroserie și
-                                intervenției pe structura de rezistență,
-                                realizându-se într-un spațiu adecvat și cu o
-                                dotare corespunzătoare.
-                              </p>
-                            </div>
-                            {/*<img src={pr1} alt=""/>*/}
+                          {/* <div className="pricing-img-6"> */}
+                          <div className="pricing-text-5">
+                            {/*<span><small>$</small>25</span>*/}
+                            <h4>Vopsitorie & tinichigerie</h4>
+                            <p>
+                              Cabina de vopsit este profesională și de ultimă
+                              generație, asigurându-ne specialiștii că vor
+                              obține exact rezultatul dorit, iar atelierul de
+                              tinichigerie dispune de toate mijloacele tehnice
+                              necesare îndreptării elementelor de caroserie și
+                              intervenției pe structura de rezistență,
+                              realizându-se într-un spațiu adecvat și cu o
+                              dotare corespunzătoare.
+                            </p>
                           </div>
+                          {/*<img src={pr1} alt=""/>*/}
+                          {/* </div> */}
                         </div>
                       </div>
                     </div>
