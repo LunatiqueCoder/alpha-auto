@@ -126,165 +126,85 @@ const ServicesSectionMobile = () => {
               </Nav>
               <TabContent activeTab={activeTab}>
                 <TabPane tabId="1">
-                  <div className="row">
-                    <div className="col-lg-12 col-md-12 col-12">
-                      <div className="pricing-wrap">
-                        <div className="pricing-single">
-                          {/* <div className="pricing-img"> */}
-                            <div className="pricing-text">
-                              {/*<span><small>$</small>25</span>*/}
-                              <h4>Revizie</h4>
-                              <p>
-                                Revizia auto este un serviciu obligatoriu, care
-                                trebuie efectuat regulat, uneori chiar mai des
-                                decât este specificat de către producător. Cand
-                                spunem revizie, ne referim la verificarea,
-                                reglarea și/sau schimbarea pieselor și
-                                aparatajelor acestea adesea constând în:
-                                schimbarea filtrelor de ulei, aer, habitaclu,
-                                inspecția nivelelor lichidelor, verificarea
-                                plăcuțelor de frână, înlăturarea jocurilor
-                                survenite prin uzură, etc.
-                              </p>
-                            </div>
-                            {/*<img src={pr1} alt=""/>*/}
-                          {/* </div> */}
-                        </div>
-                      </div>
-                    </div>
+                  <div className="pricing-text">
+                    <h4>Revizie</h4>
+                    <p>
+                      Revizia auto este un serviciu obligatoriu, care trebuie
+                      efectuat regulat, uneori chiar mai des decât este
+                      specificat de către producător. Cand spunem revizie, ne
+                      referim la verificarea, reglarea și/sau schimbarea
+                      pieselor și aparatajelor acestea adesea constând în:
+                      schimbarea filtrelor de ulei, aer, habitaclu, inspecția
+                      nivelelor lichidelor, verificarea plăcuțelor de frână,
+                      înlăturarea jocurilor survenite prin uzură, etc.
+                    </p>
                   </div>
                 </TabPane>
                 <TabPane tabId="2">
-                  <div className="row">
-                    <div className="col-lg-12 col-md-12 col-12">
-                      <div className="pricing-wrap">
-                        <div className="pricing-single">
-                          {/* <div className="pricing-img-2"> */}
-                            <div className="pricing-text-1">
-                              {/*<span><small>$</small>35</span>*/}
-                              <h4>Mecanică</h4>
-                              <p>
-                                Mașina este un ansamblu de mii de piese care, în
-                                mod normal, se completează perfect și îi oferă
-                                utilizatorului libertate de mișcare. Din păcate,
-                                piesele auto nu sunt nemuritoare și ocazional, o
-                                parte dintre ele cedează,fiind necesară
-                                exploatarea și repararea autovehiculelor, astfel
-                                încât acestea să-și mențină parametrii
-                                constructivi și funcționali și să se încadreze
-                                în normele tehnice.
-                              </p>
-                            </div>
-                            {/*<img src={pr1} alt=""/>*/}
-                          {/* </div> */}
-                        </div>
-                      </div>
-                    </div>
+                  <div className="pricing-text-1">
+                    <h4>Mecanică</h4>
+                    <p>
+                      Mașina este un ansamblu de mii de piese care, în mod
+                      normal, se completează perfect și îi oferă utilizatorului
+                      libertate de mișcare. Din păcate, piesele auto nu sunt
+                      nemuritoare și ocazional, o parte dintre ele cedează,fiind
+                      necesară exploatarea și repararea autovehiculelor, astfel
+                      încât acestea să-și mențină parametrii constructivi și
+                      funcționali și să se încadreze în normele tehnice.
+                    </p>
                   </div>
                 </TabPane>
                 <TabPane tabId="3">
-                  <div className="row">
-                    <div className="col-lg-12 col-md-12 col-12">
-                      <div className="pricing-wrap">
-                        <div className="pricing-single">
-                          {/* <div className="pricing-img-3"> */}
-                            <div className="pricing-text-2">
-                              {/*<span><small>$</small>45</span>*/}
-                              <h4>Direcția și frânarea</h4>
-                              <p>
-                                Direcția și frânarea sunt două sisteme ale unui
-                                autoturism ce trebuie să funcționeze
-                                ireproșabil. De la frână pe disc și cea de mână
-                                la frână hidraulică și sistemul antiblocare roți
-                                (ABS), specialiștii noștri știu totul despre
-                                sistemul de frânare, oferind reparații pentru
-                                orice mașină indiferent de model, fabricant sau
-                                an de fabricație.
-                              </p>
-                            </div>
-                            {/*<img src={pr1} alt=""/>*/}
-                          {/* </div> */}
-                        </div>
-                      </div>
-                    </div>
+                  <div className="pricing-text-2">
+                    <h4>Direcția și frânarea</h4>
+                    <p>
+                      Direcția și frânarea sunt două sisteme ale unui autoturism
+                      ce trebuie să funcționeze ireproșabil. De la frână pe disc
+                      și cea de mână la frână hidraulică și sistemul antiblocare
+                      roți (ABS), specialiștii noștri știu totul despre sistemul
+                      de frânare, oferind reparații pentru orice mașină
+                      indiferent de model, fabricant sau an de fabricație.
+                    </p>
                   </div>
                 </TabPane>
                 <TabPane tabId="4">
-                  <div className="row">
-                    <div className="col-lg-12 col-md-12 col-12">
-                      <div className="pricing-wrap">
-                        <div className="pricing-single">
-                          {/* <div className="pricing-img-4"> */}
-                            <div className="pricing-text-3">
-                              {/*<span><small>$</small>65</span>*/}
-                              <h4>Diagnoză computerizată</h4>
-                              <p>
-                                Diagnoza reprezintă verificarea computerizată a
-                                condițiilor tehnice generale ale unui autoturism
-                                (folosind sisteme computerizate şi interfeţe
-                                specifice fiecărui tip de automobil), inclusiv
-                                verificarea parametrilor reali cu cei teoretici
-                                și identificarea cauzelor și localizării
-                                oricărei defecțiuni, pentru a le elimina rapid.
-                              </p>
-                            </div>
-                            {/*<img src={pr1} alt=""/>*/}
-                          {/* </div> */}
-                        </div>
-                      </div>
-                    </div>
+                  <div className="pricing-text-3">
+                    <h4>Diagnoză computerizată</h4>
+                    <p>
+                      Diagnoza reprezintă verificarea computerizată a
+                      condițiilor tehnice generale ale unui autoturism (folosind
+                      sisteme computerizate şi interfeţe specifice fiecărui tip
+                      de automobil), inclusiv verificarea parametrilor reali cu
+                      cei teoretici și identificarea cauzelor și localizării
+                      oricărei defecțiuni, pentru a le elimina rapid.
+                    </p>
                   </div>
                 </TabPane>
                 <TabPane tabId="5">
-                  <div className="row">
-                    <div className="col-lg-12 col-md-12 col-12">
-                      <div className="pricing-wrap">
-                        <div className="pricing-single">
-                          {/* <div className="pricing-img-5"> */}
-                          <div className="pricing-text-4">
-                            {/*<span><small>$</small>50</span>*/}
-                            <h4>Electrică</h4>
-                            <p>
-                              Instalațiile electrice ale autovehiculelor sunt
-                              complexe și susțin multe dintre sistemele vitale
-                              pentru funcționarea normală a mașinii. De la
-                              pornire și frânare până la deschiderea unui geam,
-                              sistemul electric este utilizat continuu în timpul
-                              mersului și în timpul staționării.
-                            </p>
-                          </div>
-                          {/*<img src={pr1} alt=""/>*/}
-                          {/* </div> */}
-                        </div>
-                      </div>
-                    </div>
+                  <div className="pricing-text-4">
+                    <h4>Electrică</h4>
+                    <p>
+                      Instalațiile electrice ale autovehiculelor sunt complexe
+                      și susțin multe dintre sistemele vitale pentru
+                      funcționarea normală a mașinii. De la pornire și frânare
+                      până la deschiderea unui geam, sistemul electric este
+                      utilizat continuu în timpul mersului și în timpul
+                      staționării.
+                    </p>
                   </div>
                 </TabPane>
                 <TabPane tabId="6">
-                  <div className="row">
-                    <div className="col-lg-12 col-md-12 col-12">
-                      <div className="pricing-wrap">
-                        <div className="pricing-single">
-                          {/* <div className="pricing-img-6"> */}
-                          <div className="pricing-text-5">
-                            {/*<span><small>$</small>25</span>*/}
-                            <h4>Vopsitorie & tinichigerie</h4>
-                            <p>
-                              Cabina de vopsit este profesională și de ultimă
-                              generație, asigurându-ne specialiștii că vor
-                              obține exact rezultatul dorit, iar atelierul de
-                              tinichigerie dispune de toate mijloacele tehnice
-                              necesare îndreptării elementelor de caroserie și
-                              intervenției pe structura de rezistență,
-                              realizându-se într-un spațiu adecvat și cu o
-                              dotare corespunzătoare.
-                            </p>
-                          </div>
-                          {/*<img src={pr1} alt=""/>*/}
-                          {/* </div> */}
-                        </div>
-                      </div>
-                    </div>
+                  <div className="pricing-text-5">
+                    <h4>Vopsitorie & tinichigerie</h4>
+                    <p>
+                      Cabina de vopsit este profesională și de ultimă generație,
+                      asigurându-ne specialiștii că vor obține exact rezultatul
+                      dorit, iar atelierul de tinichigerie dispune de toate
+                      mijloacele tehnice necesare îndreptării elementelor de
+                      caroserie și intervenției pe structura de rezistență,
+                      realizându-se într-un spațiu adecvat și cu o dotare
+                      corespunzătoare.
+                    </p>
                   </div>
                 </TabPane>
               </TabContent>
