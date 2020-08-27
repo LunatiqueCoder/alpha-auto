@@ -1,3 +1,9 @@
+# 2.1.0
+
+- Update npm packages and resolve conflicts
+- Update app styles for tablet view
+- Small component refactor
+
 # 2.0.0
 
 - Beta release
