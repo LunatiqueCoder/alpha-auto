@@ -29,7 +29,7 @@ const Contactpage = () => {
       <div className="hx-contact-grid-area">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 col-md-12 col-sm-12 col-12">
+            <div className="col-lg-3 col-md-12 col-sm-12 col-12">
               <div className="hx-contact-gd-wrap phone-tile">
                 <a href="tel:+40722 968 318">
                   <div className="hx-contact-gd-icon">
@@ -54,7 +54,7 @@ const Contactpage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-12 col-sm-12 col-12">
+            <div className="col-lg-5 col-md-12 col-sm-12 col-12">
               <AnchorLink offset="10" href="#appointment">
                 <div className="hx-contact-gd-wrap email-tile">
                   <div className="hx-contact-gd-icon">
