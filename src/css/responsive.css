@@ -753,7 +753,7 @@
   .nav-tabs > .pricing-content-4 > a,
   .nav-tabs > .pricing-content-5 > a,
   .nav-tabs > .pricing-content-6 > a {
-    margin-right: 30px;
+    margin: 10px;
   }
   .pricing-img img,
   .pricing-img-2 img,
@@ -1089,7 +1089,7 @@
   .nav-tabs > .pricing-content-4 > a,
   .nav-tabs > .pricing-content-5 > a,
   .nav-tabs > .pricing-content-6 > a {
-    margin: auto;
+    margin: 5px;
   }
 
   .nav-tabs > li > a {
@@ -1212,7 +1212,7 @@
   .pricing-section-2 .nav-tabs > .pricing-content-4 > a,
   .pricing-section-2 .nav-tabs > .pricing-content-5 > a,
   .pricing-section-2 .nav-tabs > .pricing-content-6 > a {
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .pricing-section-2 .nav-tabs {
     margin-left: 40px;
