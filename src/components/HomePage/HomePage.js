@@ -4,8 +4,8 @@ import CookieToast from "../CookieToast/";
 import ContactSection from "../ContactSection";
 import Footer from "../Footer/";
 import MainSection from "../MainSection";
-import ServicesSectionDesktop from "../ServicesSection/components/Desktop/";
-import ServicesSectionMobile from "../ServicesSection/components/Mobile/";
+import {ServicesSectionDesktop,ServicesSectionMobile} from "../ServicesSection/";
+
 
 const Homepage = () => {
   return (
