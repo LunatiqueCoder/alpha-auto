@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "../ContactForm";
+import ContactForm from "../ContactForm/ContactForm";
 import "./style.css";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import AnchorLink from "react-anchor-link-smooth-scroll";

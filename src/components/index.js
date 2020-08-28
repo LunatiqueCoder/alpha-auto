@@ -1,33 +1,21 @@
 // Pages
-import HomePage from "./HomePage";
+// import HomePage from "./HomePage";
 
 // Sections
 import MainSection from "./MainSection";
-import CommentFormSection from "./ContactForm";
-import ContactSection from "./ContactSection";
 import {
   ServicesSectionDesktop,
   ServicesSectionMobile,
 } from "./ServicesSection";
 
-// Components
-import CallNowButton from "./CallNowButton";
-import CookieToast from "./CookieToast";
-import Footer from "./Footer";
-import Header from "./Header";
+
 import Hero from "./Hero";
 import MobileMenu from "./MobileMenu";
 import Navbar from "./Navbar";
 
 export {
-  CallNowButton,
-  CommentFormSection, // TODO
-  ContactSection,
-  CookieToast,
-  Footer,
-  Header,
   Hero,
-  HomePage,
+  // HomePage,
   MainSection,
   MobileMenu,
   Navbar,
