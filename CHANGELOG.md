@@ -2,7 +2,7 @@
 
 - Update npm packages and resolve conflicts
 - Update app styles for tablet view
-- Small component refactor
+- Renamed multiple index.js files to avoid confusion
 
 # 2.0.0
 
