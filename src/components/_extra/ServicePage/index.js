@@ -4,7 +4,7 @@ import React from "react";
 import Navbar from "../../Navbar";
 import PageTitle from "../breadcumb";
 import FooterSection from "../../Footer";
-import Services from "../../ServicesSection/components/Desktop";
+import Services from "../../ServicesSection/components/Desktop/Desktop";
 import Pricing from "../../ServicesSection/components/Mobile";
 import TeamSection from "../TeamSection";
 import Testimonial from "../testimonial";

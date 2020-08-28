@@ -3,9 +3,9 @@ import CallNowButton from "../CallNowButton";
 import CookieToast from "../CookieToast/";
 import ContactSection from "../ContactSection";
 import Footer from "../Footer/";
-import MainSection from "../MainSection";
-import ServicesSectionDesktop from "../ServicesSection/components/Desktop";
-import ServicesSectionMobile from "../ServicesSection/components/Mobile";
+import MainSection from "../MainSection/MainSection";
+import ServicesSectionDesktop from "../ServicesSection/components/Desktop/";
+import ServicesSectionMobile from "../ServicesSection/components/Mobile/";
 
 const Homepage = () => {
   return (
