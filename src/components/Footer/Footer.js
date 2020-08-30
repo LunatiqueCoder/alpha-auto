@@ -91,7 +91,7 @@ const FooterSection = () => {
             <div className="row">
               <div className="col-12 large-screen-only">
                 <span>
-                  Privacy Policy | © 2020 <Link to="/">Alpha Auto</Link> | v2.0
+                  Privacy Policy | © 2020 <Link to="/">Alpha Auto</Link> | v2.1.0
                 </span>
               </div>
               <div className="col-12 mobile-only">
