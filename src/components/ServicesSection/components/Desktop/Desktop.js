@@ -27,7 +27,7 @@ const ServicesSectionDesktop = () => {
                 <p>
                   Revizia auto este un serviciu obligatoriu, care trebuie
                   efectuat regulat, uneori chiar mai des decât este specificat
-                  de către producător. Cand spunem revizie, ne referim la
+                  de către producător. Când spunem revizie, ne referim la
                   verificarea, reglarea și schimbarea pieselor și aparatajelor:
                   schimbarea filtrelor de ulei, aer, habitaclu, inspecția
                   nivelelor lichidelor, verificarea plăcuțelor de frână,
@@ -47,8 +47,8 @@ const ServicesSectionDesktop = () => {
                   Mașina este un ansamblu de mii de piese care, în mod normal,
                   se completează perfect și îi oferă utilizatorului libertate de
                   mișcare. Din păcate, piesele auto nu sunt nemuritoare și
-                  ocazional, o parte dintre ele cedează,fiind necesară
-                  exploatarea și repararea autovehiculelor, astfel încât acestea
+                  ocazional, o parte dintre ele cedează, fiind necesară
+                  repararea autovehiculelor, astfel încât acestea
                   să-și mențină parametrii constructivi și funcționali și să se
                   încadreze în normele tehnice.
                 </p>

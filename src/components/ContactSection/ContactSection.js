@@ -88,7 +88,7 @@ const Contactpage = () => {
           <div className="row">
             <div className="col col-xs-12">
               <div className="contact-map">
-                <LoadScript googleMapsApiKey="AIzaSyC5tinHO-IhtGkHdXMYUufLOa-5ICmgjE8">
+                <LoadScript googleMapsApiKey="AIzaSyAZUYvRKsl3Vmb9DRlnSNfCgvdzO1shEyQ">
                   <GoogleMap
                     id="map"
                     mapContainerStyle={mapContainerStyle}
