@@ -1,3 +1,8 @@
+# 2.1.1
+
+- Updated Google Maps API key 
+- Added missing diacritics
+
 # 2.1.0
 
 - Update npm packages and resolve conflicts
